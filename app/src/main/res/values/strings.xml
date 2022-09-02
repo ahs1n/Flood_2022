@@ -15,6 +15,9 @@
     <string name="btnLogin">Login</string>
     <string name="country">Language (Click to change)</string>
     <string name="downData">Download Data</string>
+    <string name="oldPassword" translatable="false">Old Password</string>
+    <string name="newPassword" translatable="false">New Password</string>
+
 
     <!--SECTION HEADINGS-->
     <string name="mobilehealthserviceform_heading"> Mobile Health Service Form </string>
@@ -506,7 +509,7 @@
     <string name="Q_mh030">MH030</string>
 
     <string name="dpr_mainheading">DPR: Daily Patient Record Sheet</string>
-    <string name="app_name"> SHRC Camps - R4 </string>
+    <string name="app_name"> Floods 2022 </string>
     <string name="btnSync">Download Data</string>
     <string name="btnUpload">Upload Data</string>
     <string name="prompt_email">Email</string>
@@ -571,6 +574,25 @@
     <string name="ss109a">Yes</string>
     <string name="ss109b">No</string>
     <string name="ss110">Weight</string>
+
+    <string name="ss110a">Temprature</string>
+    <string name="ss110a99">Not Recorded</string>
+    <string name="ss110atemp">Temprature</string>
+    <string name="ss110b">Blood Pressure</string>
+    <string name="ss110b99">Not Recorded</string>
+    <string name="ss110bdiastolic">Diastolic</string>
+    <string name="ss110bsystolic">Systolic </string>
+    <string name="ss110c">ICT</string>
+    <string name="ss110c01">Negative</string>
+    <string name="ss110c02">Positive</string>
+    <string name="ss110c99">Not Recorded</string>
+    <string name="ss110d">RBS</string>
+    <string name="ss110d99">Not Recorded</string>
+    <string name="ss110drbs">RBS</string>
+    <string name="ss110e">HB</string>
+    <string name="ss110e99">Not Recorded</string>
+    <string name="ss110ehb">HB</string>
+
     <string name="ss111">Purpose of Visit</string>
     <string name="ss111a">Antenatal Care</string>
     <string name="ss111b">Post Natal Care</string>
@@ -647,6 +669,54 @@
     <string name="me20322">ORS</string>
     <string name="me20323">Scabion lotion</string>
     <string name="me20324">Polyfax</string>
+
+    <string name="me20333">Syp:Brufen </string>
+    <string name="me20334">Tab:Diclofenac</string>
+    <string name="me20335">Inj:Diclofenac</string>
+    <string name="me20336">Syp:Rigix</string>
+    <string name="me20337">Tab:Rigix</string>
+    <string name="me20338">Syp:Benadyrl</string>
+    <string name="me20339">Tab:Arinac</string>
+    <string name="me20340">Tab:Arinac forte</string>
+    <string name="me20341">Syp:Salbutamol</string>
+    <string name="me20342">Tab:Prednisolone</string>
+    <string name="me20343">Cap:Amoxicillin</string>
+    <string name="me20344">Tab:Amoxicillin Dispersible</string>
+    <string name="me20345">Syp:Amoxicillin</string>
+    <string name="me20346">Tab:Zetro (Azithromycin)</string>
+    <string name="me20347">Syp:Zetro (Azithromycin)</string>
+    <string name="me20348">Tab:Cefixime</string>
+    <string name="me20349">Syp:Cefixime</string>
+    <string name="me20350">Tab:Novidate 500 mg</string>
+    <string name="me20351">Syp:Mytil (125mg/5ml)</string>
+    <string name="me20352">Tab:Chloroquine</string>
+    <string name="me20353">Syp:Genem</string>
+    <string name="me20354">Tab:Artem DS plus </string>
+    <string name="me20355">Syp:Cotrimoxazole</string>
+    <string name="me20356">Syp:Metronidazole</string>
+    <string name="me20357">Ecotec Sachet</string>
+    <string name="me20358">Lotrix cream</string>
+    <string name="me20359">Fusil-H Cream</string>
+    <string name="me20360">Polyfax Cream</string>
+    <string name="me20361">Nilstat oral drops </string>
+    <string name="me20362">Dektarin oral jel</string>
+    <string name="me20363">Syp:D-worm </string>
+    <string name="me20364">Tab:D-worm </string>
+    <string name="me20365">Tab:Gravinate </string>
+    <string name="me20366">Syp:Gravinate </string>
+    <string name="me20367">Tab:Metfarmin </string>
+    <string name="me20368">Syp:Spaslar P</string>
+    <string name="me20369">Syp:Vidaylin</string>
+    <string name="me20370">Tab:Iron/Folic Acid</string>
+    <string name="me20371">Syp:Maltofer </string>
+    <string name="me20372">Tab:Vit A&amp;D tablets</string>
+    <string name="me20373">Syp:Calcium P</string>
+    <string name="me20374">Chlorophenicol eye drops</string>
+    <string name="me20375">Other specify </string>
+    <string name="me20376">Other specify </string>
+    <string name="me20377">Other specify </string>
+    <string name="me20378">Other specify </string>
+
     <string name="me20396">Others</string>
     <string name="vstitle">SECTION 3: VACCINATOR’S SECTION</string>
     <string name="vs301">Tetanus Toxoid Vaccine (Only for Women)</string>
@@ -702,6 +772,11 @@
     <string name='Q_ss108'>ss108</string>
     <string name='Q_ss109'>ss109</string>
     <string name='Q_ss110'>ss110</string>
+    <string name='Q_ss110a'>ss110a</string>
+    <string name='Q_ss110b'>ss110b</string>
+    <string name='Q_ss110c'>ss110c</string>
+    <string name='Q_ss110d'>ss110d</string>
+    <string name='Q_ss110e'>ss110e</string>
     <string name='Q_ss111'>ss111</string>
     <string name='Q_sstitle'>sstitle</string>
     <string name='Q_vs301'>vs301</string>
