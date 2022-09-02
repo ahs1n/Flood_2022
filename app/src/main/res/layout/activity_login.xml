@@ -8,9 +8,6 @@
 
         <import type="android.view.View" />
 
-        <variable
-            name="callback"
-            type="edu.aku.hassannaqvi.shrc_camps.ui.LoginActivity" />
     </data>
 
     <LinearLayout
@@ -165,7 +162,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:background="@drawable/login_eyestyle"
-                                        android:onClick="@{callback::onShowPasswordClick}"
+                                        android:onClick="onShowPasswordClick"
                                         android:paddingStart="12dp"
                                         android:paddingEnd="12dp"
                                         android:src="@drawable/ic_login_eye"

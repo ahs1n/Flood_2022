@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.shrc_camps.ui.MainActivity" />
+            type="edu.aku.hassannaqvi.flood2022.ui.MainActivity" />
     </data>
 
     <LinearLayout
@@ -107,12 +107,12 @@
                             android:layout_marginEnd="8dp"
                             android:background="@drawable/bacground_border"
                             android:gravity="center"
-                            android:hint="####-#"
+                            android:hint="#####-####"
                             android:imeOptions="actionSearch"
                             android:inputType="number"
                             android:padding="@dimen/_5sdp"
-                            app:mask="####-#"
-                            app:pattern="^(\\d{4,4}\\-\\d{1,1})$" />
+                            app:mask="#####-####"
+                            app:pattern="^(\\d{5,5}\\-\\d{4,4})$" />
 
                         <ProgressBar
                             android:id="@+id/btn_search_camp_progress"

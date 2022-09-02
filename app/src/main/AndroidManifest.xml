@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="edu.aku.hassannaqvi.shrc_camps">
+    package="edu.aku.hassannaqvi.flood2022">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -20,7 +20,7 @@
         tools:ignore="ScopedStorage" />
 
     <application
-        android:name=".core.MainApp"
+        android:name="edu.aku.hassannaqvi.flood2022.core.MainApp"
         android:allowBackup="false"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
@@ -31,8 +31,9 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:allowBackup">
         <activity
-            android:name=".ui.SplashscreenActivity"
+            android:name="edu.aku.hassannaqvi.flood2022.ui.SplashscreenActivity"
             android:label="@string/app_name"
+            android:exported="true"
             android:theme="@style/Theme.Design.NoActionBar"
             android:windowSoftInputMode="adjustResize|stateHidden">
 
@@ -44,7 +45,7 @@
 
         </activity>
         <activity
-            android:name=".ui.sections.SectionMobileHealthR2"
+            android:name="edu.aku.hassannaqvi.flood2022.ui.sections.SectionMobileHealthR2"
             android:label="@string/mobilehealthserviceform_heading"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish1">
@@ -55,53 +56,52 @@
             </intent-filter>-->
         </activity>
         <activity
-            android:name=".ui.LoginActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+            android:name="edu.aku.hassannaqvi.flood2022.ui.LoginActivity"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.SyncActivity"
+            android:name="edu.aku.hassannaqvi.flood2022.ui.SyncActivity"
             android:label="Download and Upload Data Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.EndingActivity"
+            android:name="edu.aku.hassannaqvi.flood2022.ui.EndingActivity"
             android:label="ِانٹرویو اسٹیٹس"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeUrdu" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name="edu.aku.hassannaqvi.flood2022.ui.MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".ui.TakePhoto"
+            android:name="edu.aku.hassannaqvi.flood2022.ui.TakePhoto"
             android:hardwareAccelerated="true"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.list_activity.FormsReportCluster"
+            android:name="edu.aku.hassannaqvi.flood2022.ui.list_activity.FormsReportCluster"
             android:label="Forms Report"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ui.list_activity.FormsReportDate"
+            android:name="edu.aku.hassannaqvi.flood2022.ui.list_activity.FormsReportDate"
             android:label="Forms Report"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".database.AndroidManager"
+            android:name="edu.aku.hassannaqvi.flood2022.database.AndroidManager"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ui.ChangePasswordActivity"
+            android:name="edu.aku.hassannaqvi.flood2022.ui.ChangePasswordActivity"
             android:exported="true"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize" />
 
         <meta-data
             android:name="YEK_REVRES"
-            android:value="3sA!ttiTuDPr%esENc3WmZq4t7w!zSCnF)J@NcRfUjXn2r5u8x/A?D*G-KaPdSgV" />
+            android:value="VmYq3t6w9z8C8F)J@McQfTjWnZr4u7x!A%D*G-KaPdRgUkXp2s5v8y/B!E(H+MbQ" />
         <meta-data
             android:name="YEK_TRATS"
-            android:value="3" />
+            android:value="22" />
     </application>
 
 </manifest>
