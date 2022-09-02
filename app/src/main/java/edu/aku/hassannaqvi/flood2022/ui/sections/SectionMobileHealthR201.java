@@ -237,6 +237,11 @@ public class SectionMobileHealthR201 extends AppCompatActivity implements EndSec
 
     private void setupSkips() {
         bi.me20399.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.me203check, !b));
+
+        bi.me20301.setOnCheckedChangeListener((compoundButton, b) -> {
+            Clear.clearAllFields(bi.me20301DAY, b);
+            Clear.clearAllFields(bi.me20301QTY, b);
+        });
     }
 
     public void setTags(RadioGroup rg, View[] views) {
