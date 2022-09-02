@@ -19,6 +19,7 @@ public class MHContract {
         public static final String COLUMN_SYSDATE = "sysdate";
         public static final String COLUMN_SERIAL = "serial";
         public static final String COLUMN_SA = "sA";
+        public static final String COLUMN_SB = "sB";
         public static final String COLUMN_SS101 = "ss101";
         public static final String COLUMN_SS102 = "ss102";
         public static final String COLUMN_SS103 = "ss103";

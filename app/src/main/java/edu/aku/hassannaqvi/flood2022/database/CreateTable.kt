@@ -130,7 +130,8 @@ object CreateTable {
             + MHContract.MHTable.COLUMN_SS105 + " TEXT,"
             + MHContract.MHTable.COLUMN_SS106 + " TEXT,"
             + MHContract.MHTable.COLUMN_SS107 + " TEXT,"
-            + MHContract.MHTable.COLUMN_SA + " TEXT"
+            + MHContract.MHTable.COLUMN_SA + " TEXT,"
+            + MHContract.MHTable.COLUMN_SB + " TEXT"
             + " );")
 
     const val SQL_CREATE_USERS = ("CREATE TABLE " + Users.UsersTable.TABLE_NAME + "("
