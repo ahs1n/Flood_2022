@@ -31,10 +31,6 @@ import java.security.NoSuchAlgorithmException;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 import javax.crypto.BadPaddingException;
@@ -51,7 +47,7 @@ import edu.aku.hassannaqvi.flood2022.core.MainApp;
 
 public class DataDownWorkerALL extends Worker {
 
-    private static final String TAG = "DataDownWorkerALL";
+    private final String TAG = "DataDownWorkerALL";
 
     private final int position;
     private final Context mContext;
@@ -70,13 +66,69 @@ public class DataDownWorkerALL extends Worker {
 
     }
 
-    public static void longInfo(String str) {
-        if (str.length() > 4000) {
-            Log.i(TAG, str.substring(0, 4000));
-            longInfo(str.substring(4000));
-        } else
-            Log.i(TAG, str);
-    }
+    /*
+     * This method is responsible for doing the work
+     * so whatever work that is needed to be performed
+     * we will put it here
+     *
+     * For example, here I am calling the method displayNotification()
+     * It will display a notification
+     * So that we will understand the work is executed
+     * */
+
+    /*private static SSLSocketFactory buildSslSocketFactory(Context context) {
+        try {
+
+
+            CertificateFactory cf = CertificateFactory.getInstance("X.509");
+            AssetManager assetManager = context.getAssets();
+            InputStream caInput = assetManager.open("vcoe1_aku_edu.cer");
+            Certificate ca;
+            try {
+                ca = cf.generateCertificate(caInput);
+                System.out.println("ca=" + ((X509Certificate) ca).getSubjectDN());
+            } finally {
+                caInput.close();
+            }
+
+            // Create a KeyStore containing our trusted CAs
+            String keyStoreType = KeyStore.getDefaultType();
+            KeyStore keyStore = KeyStore.getInstance(keyStoreType);
+            keyStore.load(null, null);
+            keyStore.setCertificateEntry("ca", ca);
+
+            // Create a TrustManager that trusts the CAs in our KeyStore
+            String tmfAlgorithm = TrustManagerFactory.getDefaultAlgorithm();
+            TrustManagerFactory tmf = TrustManagerFactory.getInstance(tmfAlgorithm);
+            tmf.init(keyStore);
+*//*
+
+            SSLContext context = SSLContext.getInstance("TLS");
+            context.init(null, new X509TrustManager[]{new X509TrustManager() {
+                public void checkClientTrusted(X509Certificate[] chain,
+                                               String authType) throws CertificateException {
+                }
+
+                public void checkServerTrusted(X509Certificate[] chain,
+                                               String authType) throws CertificateException {
+                }
+
+                public X509Certificate[] getAcceptedIssuers() {
+                    return new X509Certificate[0];
+                }
+            }}, new SecureRandom());
+            HttpsURLConnection.setDefaultSSLSocketFactory(
+                    context.getSocketFactory());
+            *//*
+            // Create an SSLContext that uses our TrustManager
+            SSLContext context1 = SSLContext.getInstance("TLSv1.2");
+            context1.init(null, tmf.getTrustManagers(), null);
+            return context1.getSocketFactory();
+        } catch (NoSuchAlgorithmException | KeyStoreException | KeyManagementException | CertificateException | IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }*/
 
     @NonNull
     @Override
@@ -99,7 +151,7 @@ public class DataDownWorkerALL extends Worker {
 
 
             ca = cf.generateCertificate(caInput);
-            //     System.out.println("ca=" + ((X509Certificate) ca).getSubjectDN());
+//            System.out.println("ca=" + ((X509Certificate) ca).getSubjectDN());
         } catch (CertificateException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -165,7 +217,6 @@ public class DataDownWorkerALL extends Worker {
                 jsonParam.put(jsonTable);
                 // .put(jsonSync);
                 String cipheredRequest = CipherSecure.encryptGCM(String.valueOf(jsonTable));
-
                 requestLength = cipheredRequest.length();
 
                 Log.d(TAG + " : " + uploadTable, "doWork: jsonTable: " + jsonTable);
@@ -178,9 +229,7 @@ public class DataDownWorkerALL extends Worker {
                 if (urlConnection.getResponseCode() == HttpsURLConnection.HTTP_OK) {
 
                     responseLength = urlConnection.getContentLength();
-                    if (checkDateTime() instanceof Result.Failure) {
-                        return checkDateTime();
-                    }
+
                     InputStream in = new BufferedInputStream(urlConnection.getInputStream());
 
                     BufferedReader reader = new BufferedReader(new InputStreamReader(in));
@@ -276,8 +325,6 @@ public class DataDownWorkerALL extends Worker {
             data = new Data.Builder()
                     .putString("error", e.getClass().getSimpleName() + ": " + e.getMessage())
                     .putInt("position", this.position)
-                    .putString("time", getTime())
-                    .putString("size", getSize(requestLength) + "/" + getSize(responseLength))
                     .build();
 
             return Result.failure(data);
@@ -308,51 +355,30 @@ public class DataDownWorkerALL extends Worker {
         return Result.success(data);
     }
 
-    private Result checkDateTime() {
+/*    private boolean certIsValid(Certificate[] certs, Certificate ca) {
+        for (Certificate cert : certs) {
+            System.out.println("Certificate is: " + cert);
+            if (cert instanceof X509Certificate) {
 
-        long serverDate = urlConnection.getDate();
-        Log.d(TAG, "doWork(Server Date): " + serverDate);
+                try {
+                    ((X509Certificate) cert).checkValidity();
 
-        Calendar deviceCalendar = Calendar.getInstance();
-        Calendar serverCalendar = Calendar.getInstance();
-        deviceCalendar.setTime(new Date());
-        //SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        SimpleDateFormat sdf = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z");
-        SimpleDateFormat sdd = new SimpleDateFormat("dd-MMM-yyyy, HH:mm \n(zzzz)");
+                    System.out.println("Certificate is active for current date");
+                    if (cert.equals(ca)) {
 
-        // try {
-        serverCalendar.setTime(new Date(serverDate));
-        //serverCalendar.setTime(sdf.parse(serverDate));
-       /* } catch (ParseException e) {
-            e.printStackTrace();
-        }*/
-        //Here you say to java the initial timezone. This is the secret
-        //sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
-        //Will print in UTC
-        System.out.println(sdf.format(serverCalendar.getTime()));
+                        return true;
+                    }
+                    //  Toast.makeText(mContext, "Certificate is active for current date", Toast.LENGTH_SHORT).show();
+                } catch (CertificateExpiredException | CertificateNotYetValidException e) {
+                    e.printStackTrace();
+                    return false;
+                }
+            }
 
-        //Here you set to your timezone
-        sdf.setTimeZone(TimeZone.getDefault());
-        //Will print on your default Timezone
-        System.out.println(sdf.format(serverCalendar.getTime()));
-
-        long deviceTime = deviceCalendar.getTimeInMillis();
-        long serverTime = serverCalendar.getTimeInMillis();
-        long timeDiff = Math.abs(deviceTime - serverTime);
-        Log.d(TAG, "doWork(TimeDiff): " + timeDiff);
-        int hours = (int) (timeDiff / (1000 * 60 * 60));
-
-        if (hours > 1) {
-            Data data = new Data.Builder()
-                    .putString("error", "Your device date is invalid! Adjust date and time and try again")
-                    .putString("deviceTime", sdd.format(deviceCalendar.getTime()))
-                    .putString("serverTime", sdd.format(serverCalendar.getTime()))
-                    .putInt("position", this.position)
-                    .build();
-            return Result.failure(data);
         }
-        return Result.success();
-    }
+        return false;
+    }*/
+
 
     private String getSize(int length) {
         if (length < 0) return "0B";
@@ -368,4 +394,5 @@ public class DataDownWorkerALL extends Worker {
 
         return toMinutes > 0 ? toMinutes + "m " + toSeconds + "s" : toSeconds > 0 ? TimeUnit.MILLISECONDS.toSeconds(timeElapsed) + "s" : timeElapsed + "ms";
     }
+
 }

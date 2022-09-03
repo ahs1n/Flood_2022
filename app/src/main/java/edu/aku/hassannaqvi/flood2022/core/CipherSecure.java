@@ -43,7 +43,7 @@ public class CipherSecure {
     private static final int IV_LENGTH = 12;
     private static final int TAG_LENGTH = 16;
 
-    public static String encryptGCM(String plainText) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException, UnsupportedEncodingException, BadPaddingException, IllegalBlockSizeException {
+    public static String encryptGCM(String plainText) throws NoSuchPaddingException, NoSuchAlgorithmException, IllegalArgumentException, InvalidAlgorithmParameterException, InvalidKeyException, UnsupportedEncodingException, BadPaddingException, IllegalBlockSizeException {
         byte[] iv = new byte[IV_LENGTH];
         (new SecureRandom()).nextBytes(iv);
         //  Log.d(TAG, "encryptGCM (encrypted IV): "+ new String(Base64.encode(iv, Base64.NO_WRAP)));
