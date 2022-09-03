@@ -69,201 +69,11 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
             bi.fldGrpCVss110c.setVisibility(View.GONE);
             bi.fldGrpCVss110d.setVisibility(View.GONE);
             bi.fldGrpCVss110e.setVisibility(View.GONE);
-            /*bi.me20302.setVisibility(View.GONE);
-            bi.me20303.setVisibility(View.GONE);
-            bi.me20305.setVisibility(View.GONE);
-            bi.me20306.setVisibility(View.GONE);
-            bi.me20308.setVisibility(View.GONE);
-            bi.me20309.setVisibility(View.GONE);
-            bi.me20310.setVisibility(View.GONE);
-            bi.me20311.setVisibility(View.GONE);
-            bi.me20312.setVisibility(View.GONE);
-            bi.me20314.setVisibility(View.GONE);
-            bi.me20315.setVisibility(View.GONE);
-            bi.me20316.setVisibility(View.GONE);
-            bi.me20317.setVisibility(View.GONE);
-            bi.me20318.setVisibility(View.GONE);
-            bi.me20319.setVisibility(View.GONE);
-            bi.me20320.setVisibility(View.GONE);
-            bi.me20321.setVisibility(View.GONE);
-            bi.me20323.setVisibility(View.GONE);*/
         }
-        /*else {
-            bi.me20301DAY.setVisibility(View.GONE);
-            bi.me20301QTY.setVisibility(View.GONE);
-            bi.me20304DAY.setVisibility(View.GONE);
-            bi.me20304QTY.setVisibility(View.GONE);
-            bi.me20307DAY.setVisibility(View.GONE);
-            bi.me20307QTY.setVisibility(View.GONE);
-            bi.me20313DAY.setVisibility(View.GONE);
-            bi.me20313QTY.setVisibility(View.GONE);
-            bi.me20322DAY.setVisibility(View.GONE);
-            bi.me20322QTY.setVisibility(View.GONE);
-            bi.me20324DAY.setVisibility(View.GONE);
-            bi.me20324QTY.setVisibility(View.GONE);
-            bi.me20396DAY.setVisibility(View.GONE);
-            bi.me20396QTY.setVisibility(View.GONE);
-            bi.me20333.setVisibility(View.GONE);
-            bi.me20333DAY.setVisibility(View.GONE);
-            bi.me20333QTY.setVisibility(View.GONE);
-            bi.me20334.setVisibility(View.GONE);
-            bi.me20334DAY.setVisibility(View.GONE);
-            bi.me20334QTY.setVisibility(View.GONE);
-            bi.me20335.setVisibility(View.GONE);
-            bi.me20335DAY.setVisibility(View.GONE);
-            bi.me20335QTY.setVisibility(View.GONE);
-            bi.me20336.setVisibility(View.GONE);
-            bi.me20336DAY.setVisibility(View.GONE);
-            bi.me20336QTY.setVisibility(View.GONE);
-            bi.me20337.setVisibility(View.GONE);
-            bi.me20337DAY.setVisibility(View.GONE);
-            bi.me20337QTY.setVisibility(View.GONE);
-            bi.me20338.setVisibility(View.GONE);
-            bi.me20338DAY.setVisibility(View.GONE);
-            bi.me20338QTY.setVisibility(View.GONE);
-            bi.me20339.setVisibility(View.GONE);
-            bi.me20339DAY.setVisibility(View.GONE);
-            bi.me20339QTY.setVisibility(View.GONE);
-            bi.me20340.setVisibility(View.GONE);
-            bi.me20340DAY.setVisibility(View.GONE);
-            bi.me20340QTY.setVisibility(View.GONE);
-            bi.me20341.setVisibility(View.GONE);
-            bi.me20341DAY.setVisibility(View.GONE);
-            bi.me20341QTY.setVisibility(View.GONE);
-            bi.me20342.setVisibility(View.GONE);
-            bi.me20342DAY.setVisibility(View.GONE);
-            bi.me20342QTY.setVisibility(View.GONE);
-            bi.me20343.setVisibility(View.GONE);
-            bi.me20343DAY.setVisibility(View.GONE);
-            bi.me20343QTY.setVisibility(View.GONE);
-            bi.me20344.setVisibility(View.GONE);
-            bi.me20344DAY.setVisibility(View.GONE);
-            bi.me20344QTY.setVisibility(View.GONE);
-            bi.me20345.setVisibility(View.GONE);
-            bi.me20345DAY.setVisibility(View.GONE);
-            bi.me20345QTY.setVisibility(View.GONE);
-            bi.me20346.setVisibility(View.GONE);
-            bi.me20346DAY.setVisibility(View.GONE);
-            bi.me20346QTY.setVisibility(View.GONE);
-            bi.me20347.setVisibility(View.GONE);
-            bi.me20347DAY.setVisibility(View.GONE);
-            bi.me20347QTY.setVisibility(View.GONE);
-            bi.me20348.setVisibility(View.GONE);
-            bi.me20348DAY.setVisibility(View.GONE);
-            bi.me20348QTY.setVisibility(View.GONE);
-            bi.me20349.setVisibility(View.GONE);
-            bi.me20349DAY.setVisibility(View.GONE);
-            bi.me20349QTY.setVisibility(View.GONE);
-            bi.me20350.setVisibility(View.GONE);
-            bi.me20350DAY.setVisibility(View.GONE);
-            bi.me20350QTY.setVisibility(View.GONE);
-            bi.me20351.setVisibility(View.GONE);
-            bi.me20351DAY.setVisibility(View.GONE);
-            bi.me20351QTY.setVisibility(View.GONE);
-            bi.me20352.setVisibility(View.GONE);
-            bi.me20352DAY.setVisibility(View.GONE);
-            bi.me20352QTY.setVisibility(View.GONE);
-            bi.me20353.setVisibility(View.GONE);
-            bi.me20353DAY.setVisibility(View.GONE);
-            bi.me20353QTY.setVisibility(View.GONE);
-            bi.me20354.setVisibility(View.GONE);
-            bi.me20354DAY.setVisibility(View.GONE);
-            bi.me20354QTY.setVisibility(View.GONE);
-            bi.me20355.setVisibility(View.GONE);
-            bi.me20355DAY.setVisibility(View.GONE);
-            bi.me20355QTY.setVisibility(View.GONE);
-            bi.me20356.setVisibility(View.GONE);
-            bi.me20356DAY.setVisibility(View.GONE);
-            bi.me20356QTY.setVisibility(View.GONE);
-            bi.me20357.setVisibility(View.GONE);
-            bi.me20357DAY.setVisibility(View.GONE);
-            bi.me20357QTY.setVisibility(View.GONE);
-            bi.me20358.setVisibility(View.GONE);
-            bi.me20358DAY.setVisibility(View.GONE);
-            bi.me20358QTY.setVisibility(View.GONE);
-            bi.me20359.setVisibility(View.GONE);
-            bi.me20359DAY.setVisibility(View.GONE);
-            bi.me20359QTY.setVisibility(View.GONE);
-            bi.me20361.setVisibility(View.GONE);
-            bi.me20361DAY.setVisibility(View.GONE);
-            bi.me20361QTY.setVisibility(View.GONE);
-            bi.me20362.setVisibility(View.GONE);
-            bi.me20362DAY.setVisibility(View.GONE);
-            bi.me20362QTY.setVisibility(View.GONE);
-            bi.me20363.setVisibility(View.GONE);
-            bi.me20363DAY.setVisibility(View.GONE);
-            bi.me20363QTY.setVisibility(View.GONE);
-            bi.me20364.setVisibility(View.GONE);
-            bi.me20364DAY.setVisibility(View.GONE);
-            bi.me20364QTY.setVisibility(View.GONE);
-            bi.me20365.setVisibility(View.GONE);
-            bi.me20365DAY.setVisibility(View.GONE);
-            bi.me20365QTY.setVisibility(View.GONE);
-            bi.me20366.setVisibility(View.GONE);
-            bi.me20366DAY.setVisibility(View.GONE);
-            bi.me20366QTY.setVisibility(View.GONE);
-            bi.me20367.setVisibility(View.GONE);
-            bi.me20367DAY.setVisibility(View.GONE);
-            bi.me20367QTY.setVisibility(View.GONE);
-            bi.me20368.setVisibility(View.GONE);
-            bi.me20368DAY.setVisibility(View.GONE);
-            bi.me20368QTY.setVisibility(View.GONE);
-            bi.me20369.setVisibility(View.GONE);
-            bi.me20369DAY.setVisibility(View.GONE);
-            bi.me20369QTY.setVisibility(View.GONE);
-            bi.me20370.setVisibility(View.GONE);
-            bi.me20370DAY.setVisibility(View.GONE);
-            bi.me20370QTY.setVisibility(View.GONE);
-            bi.me20371.setVisibility(View.GONE);
-            bi.me20371DAY.setVisibility(View.GONE);
-            bi.me20371QTY.setVisibility(View.GONE);
-            bi.me20372.setVisibility(View.GONE);
-            bi.me20372DAY.setVisibility(View.GONE);
-            bi.me20372QTY.setVisibility(View.GONE);
-            bi.me20373.setVisibility(View.GONE);
-            bi.me20373DAY.setVisibility(View.GONE);
-            bi.me20373QTY.setVisibility(View.GONE);
-            bi.me20374.setVisibility(View.GONE);
-            bi.me20374DAY.setVisibility(View.GONE);
-            bi.me20374QTY.setVisibility(View.GONE);
-            bi.me20375.setVisibility(View.GONE);
-            bi.me20375DAY.setVisibility(View.GONE);
-            bi.me20375QTY.setVisibility(View.GONE);
-            bi.me20376.setVisibility(View.GONE);
-            bi.me20376DAY.setVisibility(View.GONE);
-            bi.me20376QTY.setVisibility(View.GONE);
-            bi.me20377.setVisibility(View.GONE);
-            bi.me20377DAY.setVisibility(View.GONE);
-            bi.me20377QTY.setVisibility(View.GONE);
-            bi.me20378.setVisibility(View.GONE);
-            bi.me20378DAY.setVisibility(View.GONE);
-            bi.me20378QTY.setVisibility(View.GONE);
-        }*/
     }
 
 
     private void setupSkips() {
-
-/*        bi.ss108.setOnCheckedChangeListener((radioGroup, i) -> {
-            Clear.clearAllFields(bi.fldGrpCVss109);
-            Clear.clearAllFields(bi.fldGrpCVvs301);
-
-            if (i == bi.ss108a.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVss109);
-                bi.fldGrpCVss109.setVisibility(View.GONE);
-                Clear.clearAllFields(bi.fldGrpCVvs301);
-                bi.fldGrpCVvs301.setVisibility(View.GONE);
-            } else {
-                if (TextUtils.isEmpty(bi.ss107y.getText().toString())) {
-                    return;
-                } else if (Integer.parseInt(bi.ss107y.getText().toString()) >= 14) {
-                    Clear.clearAllFields(bi.fldGrpCVss109);
-                    bi.fldGrpCVss109.setVisibility(View.VISIBLE);
-                    Clear.clearAllFields(bi.fldGrpCVvs301);
-                    bi.fldGrpCVvs301.setVisibility(View.VISIBLE);
-                }
-            }
-        });*/
 
         bi.ss108.setOnCheckedChangeListener((radioGroup, i) -> {
             if (i == bi.ss108a.getId()) {
@@ -293,6 +103,7 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
 
 
         bi.ss110a99.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.ss110atempx, !b));
+        bi.ss11099.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.ss110, !b));
 
         bi.ss110b99.setOnCheckedChangeListener((compoundButton, b) -> {
             Clear.clearAllFields(bi.ss110bdiastolicx, !b);
@@ -300,104 +111,6 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
         });
         bi.ss110d99.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.ss110drbsx, !b));
         bi.ss110e99.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.ss110ehbx, !b));
-
-        /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            bi.llscrollviewmh26.setOnScrollChangeListener(new View.OnScrollChangeListener() {
-                @Override
-                public void onScrollChange(View view, int i, int i1, int i2, int i3) {
-
-                    bi.llscrollviewmh26.getChildAt(bi.llscrollviewmh26.getChildCount() - 1);
-                    int diff = (bi.llscrollviewmh26.getRight() - (bi.llscrollviewmh26.getWidth() + bi.llscrollviewmh26.getScrollX()));
-                    if (diff == 0) {
-                        AllVaccinationsViewed = true;
-                    }
-                }
-            });
-        }*/
-
-/*
-        bi.chkWeight.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh012, !b));
-        bi.chkHeight.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh015, !b));
-        bi.chkMUAC.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh016, !b));
-        bi.mh01704.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.llmh020, !b));
-        bi.mh017097.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh017check, !b));
-        bi.mh018097.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh018check, !b));
-        bi.mh019097.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.mh019check, !b));
-
-
-        //TODO:
-        bi.mh025.setOnCheckedChangeListener((radioGroup, i) -> {
-            //Log.d("TAG", "setupSkips:1 "+bi.mh02202.isChecked()+"|"+bi.mh02501.isChecked());
-            if (bi.mh02202.isChecked() && bi.mh02501.isChecked()) {
-                // Log.d("TAG", "setupSkips:2 ");
-                openWarningDialog(this, "Error", "Answer conflicts with Q. MH022", bi.mh025);
-                //bi.mh025.clearCheck();
-            }
-        });
-        bi.mh022.setOnCheckedChangeListener((radioGroup, i) -> {
-            if (bi.mh02202.isChecked() && bi.mh02501.isChecked()) {
-                openWarningDialog(this, "Error", "Answer conflicts with Q. MH025", bi.mh022);
-            }
-        });
-
-        bi.mh024.setOnCheckedChangeListener((radioGroup, i) -> {
-            if (bi.mh02302.isChecked() && bi.mh02401.isChecked()) {
-                openWarningDialog(this, "Error", "Answer conflicts with Q. MH023", bi.mh024);
-            }
-        });
-
-        bi.mh023.setOnCheckedChangeListener((radioGroup, i) -> {
-            if (bi.mh02302.isChecked() && bi.mh02401.isChecked()) {
-                openWarningDialog(this, "Error", "Answer conflicts with Q. MH024", bi.mh023);
-            }
-        });
-        //bi.mh023.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearRadioGroup(bi.mh024, i != bi.mh02302.getId()));
-
-
-        bi.mh027b.setOnCheckedChangeListener((radioGroup, i) -> {
-            bi.mh02601.setTag(null);
-            bi.rgmh02601.setTag(null);
-            bi.rgmh02602.setTag(null);
-            bi.rgmh02603.setTag(null);
-            bi.rgmh02604.setTag(null);
-            bi.rgmh02605.setTag(null);
-            bi.mh026019.setTag(null);
-            bi.mh026021.setTag(null);
-            bi.mh026022.setTag(null);
-            Clear.clearAllFields(bi.fldGrpCVmh026);
-            Clear.clearAllFields(bi.fldGrpCVmh027);
-            Clear.clearAllFields(bi.fldGrpCVmh027a);
-            bi.mh02601.setChecked(false);
-            bi.mh026019.setChecked(false);
-            bi.mh026021.setChecked(false);
-            bi.mh026022.setChecked(false);
-            bi.fldGrpCVmh026.setVisibility(View.GONE);
-            bi.fldGrpCVmh027.setVisibility(View.GONE);
-            bi.fldGrpCVmh027a.setVisibility(View.VISIBLE);
-            if (i == bi.mh027b02.getId()) {
-                bi.fldGrpCVmh026.setVisibility(View.VISIBLE);
-                bi.fldGrpCVmh027.setVisibility(View.VISIBLE);
-                //bi.fldGrpCVmh027a.setVisibility(View.VISIBLE);
-            }*//* else if (i == bi.mh027b01.getId()) {
-                bi.fldGrpCVmh027a.setVisibility(View.VISIBLE);
-            }*//*
-        });
-
-        setTags(bi.mh02601, new View[]{bi.rgmh02601, bi.rgmh02602, bi.rgmh02603, bi.rgmh02604, bi.rgmh02605, bi.rgmh02606, bi.mh026021, bi.mh026022});
-        setTags(bi.rgmh02601, new View[]{bi.mh02601, bi.rgmh02602, bi.rgmh02603, bi.rgmh02604, bi.rgmh02605, bi.rgmh02606, bi.mh026021, bi.mh026022});
-        setTags(bi.rgmh02602, new View[]{bi.mh02601, bi.rgmh02601, bi.rgmh02603, bi.rgmh02604, bi.rgmh02605, bi.rgmh02606, bi.mh026021, bi.mh026022});
-        setTags(bi.rgmh02603, new View[]{bi.mh02601, bi.rgmh02601, bi.rgmh02602, bi.rgmh02604, bi.rgmh02605, bi.rgmh02606, bi.mh026021, bi.mh026022});
-        setTags(bi.rgmh02604, new View[]{bi.mh02601, bi.rgmh02601, bi.rgmh02602, bi.rgmh02603, bi.rgmh02605, bi.rgmh02606, bi.mh026021, bi.mh026022});
-        setTags(bi.rgmh02605, new View[]{bi.mh02601, bi.rgmh02601, bi.rgmh02602, bi.rgmh02603, bi.rgmh02604, bi.rgmh02606, bi.mh026021, bi.mh026022});
-        setTags(bi.rgmh02606, new View[]{bi.mh02601, bi.rgmh02601, bi.rgmh02602, bi.rgmh02603, bi.rgmh02604, bi.rgmh02605, bi.mh026021, bi.mh026022});
-        setTags(bi.mh026021, new View[]{bi.mh02601, bi.rgmh02601, bi.rgmh02602, bi.rgmh02603, bi.rgmh02604, bi.rgmh02605, bi.rgmh02606, bi.mh026022});
-        setTags(bi.mh026022, new View[]{bi.mh02601, bi.rgmh02601, bi.rgmh02602, bi.rgmh02603, bi.rgmh02604, bi.rgmh02605, bi.rgmh02606, bi.mh026021});
-
-        bi.rgmh02603.setOnCheckedChangeListener((radioGroup, i) -> {
-            Clear.clearAllFields(bi.fldGrpCVmh027a);
-            bi.fldGrpCVmh027a.setVisibility(View.GONE);
-        });*/
-
 
     }
 
@@ -424,9 +137,14 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
             bi.fldGrpCVss109.setVisibility(View.GONE);
             Clear.clearAllFields(bi.fldGrpCVvs301);
             bi.fldGrpCVvs301.setVisibility(View.GONE);
+            Clear.clearAllFields(bi.fldGrpCVss111);
+            bi.ss111a.setEnabled(false);
+            bi.ss111b.setEnabled(false);
         } else {
             bi.fldGrpCVss109.setVisibility(View.VISIBLE);
             bi.fldGrpCVvs301.setVisibility(View.VISIBLE);
+            bi.ss111a.setEnabled(true);
+            bi.ss111b.setEnabled(true);
         }
     }
 
@@ -560,7 +278,7 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
                 : bi.ss10999.isChecked() ? "99"
                 : "-1");
         mobileHealth.setSs110(bi.ss110.getText().toString());
-
+        mobileHealth.setSs11099(bi.ss11099.isChecked() ? "99" : "-1");
         mobileHealth.setSs110atempx(bi.ss110atempx.getText().toString());
         mobileHealth.setSs110a99(bi.ss110a99.isChecked() ? "99" : "-1");
         mobileHealth.setSs110bdiastolicx(bi.ss110bdiastolicx.getText().toString());

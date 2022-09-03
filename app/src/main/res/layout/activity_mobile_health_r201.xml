@@ -122,8 +122,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20301.checked ? me20301QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -136,8 +136,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20301.checked ? me20301DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -168,8 +168,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20304.checked ? me20304QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -182,8 +182,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20304.checked ? me20304DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -214,8 +214,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20307.checked ? me20307QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -228,8 +228,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20307.checked ? me20307DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -272,8 +272,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20313.checked ? me20313QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -286,8 +286,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20313.checked ? me20313DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -354,8 +354,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20322.checked ? me20322QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -368,8 +368,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20322.checked ? me20322DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -400,8 +400,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20324.checked ? me20324QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -414,8 +414,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20324.checked ? me20324DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -434,8 +434,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20333.checked ? me20333QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -448,8 +448,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20333.checked ? me20333DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -468,8 +468,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20334.checked ? me20334QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -482,8 +482,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20334.checked ? me20334DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -502,8 +502,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20335.checked ? me20335QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -516,8 +516,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20335.checked ? me20335DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -536,8 +536,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20336.checked ? me20336QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -550,8 +550,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20336.checked ? me20336DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -570,8 +570,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20337.checked ? me20337QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -584,8 +584,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20337.checked ? me20337DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -604,8 +604,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20338.checked ? me20338QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -618,8 +618,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20338.checked ? me20338DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -638,8 +638,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20339.checked ? me20339QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -652,8 +652,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20339.checked ? me20339DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -672,8 +672,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20340.checked ? me20340QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -686,8 +686,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20340.checked ? me20340DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -706,8 +706,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20341.checked ? me20341QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -720,8 +720,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20341.checked ? me20341DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -740,8 +740,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20342.checked ? me20342QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -754,8 +754,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20342.checked ? me20342DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -774,8 +774,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20343.checked ? me20343QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -788,8 +788,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20343.checked ? me20343DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -808,8 +808,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20344.checked ? me20344QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -822,8 +822,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20344.checked ? me20344DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -842,8 +842,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20345.checked ? me20345QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -856,8 +856,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20345.checked ? me20345DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -876,8 +876,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20346.checked ? me20345QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -890,8 +890,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20346.checked ? me20345QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -910,8 +910,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20347.checked ? me20347QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -924,8 +924,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20347.checked ? me20347DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -944,8 +944,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20348.checked ? me20348QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -958,8 +958,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20348.checked ? me20348DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -978,8 +978,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20349.checked ? me20349QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -992,8 +992,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20349.checked ? me20349DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1012,8 +1012,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20350.checked ? me20350QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1026,8 +1026,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20350.checked ? me20350DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1046,8 +1046,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20351.checked ? me20351QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1060,8 +1060,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20351.checked ? me20351DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1080,8 +1080,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20352.checked ? me20352QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1094,8 +1094,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20352.checked ? me20352DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1114,8 +1114,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20353.checked ? me20353QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1128,8 +1128,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20353.checked ? me20353DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1148,8 +1148,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20354.checked ? me20354QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1162,8 +1162,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20354.checked ? me20354DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1182,8 +1182,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20355.checked ? me20355QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1196,8 +1196,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20355.checked ? me20355DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1216,8 +1216,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20356.checked ? me20356QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1230,8 +1230,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20356.checked ? me20356DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1250,8 +1250,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20357.checked ? me20357QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1264,8 +1264,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20357.checked ? me20357DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1284,8 +1284,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20358.checked ? me20358QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1298,8 +1298,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20358.checked ? me20358DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1318,8 +1318,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20359.checked ? me20359QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1332,8 +1332,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20359.checked ? me20359DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1352,8 +1352,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20361.checked ? me20361QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1366,8 +1366,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20361.checked ? me20361DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1386,8 +1386,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20362.checked ? me20362QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1400,8 +1400,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20362.checked ? me20362DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1420,8 +1420,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20363.checked ? me20363QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1434,8 +1434,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20363.checked ? me20363DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1454,8 +1454,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20364.checked ? me20364QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1468,8 +1468,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20364.checked ? me20364DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1488,8 +1488,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20365.checked ? me20365QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1502,8 +1502,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20365.checked ? me20365DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1522,8 +1522,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20366.checked ? me20366QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1536,8 +1536,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20366.checked ? me20366DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1556,8 +1556,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20367.checked ? me20367QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1570,8 +1570,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20367.checked ? me20367DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1590,8 +1590,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20368.checked ? me20368QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1604,8 +1604,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20368.checked ? me20368DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1624,8 +1624,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20369.checked ? me20369QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1638,8 +1638,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20369.checked ? me20369DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1658,8 +1658,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20370.checked ? me20370QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1672,8 +1672,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20370.checked ? me20370DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1692,8 +1692,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20371.checked ? me20371QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1706,8 +1706,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20371.checked ? me20371DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1726,8 +1726,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20372.checked ? me20372QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1740,8 +1740,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20372.checked ? me20372DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1760,8 +1760,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20373.checked ? me20373QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1774,8 +1774,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20373.checked ? me20373DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1794,8 +1794,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20374.checked ? me20374QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1808,144 +1808,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20374.checked ? me20374DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20375"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20375" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20375QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20375.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20375.checked ? me20375QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20375DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20375.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20375.checked ? me20375DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20376"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20376" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20376QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20376.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20376.checked ? me20376QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20376DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20376.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20376.checked ? me20376DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20377"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20377" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20377QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20377.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20377.checked ? me20377QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20377DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20377.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20377.checked ? me20377DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20378"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20378" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20378QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20378.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20378.checked ? me20378QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20378DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20378.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20378.checked ? me20378DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <CheckBox
@@ -1964,8 +1828,8 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20396.checked ? me20396QTY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                             <com.edittextpicker.aliazaz.EditTextPicker
@@ -1978,8 +1842,144 @@
                                 android:inputType="number"
                                 android:maxLength="2"
                                 android:text='@{me20396.checked ? me20396DAY.getText().toString() : ""}'
-                                app:maxValue="12"
-                                app:minValue="1"
+                                app:maxValue="99"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <CheckBox
+                                android:id="@+id/me20375"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/me20375" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/me20375QTY"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{me20375.checked}"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text='@{me20375.checked ? me20375QTY.getText().toString() : ""}'
+                                app:maxValue="99"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/me20375DAY"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{me20375.checked}"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text='@{me20375.checked ? me20375DAY.getText().toString() : ""}'
+                                app:maxValue="99"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <CheckBox
+                                android:id="@+id/me20376"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/me20376" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/me20376QTY"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{me20376.checked}"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text='@{me20376.checked ? me20376QTY.getText().toString() : ""}'
+                                app:maxValue="99"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/me20376DAY"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{me20376.checked}"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text='@{me20376.checked ? me20376DAY.getText().toString() : ""}'
+                                app:maxValue="99"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <CheckBox
+                                android:id="@+id/me20377"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/me20377" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/me20377QTY"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{me20377.checked}"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text='@{me20377.checked ? me20377QTY.getText().toString() : ""}'
+                                app:maxValue="99"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/me20377DAY"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{me20377.checked}"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text='@{me20377.checked ? me20377DAY.getText().toString() : ""}'
+                                app:maxValue="99"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <CheckBox
+                                android:id="@+id/me20378"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/me20378" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/me20378QTY"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{me20378.checked}"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text='@{me20378.checked ? me20378QTY.getText().toString() : ""}'
+                                app:maxValue="99"
+                                app:minValue="0"
+                                app:type="range" />
+
+                            <com.edittextpicker.aliazaz.EditTextPicker
+                                android:id="@+id/me20378DAY"
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:enabled="@{me20378.checked}"
+                                android:gravity="center"
+                                android:hint="##"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text='@{me20378.checked ? me20378DAY.getText().toString() : ""}'
+                                app:maxValue="99"
+                                app:minValue="0"
                                 app:type="range" />
 
                         </com.google.android.flexbox.FlexboxLayout>
@@ -1993,6 +1993,16 @@
                             android:tag="-1"
                             android:text="@string/nr"
                             android:textColor="@color/redDark" />
+
+                        <EditText
+                            android:id="@+id/me20396x"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
+                            android:hint="@string/me20396"
+                            android:tag="me20396"
+                            android:text='@{me20396.checked ? me20396x.getText().toString() : ""}'
+                            android:visibility='@{me20396.checked? View.VISIBLE : View.GONE}' />
 
                         <EditText
                             android:id="@+id/me20375x"
@@ -2033,16 +2043,6 @@
                             android:tag="me20378"
                             android:text='@{me20378.checked? me20378x.getText().toString() : ""}'
                             android:visibility='@{me20378.checked? View.VISIBLE : View.GONE}' />
-
-                        <EditText
-                            android:id="@+id/me20396x"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
-                            android:hint="@string/me20396"
-                            android:tag="me20396"
-                            android:text='@{me20396.checked ? me20396x.getText().toString() : ""}'
-                            android:visibility='@{me20396.checked? View.VISIBLE : View.GONE}' />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

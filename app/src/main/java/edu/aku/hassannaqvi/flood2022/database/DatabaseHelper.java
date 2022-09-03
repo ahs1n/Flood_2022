@@ -353,21 +353,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String orderBy = UsersTable.COLUMN_ID + " ASC";
 
         Users allForms = null;
-            c = db.query(
-                    UsersTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                allForms = new Users().hydrate(c);
-            }
-            if (c != null) {
-                c.close();
-            }
+        c = db.query(
+                UsersTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            allForms = new Users().hydrate(c);
+        }
+        if (c != null) {
+            c.close();
+        }
         return allForms;
     }
 
@@ -433,25 +433,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String having = null;
         String orderBy = FormsTable.COLUMN_ID + " ASC";
         ArrayList<Form> allForms = new ArrayList<>();
-            c = db.query(
-                    FormsTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                Form forms = new Form();
-                forms.setId(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_ID)));
-                forms.setUid(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_UID)));
-                forms.setSysDate(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_SYSDATE)));
-                forms.setUserName(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_USERNAME)));
-                allForms.add(forms);
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                FormsTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Form forms = new Form();
+            forms.setId(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_ID)));
+            forms.setUid(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_UID)));
+            forms.setSysDate(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_SYSDATE)));
+            forms.setUserName(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_USERNAME)));
+            allForms.add(forms);
+        }
+        if (c != null) {
+            c.close();
         }
         return allForms;
     }
@@ -504,23 +504,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String having = null;
         String orderBy = ChildInfoTable.COLUMN_ID + " ASC";
         ArrayList<ChildInformation> allForms = new ArrayList<>();
-            c = db.query(
-                    ChildInfoTable.TABLE_NAME,  // The table to query
-                    null,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                ChildInformation childItem = new ChildInformation().Hydrate(c);
-                childItem.setMotherAvailable(childItem.getCb11().equals("1"));
-                childItem.setTotalMonths((Integer.parseInt(childItem.getCb0501()) * 12) + Integer.parseInt(childItem.getCb0502()));
-                allForms.add(childItem);
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                ChildInfoTable.TABLE_NAME,  // The table to query
+                null,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            ChildInformation childItem = new ChildInformation().Hydrate(c);
+            childItem.setMotherAvailable(childItem.getCb11().equals("1"));
+            childItem.setTotalMonths((Integer.parseInt(childItem.getCb0501()) * 12) + Integer.parseInt(childItem.getCb0502()));
+            allForms.add(childItem);
+        }
+        if (c != null) {
+            c.close();
         }
         return allForms;
     }
@@ -536,31 +536,31 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String having = null;
         String orderBy = ChildInfoTable.COLUMN_ID + " ASC";
         ArrayList<ChildInformation> allForms = new ArrayList<>();
-            c = db.query(
-                    ChildInfoTable.TABLE_NAME,  // The table to query
-                    null,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                ChildInformation info = new ChildInformation().Hydrate(c);
-                info.setMotherAvailable(info.getCb11().equals("1"));
-                int calculateMonth = (Integer.parseInt(info.getCb0501()) * 12) + Integer.parseInt(info.getCb0502());
-                if (calculateMonth <= 35) info.setUnder35(true);
-                info.setChildTableDataExist(
-                        (Child) getFormExist(
-                                ChildContract.ChildTable.class,
-                                info.getCluster(),
-                                info.getHhno(),
-                                info.getUuid(),
-                                info.getUid()));
-                allForms.add(info);
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                ChildInfoTable.TABLE_NAME,  // The table to query
+                null,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            ChildInformation info = new ChildInformation().Hydrate(c);
+            info.setMotherAvailable(info.getCb11().equals("1"));
+            int calculateMonth = (Integer.parseInt(info.getCb0501()) * 12) + Integer.parseInt(info.getCb0502());
+            if (calculateMonth <= 35) info.setUnder35(true);
+            info.setChildTableDataExist(
+                    (Child) getFormExist(
+                            ChildContract.ChildTable.class,
+                            info.getCluster(),
+                            info.getHhno(),
+                            info.getUuid(),
+                            info.getUid()));
+            allForms.add(info);
+        }
+        if (c != null) {
+            c.close();
         }
         return allForms;
     }
@@ -615,20 +615,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         String orderBy = TableDistricts._ID + " ASC";
         ArrayList<Districts> all = new ArrayList<>();
-            c = db.query(
-                    TableDistricts.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                all.add(new Districts().hydrate(c));
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                TableDistricts.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            all.add(new Districts().hydrate(c));
+        }
+        if (c != null) {
+            c.close();
         }
         return all;
     }
@@ -646,20 +646,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         String orderBy = Camps.TableCamp._ID + " ASC";
         Camps camp = null;
-            c = db.query(
-                    Camps.TableCamp.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                camp = new Camps().hydrate(c);
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                Camps.TableCamp.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            camp = new Camps().hydrate(c);
+        }
+        if (c != null) {
+            c.close();
         }
         return camp;
     }
@@ -677,20 +677,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String orderBy = Doctor.TableDoctor.COLUMN_STAFF_NAME + " ASC";
 
         ArrayList<Doctor> docs = new ArrayList<>();
-            c = db.query(
-                    Doctor.TableDoctor.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                docs.add(new Doctor().hydrate(c));
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                Doctor.TableDoctor.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            docs.add(new Doctor().hydrate(c));
+        }
+        if (c != null) {
+            c.close();
         }
         return docs;
     }
@@ -708,21 +708,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String orderBy = TableUCs.COLUMN_UC_CODE + " ASC";
 
         ArrayList<UCs> allDC = new ArrayList<>();
-            c = db.query(
-                    TableUCs.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                UCs dc = new UCs();
-                allDC.add(dc.hydrate(c));
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                TableUCs.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            UCs dc = new UCs();
+            allDC.add(dc.hydrate(c));
+        }
+        if (c != null) {
+            c.close();
         }
         return allDC;
     }
@@ -737,20 +737,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String having = null;
         String orderBy = TableRandom.COLUMN_ID + " ASC";
         BLRandom allBL = null;
-            c = db.query(
-                    TableRandom.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                allBL = new BLRandom().hydrate(c);
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                TableRandom.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            allBL = new BLRandom().hydrate(c);
+        }
+        if (c != null) {
+            c.close();
         }
         return allBL;
     }
@@ -775,20 +775,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String orderBy = FormsTable.COLUMN_ID + " ASC";
 
         Form allFC = null;
-            c = db.query(
-                    FormsTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                allFC = new Form().Hydrate(c);
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                FormsTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            allFC = new Form().Hydrate(c);
+        }
+        if (c != null) {
+            c.close();
         }
         return allFC;
     }
@@ -981,10 +981,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             ContentValues values = new ContentValues();
 
             values.put(TableDistricts.COLUMN_DISTRICT_CODE, District.getDistrictCode());
-                values.put(TableDistricts.COLUMN_DISTRICT_NAME, District.getDistrictName());
-                long rowID = db.insert(TableDistricts.TABLE_NAME, null, values);
-                if (rowID != -1) insertCount++;
-            }
+            values.put(TableDistricts.COLUMN_DISTRICT_NAME, District.getDistrictName());
+            long rowID = db.insert(TableDistricts.TABLE_NAME, null, values);
+            if (rowID != -1) insertCount++;
+        }
         return insertCount;
     }
 
@@ -999,13 +999,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             cluster.sync(jsonObjectCluster);
             ContentValues values = new ContentValues();
 
-                values.put(TableClusters.COLUMN_CLUSTER_CODE, cluster.getClusterCode());
-                values.put(TableClusters.COLUMN_CLUSTER_NAME, cluster.getClustername());
-                values.put(TableClusters.COLUMN_DIST_CODE, cluster.getDistCode());
+            values.put(TableClusters.COLUMN_CLUSTER_CODE, cluster.getClusterCode());
+            values.put(TableClusters.COLUMN_CLUSTER_NAME, cluster.getClustername());
+            values.put(TableClusters.COLUMN_DIST_CODE, cluster.getDistCode());
 
-                long rowID = db.insert(TableClusters.TABLE_NAME, null, values);
-                if (rowID != -1) insertCount++;
-            }
+            long rowID = db.insert(TableClusters.TABLE_NAME, null, values);
+            if (rowID != -1) insertCount++;
+        }
         return insertCount;
     }
 
@@ -1061,13 +1061,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             uc.sync(jsonObjectUc);
             ContentValues values = new ContentValues();
 
-                values.put(TableUCs.COLUMN_UC_CODE, uc.getUcCode());
-                values.put(TableUCs.COLUMN_UC_NAME, uc.getUcName());
-                values.put(TableUCs.COLUMN_DISTRICT_CODE, uc.getDistrictCode());
+            values.put(TableUCs.COLUMN_UC_CODE, uc.getUcCode());
+            values.put(TableUCs.COLUMN_UC_NAME, uc.getUcName());
+            values.put(TableUCs.COLUMN_DISTRICT_CODE, uc.getDistrictCode());
 
-                long rowID = db.insert(TableUCs.TABLE_NAME, null, values);
-                if (rowID != -1) insertCount++;
-            }
+            long rowID = db.insert(TableUCs.TABLE_NAME, null, values);
+            if (rowID != -1) insertCount++;
+        }
         return insertCount;
     }
 
@@ -1082,17 +1082,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             ContentValues values = new ContentValues();
 
             values.put(Camps.TableCamp.COLUMN_ID_CAMP, camps.getIdCamp());
-                values.put(Camps.TableCamp.COLUMN_CAMP_NO, camps.getCamp_no());
-                values.put(Camps.TableCamp.COLUMN_DIST_ID, camps.getDist_id());
-                values.put(Camps.TableCamp.COLUMN_DISTRICT, camps.getDistrict());
-                values.put(Camps.TableCamp.COLUMN_UC_CODE, camps.getUcCode());
-                values.put(Camps.TableCamp.COLUMN_UC_NAME, camps.getUcName());
-                values.put(Camps.TableCamp.COLUMN_AREA_NAME, camps.getArea_name());
+            values.put(Camps.TableCamp.COLUMN_CAMP_NO, camps.getCamp_no());
+            values.put(Camps.TableCamp.COLUMN_DIST_ID, camps.getDist_id());
+            values.put(Camps.TableCamp.COLUMN_DISTRICT, camps.getDistrict());
+            values.put(Camps.TableCamp.COLUMN_UC_CODE, camps.getUcCode());
+            values.put(Camps.TableCamp.COLUMN_UC_NAME, camps.getUcName());
+            values.put(Camps.TableCamp.COLUMN_AREA_NAME, camps.getArea_name());
 //                values.put(Camps.TableCamp.COLUMN_PLAN_DATE, camps.getPlan_date());
 
-                long rowID = db.insert(Camps.TableCamp.TABLE_NAME, null, values);
-                if (rowID != -1) insertCount++;
-            }
+            long rowID = db.insert(Camps.TableCamp.TABLE_NAME, null, values);
+            if (rowID != -1) insertCount++;
+        }
         return insertCount;
     }
 
@@ -1107,13 +1107,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             doc.sync(json);
             ContentValues values = new ContentValues();
 
-                values.put(Doctor.TableDoctor.COLUMN_ID_CAMP, doc.getIdCamp());
-                values.put(Doctor.TableDoctor.COLUMN_ID_DOCTOR, doc.getIddoctor());
-                values.put(Doctor.TableDoctor.COLUMN_STAFF_NAME, doc.getStaff_name());
+            values.put(Doctor.TableDoctor.COLUMN_ID_CAMP, doc.getIdCamp());
+            values.put(Doctor.TableDoctor.COLUMN_ID_DOCTOR, doc.getIddoctor());
+            values.put(Doctor.TableDoctor.COLUMN_STAFF_NAME, doc.getStaff_name());
 
-                long rowID = db.insert(Doctor.TableDoctor.TABLE_NAME, null, values);
-                if (rowID != -1) insertCount++;
-            }
+            long rowID = db.insert(Doctor.TableDoctor.TABLE_NAME, null, values);
+            if (rowID != -1) insertCount++;
+        }
         return insertCount;
     }
 
@@ -1147,16 +1147,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             user.sync(jsonObjectUser);
             ContentValues values = new ContentValues();
 
-                values.put(UsersTable.COLUMN_USERNAME, user.getUserName());
-                values.put(UsersTable.COLUMN_PASSWORD, user.getPassword());
-                values.put(UsersTable.COLUMN_FULLNAME, user.getFullname());
-                values.put(UsersTable.COLUMN_DIST_ID, user.getDist_id());
-                values.put(UsersTable.COLUMN_ENABLED, user.getEnabled());
-                values.put(UsersTable.COLUMN_ISNEW_USER, user.getNewUser());
-                values.put(UsersTable.COLUMN_PWD_EXPIRY, user.getPwdExpiry());
-                long rowID = db.insert(UsersTable.TABLE_NAME, null, values);
-                if (rowID != -1) insertCount++;
-            }
+            values.put(UsersTable.COLUMN_USERNAME, user.getUserName());
+            values.put(UsersTable.COLUMN_PASSWORD, user.getPassword());
+            values.put(UsersTable.COLUMN_FULLNAME, user.getFullname());
+            values.put(UsersTable.COLUMN_DIST_ID, user.getDist_id());
+            values.put(UsersTable.COLUMN_ENABLED, user.getEnabled());
+            values.put(UsersTable.COLUMN_ISNEW_USER, user.getNewUser());
+            values.put(UsersTable.COLUMN_PWD_EXPIRY, user.getPwdExpiry());
+            long rowID = db.insert(UsersTable.TABLE_NAME, null, values);
+            if (rowID != -1) insertCount++;
+        }
         return insertCount;
     }
 
@@ -1178,27 +1178,27 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String orderBy = FormsTable.COLUMN_ID + " ASC";
 
         JSONArray allForms = new JSONArray();
-            c = db.query(
-                    FormsTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                /** WorkManager Upload
-                 /*Form fc = new Form();
-                 allFC.add(fc.Hydrate(c));*/
-                Log.d(TAG, "getUnsyncedForms: " + c.getCount());
-                Form form = new Form();
-                allForms.put(form.Hydrate(c).toJSONObject());
+        c = db.query(
+                FormsTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            /** WorkManager Upload
+             /*Form fc = new Form();
+             allFC.add(fc.Hydrate(c));*/
+            Log.d(TAG, "getUnsyncedForms: " + c.getCount());
+            Form form = new Form();
+            allForms.put(form.Hydrate(c).toJSONObject());
 
 
-            }
-            if (c != null) {
-                c.close();
+        }
+        if (c != null) {
+            c.close();
         }
         Log.d(TAG, "getUnsyncedForms: " + allForms.toString().length());
         Log.d(TAG, "getUnsyncedForms: " + allForms);
@@ -1245,25 +1245,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 //        Collection<Child> allFC = new ArrayList<>();
         JSONArray allFC = new JSONArray();
 
-            c = db.query(
-                    ChildContract.ChildTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
+        c = db.query(
+                ChildContract.ChildTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
               /*  Child fc = new Child();
                 allFC.add(fc.Hydrate(c));*/
-                Log.d(TAG, "getUnsyncedChild: " + c.getCount());
-                Child form = new Child();
-                allFC.put(form.Hydrate(c).toJSONObject());
+            Log.d(TAG, "getUnsyncedChild: " + c.getCount());
+            Child form = new Child();
+            allFC.put(form.Hydrate(c).toJSONObject());
 
-            }
-            if (c != null) {
-                c.close();
+        }
+        if (c != null) {
+            c.close();
         }
         return allFC;
     }
@@ -1307,25 +1307,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         /*      Collection<ChildInformation> allFC = new ArrayList<>();     */
         JSONArray allFC = new JSONArray();
 
-            c = db.query(
-                    ChildInformationContract.ChildInfoTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
+        c = db.query(
+                ChildInformationContract.ChildInfoTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
              /*   ChildInformation fc = new ChildInformation();
                 allFC.add(fc.Hydrate(c));*/
-                Log.d(TAG, "getUnsyncedChildInfo: " + c.getCount());
-                ChildInformation childInfo = new ChildInformation();
-                allFC.put(childInfo.Hydrate(c).toJSONObject());
+            Log.d(TAG, "getUnsyncedChildInfo: " + c.getCount());
+            ChildInformation childInfo = new ChildInformation();
+            allFC.put(childInfo.Hydrate(c).toJSONObject());
 
-            }
-            if (c != null) {
-                c.close();
+        }
+        if (c != null) {
+            c.close();
         }
         return allFC;
     }
@@ -1369,24 +1369,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 //        Collection<Immunization> allFC = new ArrayList<>();
         JSONArray allFC = new JSONArray();
 
-            c = db.query(
-                    IMContract.IMTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
+        c = db.query(
+                IMContract.IMTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
                /* Immunization fc = new Immunization();
                 allFC.add(fc.Hydrate(c));*/
-                Log.d(TAG, "getUnsyncedIM: " + c.getCount());
-                Immunization form = new Immunization();
-                allFC.put(form.Hydrate(c).toJSONObject());
-            }
-            if (c != null) {
-                c.close();
+            Log.d(TAG, "getUnsyncedIM: " + c.getCount());
+            Immunization form = new Immunization();
+            allFC.put(form.Hydrate(c).toJSONObject());
+        }
+        if (c != null) {
+            c.close();
         }
         return allFC;
     }
@@ -1429,22 +1429,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         JSONArray jsa = new JSONArray();
 
-            c = db.query(
-                    MHContract.MHTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                Log.d(TAG, "getUnsyncedMH: " + c.getCount());
-                MobileHealth mhForm = new MobileHealth();
-                jsa.put(mhForm.Hydrate(c).toJSONObject());
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                MHContract.MHTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Log.d(TAG, "getUnsyncedMH: " + c.getCount());
+            MobileHealth mhForm = new MobileHealth();
+            jsa.put(mhForm.Hydrate(c).toJSONObject());
+        }
+        if (c != null) {
+            c.close();
         }
         return jsa;
     }
@@ -1560,7 +1560,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
-    public void updateSyncedmobilehealth(String id) {
+    public void updateSynceddtl_patient(String id) {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
 
 // New value for one column
@@ -1637,30 +1637,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 MHTable.COLUMN_ID + " ASC";
 
         Collection<MobileHealth> allFC = new ArrayList<>();
-            c = db.query(
-                    MHTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                MobileHealth fc = new MobileHealth();
-                fc.setId(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_ID)));
-                fc.setUid(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_UID)));
-                fc.setSysDate(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SYSDATE)));
-                fc.setSs102(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS102)));
-                fc.setSs106(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS106)));
-                fc.setSs107(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS107)));
-                fc.setSynced(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SYNCED)));
-                fc.sAHydrate(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SA)));
-                Log.d(TAG, "getFormsByCluster: " + c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SA)));
-                allFC.add(fc);
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                MHTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            MobileHealth fc = new MobileHealth();
+            fc.setId(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_ID)));
+            fc.setUid(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_UID)));
+            fc.setSysDate(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SYSDATE)));
+            fc.setSs102(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS102)));
+            fc.setSs106(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS106)));
+            fc.setSs107(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS107)));
+            fc.setSynced(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SYNCED)));
+            fc.sAHydrate(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SA)));
+            Log.d(TAG, "getFormsByCluster: " + c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SA)));
+            allFC.add(fc);
+        }
+        if (c != null) {
+            c.close();
         }
         return allFC;
     }
@@ -1684,28 +1684,28 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String having = null;
         String orderBy = FormsTable.COLUMN_ID + " ASC";
         ArrayList<Form> allFC = new ArrayList<>();
-            c = db.query(
-                    FormsTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                Form fc = new Form();
-                fc.setId(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_ID)));
-                fc.setUid(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_UID)));
-                fc.setSysDate(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_SYSDATE)));
-                fc.setCluster(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_CLUSTER)));
-                fc.setHhno(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_HHNO)));
-                fc.setIStatus(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_ISTATUS)));
-                fc.setSynced(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_SYNCED)));
-                allFC.add(fc);
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                FormsTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            Form fc = new Form();
+            fc.setId(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_ID)));
+            fc.setUid(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_UID)));
+            fc.setSysDate(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_SYSDATE)));
+            fc.setCluster(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_CLUSTER)));
+            fc.setHhno(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_HHNO)));
+            fc.setIStatus(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_ISTATUS)));
+            fc.setSynced(c.getString(c.getColumnIndexOrThrow(FormsTable.COLUMN_SYNCED)));
+            allFC.add(fc);
+        }
+        if (c != null) {
+            c.close();
         }
         return allFC;
     }
@@ -1770,29 +1770,29 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String orderBy = MHTable.COLUMN_ID + " DESC";
 
         Collection<MobileHealth> allFC = new ArrayList<>();
-            c = db.query(
-                    MHTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                MobileHealth fc = new MobileHealth();
-                fc.setId(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_ID)));
-                fc.setUid(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_UID)));
-                fc.setSysDate(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SYSDATE)));
-                fc.setSs102(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS102)));
-                fc.setSs106(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS106)));
-                fc.setSs107(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS107)));
-                fc.sAHydrate(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SA)));
-                fc.setSynced(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SYNCED)));
-                allFC.add(fc);
-            }
-            if (c != null) {
-                c.close();
+        c = db.query(
+                MHTable.TABLE_NAME,  // The table to query
+                columns,                   // The columns to return
+                whereClause,               // The columns for the WHERE clause
+                whereArgs,                 // The values for the WHERE clause
+                groupBy,                   // don't group the rows
+                having,                    // don't filter by row groups
+                orderBy                    // The sort order
+        );
+        while (c.moveToNext()) {
+            MobileHealth fc = new MobileHealth();
+            fc.setId(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_ID)));
+            fc.setUid(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_UID)));
+            fc.setSysDate(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SYSDATE)));
+            fc.setSs102(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS102)));
+            fc.setSs106(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS106)));
+            fc.setSs107(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS107)));
+            fc.sAHydrate(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SA)));
+            fc.setSynced(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SYNCED)));
+            allFC.add(fc);
+        }
+        if (c != null) {
+            c.close();
         }
         return allFC;
     }

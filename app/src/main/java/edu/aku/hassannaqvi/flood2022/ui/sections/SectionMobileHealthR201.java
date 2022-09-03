@@ -480,6 +480,7 @@ public class SectionMobileHealthR201 extends AppCompatActivity implements EndSec
         mobileHealth.setMe20378DAY(bi.me20378DAY.getText().toString());
         mobileHealth.setMe20378QTY(bi.me20378QTY.getText().toString());
         mobileHealth.setMe20396DAY(bi.me20396DAY.getText().toString());
+        mobileHealth.setMe20396QTY(bi.me20396QTY.getText().toString());
     }
 
 

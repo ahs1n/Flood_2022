@@ -560,7 +560,7 @@
     <string name="ss101y">Year</string>
     <string name="ss102">Camp Number</string>
     <string name="ss103">District Name</string>
-    <string name="ss104">UC Name</string>
+    <string name="ss104">Area Name</string>
     <string name="ss105">Patient Name</string>
     <string name="ss106">Father’s / Husband Name</string>
     <string name="ss107">Age</string>
@@ -574,6 +574,7 @@
     <string name="ss109a">Yes</string>
     <string name="ss109b">No</string>
     <string name="ss110">Weight</string>
+    <string name="ss11099">Not Recorded</string>
 
     <string name="ss110a">Temprature</string>
     <string name="ss110a99">Not Recorded</string>
@@ -716,7 +717,7 @@
     <string name="me20376">Other specify 2</string>
     <string name="me20377">Other specify 3</string>
     <string name="me20378">Other specify 4</string>
-    <string name="me20396">Other specify 5</string>
+    <string name="me20396">Other specify</string>
     <string name="vstitle">SECTION 3: VACCINATOR’S SECTION</string>
     <string name="vs301">Tetanus Toxoid Vaccine (Only for Women)</string>
     <string name="vs301a">Yes</string>

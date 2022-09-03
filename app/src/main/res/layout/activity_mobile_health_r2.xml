@@ -130,7 +130,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="2"
-                                android:text="@{camps.ucName}" />
+                                android:text="@{camps.area_name}" />
                         </LinearLayout>
 
 
@@ -516,7 +516,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:hint="@string/ss110"
+                            android:hint="###.#"
                             android:inputType="number"
                             android:maxLength="3"
                             app:mask="###.#"
@@ -524,6 +524,16 @@
                             app:minValue="1"
                             app:pattern="^(\\d{3,3}\\.\\d{1,1})$"
                             app:type="range" />
+
+                        <CheckBox
+                            android:id="@+id/ss11099"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:background="#7fefd6d6"
+                            android:tag="-1"
+                            android:text="@string/ss11099"
+                            android:textColor="@color/redDark" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -561,11 +571,11 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:hint="@string/ss110atemp"
+                                android:hint="###"
                                 android:inputType="number"
                                 android:maxLength="3"
-                                app:maxValue="200"
-                                app:minValue="1"
+                                app:maxValue="106"
+                                app:minValue="95"
                                 app:type="range" />
 
                             <CheckBox
@@ -636,9 +646,9 @@
                                     android:gravity="center"
                                     android:hint="@string/ss110bdiastolic"
                                     android:inputType="number"
-                                    android:maxLength="3"
-                                    app:maxValue="200"
-                                    app:minValue="1"
+                                    android:maxLength="2"
+                                    app:maxValue="90"
+                                    app:minValue="65"
                                     app:type="range" />
 
                                 <TextView
@@ -657,8 +667,8 @@
                                     android:hint="@string/ss110bsystolic"
                                     android:inputType="number"
                                     android:maxLength="3"
-                                    app:maxValue="200"
-                                    app:minValue="1"
+                                    app:maxValue="190"
+                                    app:minValue="80"
                                     app:type="range" />
 
                             </LinearLayout>
@@ -772,8 +782,8 @@
                                 android:hint="@string/ss110drbs"
                                 android:inputType="number"
                                 android:maxLength="3"
-                                app:maxValue="200"
-                                app:minValue="1"
+                                app:maxValue="650"
+                                app:minValue="40"
                                 app:type="range" />
 
                             <CheckBox
@@ -825,9 +835,9 @@
                                 android:gravity="center"
                                 android:hint="@string/ss110ehb"
                                 android:inputType="number"
-                                android:maxLength="3"
-                                app:maxValue="200"
-                                app:minValue="1"
+                                android:maxLength="2"
+                                app:maxValue="19"
+                                app:minValue="6"
                                 app:type="range" />
 
                             <CheckBox
