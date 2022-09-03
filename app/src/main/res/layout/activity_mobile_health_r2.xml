@@ -885,12 +885,14 @@
 
                             <CheckBox
                                 android:id="@+id/ss111a"
+                                android:enabled="@{!ss108a.checked}"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/ss111a" />
 
                             <CheckBox
                                 android:id="@+id/ss111b"
+                                android:enabled="@{!ss108a.checked}"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/ss111b" />
