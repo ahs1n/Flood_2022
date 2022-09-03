@@ -81,6 +81,9 @@ public class SectionMobileHealthR201 extends AppCompatActivity implements EndSec
             bi.me20321.setVisibility(View.GONE);
             bi.me20323.setVisibility(View.GONE);
         } else {
+            bi.medName.setVisibility(View.GONE);
+            bi.medQNT.setVisibility(View.GONE);
+            bi.medDAY.setVisibility(View.GONE);
             bi.me20301DAY.setVisibility(View.GONE);
             bi.me20301QTY.setVisibility(View.GONE);
             bi.me20304DAY.setVisibility(View.GONE);
@@ -237,11 +240,6 @@ public class SectionMobileHealthR201 extends AppCompatActivity implements EndSec
 
     private void setupSkips() {
         bi.me20399.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.me203check, !b));
-
-        bi.me20301.setOnCheckedChangeListener((compoundButton, b) -> {
-            Clear.clearAllFields(bi.me20301DAY, b);
-            Clear.clearAllFields(bi.me20301QTY, b);
-        });
     }
 
     public void setTags(RadioGroup rg, View[] views) {

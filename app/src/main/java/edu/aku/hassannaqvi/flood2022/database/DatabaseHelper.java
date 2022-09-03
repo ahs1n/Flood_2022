@@ -1560,7 +1560,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
-    public void updateSyncedmobilehealth_r4(String id) {
+    public void updateSyncedmobilehealth(String id) {
         SQLiteDatabase db = this.getReadableDatabase(DATABASE_PASSWORD);
 
 // New value for one column

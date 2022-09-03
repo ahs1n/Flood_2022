@@ -712,12 +712,11 @@
     <string name="me20372">Tab:Vit A&amp;D tablets</string>
     <string name="me20373">Syp:Calcium P</string>
     <string name="me20374">Chlorophenicol eye drops</string>
-    <string name="me20375">Other specify </string>
-    <string name="me20376">Other specify </string>
-    <string name="me20377">Other specify </string>
-    <string name="me20378">Other specify </string>
-
-    <string name="me20396">Others</string>
+    <string name="me20375">Other specify 1</string>
+    <string name="me20376">Other specify 2</string>
+    <string name="me20377">Other specify 3</string>
+    <string name="me20378">Other specify 4</string>
+    <string name="me20396">Other specify 5</string>
     <string name="vstitle">SECTION 3: VACCINATOR’S SECTION</string>
     <string name="vs301">Tetanus Toxoid Vaccine (Only for Women)</string>
     <string name="vs301a">Yes</string>
