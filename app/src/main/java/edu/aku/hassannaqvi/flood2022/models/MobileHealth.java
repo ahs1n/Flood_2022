@@ -551,7 +551,10 @@ public class MobileHealth extends BaseObservable {
         JSONObject json = new JSONObject();
 
         try {
-            json.put("ss108", ss108)
+            json.put("ss107d", ss107d)
+                    .put("ss107m", ss107m)
+                    .put("ss107y", ss107y)
+                    .put("ss108", ss108)
                     .put("ss109", ss109)
                     .put("ss110", ss110)
                     .put("ss11099", ss11099)
@@ -881,6 +884,9 @@ public class MobileHealth extends BaseObservable {
 
             JSONObject json = null;
             json = new JSONObject(string);
+            this.ss107d = json.getString("ss107d");
+            this.ss107m = json.getString("ss107m");
+            this.ss107y = json.getString("ss107y");
             this.ss108 = json.getString("ss108");
             this.ss109 = json.getString("ss109");
             this.ss110 = json.getString("ss110");

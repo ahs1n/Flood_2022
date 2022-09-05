@@ -366,13 +366,13 @@ public class SectionMobileHealthR201 extends AppCompatActivity implements EndSec
         mobileHealth.setMe20372(bi.me20372.isChecked() ? "72" : "-1");
         mobileHealth.setMe20373(bi.me20373.isChecked() ? "73" : "-1");
         mobileHealth.setMe20374(bi.me20374.isChecked() ? "74" : "-1");
-        mobileHealth.setMe20375(bi.me20375.isChecked() ? "75" : "-1");
+        mobileHealth.setMe20375(bi.me20375.isChecked() ? "96" : "-1");
         mobileHealth.setMe20375x(bi.me20375x.getText().toString());
-        mobileHealth.setMe20376(bi.me20376.isChecked() ? "24" : "-1");
+        mobileHealth.setMe20376(bi.me20376.isChecked() ? "96" : "-1");
         mobileHealth.setMe20376x(bi.me20376x.getText().toString());
-        mobileHealth.setMe20377(bi.me20377.isChecked() ? "24" : "-1");
+        mobileHealth.setMe20377(bi.me20377.isChecked() ? "96" : "-1");
         mobileHealth.setMe20377x(bi.me20377x.getText().toString());
-        mobileHealth.setMe20378(bi.me20378.isChecked() ? "24" : "-1");
+        mobileHealth.setMe20378(bi.me20378.isChecked() ? "96" : "-1");
         mobileHealth.setMe20378x(bi.me20378x.getText().toString());
         mobileHealth.setMe20396(bi.me20396.isChecked() ? "96" : "-1");
         mobileHealth.setMe20396x(bi.me20396x.getText().toString());
@@ -498,7 +498,6 @@ public class SectionMobileHealthR201 extends AppCompatActivity implements EndSec
     private boolean formValidation() {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
-
 
     public void BtnEnd(View view) {
         AppUtilsKt.contextEndActivity(this);
