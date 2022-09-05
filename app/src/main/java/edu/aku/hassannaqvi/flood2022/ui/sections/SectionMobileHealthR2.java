@@ -76,18 +76,32 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
     private void setupSkips() {
 
         bi.ss108.setOnCheckedChangeListener((radioGroup, i) -> {
-            if (i == bi.ss108a.getId()) {
+//            if (i == bi.ss108a.getId()) {
+//                Clear.clearAllFields(bi.fldGrpCVss109);
+//                bi.fldGrpCVss109.setVisibility(View.GONE);
+//                Clear.clearAllFields(bi.fldGrpCVvs301);
+//                bi.fldGrpCVvs301.setVisibility(View.GONE);
+//            } else {
+//                if (TextUtils.isEmpty(bi.ss107y.getText().toString())) {
+//                    return;
+//                } else if (Integer.parseInt(bi.ss107y.getText().toString()) >= 14) {
+//                    bi.fldGrpCVss109.setVisibility(View.VISIBLE);
+//                    bi.fldGrpCVvs301.setVisibility(View.VISIBLE);
+//                }
+
+
+            if (bi.ss108a.isChecked()) {
                 Clear.clearAllFields(bi.fldGrpCVss109);
                 bi.fldGrpCVss109.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.fldGrpCVvs301);
                 bi.fldGrpCVvs301.setVisibility(View.GONE);
-            } else {
-                if (TextUtils.isEmpty(bi.ss107y.getText().toString())) {
-                    return;
-                } else if (Integer.parseInt(bi.ss107y.getText().toString()) >= 14) {
-                    bi.fldGrpCVss109.setVisibility(View.VISIBLE);
-                    bi.fldGrpCVvs301.setVisibility(View.VISIBLE);
-                }
+            } else if (bi.ss11199.isChecked() && (!TextUtils.isEmpty(bi.ss107y.getText().toString()) && Integer.parseInt(bi.ss107y.getText().toString()) < 14)) {
+                bi.fldGrpCVss109.setVisibility(View.VISIBLE);
+                bi.fldGrpCVvs301.setVisibility(View.VISIBLE);
+                bi.ss111a.setEnabled(false);
+                bi.ss111b.setEnabled(false);
+                bi.ss111c.setEnabled(true);
+                bi.ss111d.setEnabled(true);
             }
         });
 
@@ -96,7 +110,34 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
         bi.vs307.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.fldGrpCVvs308));
 
         bi.vs30699.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.vs306check, !b));
-        bi.ss11199.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.ss111check, !b));
+
+//        bi.ss11199.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.ss111check, !b));
+
+        bi.ss11199.setOnCheckedChangeListener(((compoundButton, b) -> {
+            if (b) {
+                Clear.clearAllFields(bi.ss111check);
+                bi.ss111a.setEnabled(false);
+                bi.ss111b.setEnabled(false);
+                bi.ss111c.setEnabled(false);
+                bi.ss111d.setEnabled(false);
+            } else if (bi.ss108a.isChecked()) {
+                bi.ss111a.setEnabled(false);
+                bi.ss111b.setEnabled(false);
+                bi.ss111c.setEnabled(true);
+                bi.ss111d.setEnabled(true);
+            } else if (bi.ss108b.isChecked() && (!TextUtils.isEmpty(bi.ss107y.getText().toString()) && Integer.parseInt(bi.ss107y.getText().toString()) < 14)) {
+                bi.ss111a.setEnabled(false);
+                bi.ss111b.setEnabled(false);
+                bi.ss111c.setEnabled(true);
+                bi.ss111d.setEnabled(true);
+            } else {
+                bi.ss111a.setEnabled(true);
+                bi.ss111b.setEnabled(true);
+                bi.ss111c.setEnabled(true);
+                bi.ss111d.setEnabled(true);
+
+            }
+        }));
         bi.pc20199.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.pc201check, !b));
         bi.di20299.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.di202check, !b));
 //        bi.me20399.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.me203check, !b));
@@ -105,7 +146,9 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
         bi.ss110a99.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.ss110atempx, !b));
         bi.ss11099.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.ss110, !b));
 
-        bi.ss110b99.setOnCheckedChangeListener((compoundButton, b) -> {
+        bi.ss110b99.setOnCheckedChangeListener((compoundButton, b) ->
+
+        {
             Clear.clearAllFields(bi.ss110bdiastolicx, !b);
             Clear.clearAllFields(bi.ss110bsystolicx, !b);
         });
@@ -342,184 +385,6 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
         mobileHealth.setDi20296(bi.di20296.isChecked() ? "96" : "-1");
         mobileHealth.setDi20296x(bi.di20296x.getText().toString());
         mobileHealth.setDi20299(bi.di20299.isChecked() ? "99" : "-1");
-        /*mobileHealth.setMe20301(bi.me20301.isChecked() ? "1" : "-1");
-        mobileHealth.setMe20302(bi.me20302.isChecked() ? "2" : "-1");
-        mobileHealth.setMe20303(bi.me20303.isChecked() ? "3" : "-1");
-        mobileHealth.setMe20304(bi.me20304.isChecked() ? "4" : "-1");
-        mobileHealth.setMe20305(bi.me20305.isChecked() ? "5" : "-1");
-        mobileHealth.setMe20306(bi.me20306.isChecked() ? "6" : "-1");
-        mobileHealth.setMe20307(bi.me20307.isChecked() ? "7" : "-1");
-        mobileHealth.setMe20308(bi.me20308.isChecked() ? "8" : "-1");
-        mobileHealth.setMe20309(bi.me20309.isChecked() ? "9" : "-1");
-        mobileHealth.setMe20310(bi.me20310.isChecked() ? "10" : "-1");
-        mobileHealth.setMe20311(bi.me20311.isChecked() ? "11" : "-1");
-        mobileHealth.setMe20312(bi.me20312.isChecked() ? "12" : "-1");
-        mobileHealth.setMe20313(bi.me20313.isChecked() ? "13" : "-1");
-        mobileHealth.setMe20314(bi.me20314.isChecked() ? "14" : "-1");
-        mobileHealth.setMe20315(bi.me20315.isChecked() ? "15" : "-1");
-        mobileHealth.setMe20316(bi.me20316.isChecked() ? "16" : "-1");
-        mobileHealth.setMe20317(bi.me20317.isChecked() ? "17" : "-1");
-        mobileHealth.setMe20318(bi.me20318.isChecked() ? "18" : "-1");
-        mobileHealth.setMe20319(bi.me20319.isChecked() ? "19" : "-1");
-        mobileHealth.setMe20320(bi.me20320.isChecked() ? "20" : "-1");
-        mobileHealth.setMe20321(bi.me20321.isChecked() ? "21" : "-1");
-        mobileHealth.setMe20322(bi.me20322.isChecked() ? "22" : "-1");
-        mobileHealth.setMe20323(bi.me20323.isChecked() ? "23" : "-1");
-        mobileHealth.setMe20324(bi.me20324.isChecked() ? "24" : "-1");
-        mobileHealth.setMe20333(bi.me20333.isChecked() ? "33" : "-1");
-        mobileHealth.setMe20335(bi.me20335.isChecked() ? "35" : "-1");
-        mobileHealth.setMe20336(bi.me20336.isChecked() ? "36" : "-1");
-        mobileHealth.setMe20337(bi.me20337.isChecked() ? "37" : "-1");
-        mobileHealth.setMe20338(bi.me20338.isChecked() ? "38" : "-1");
-        mobileHealth.setMe20339(bi.me20339.isChecked() ? "39" : "-1");
-        mobileHealth.setMe20340(bi.me20340.isChecked() ? "40" : "-1");
-        mobileHealth.setMe20341(bi.me20341.isChecked() ? "41" : "-1");
-        mobileHealth.setMe20342(bi.me20342.isChecked() ? "42" : "-1");
-        mobileHealth.setMe20343(bi.me20343.isChecked() ? "43" : "-1");
-        mobileHealth.setMe20344(bi.me20344.isChecked() ? "44" : "-1");
-        mobileHealth.setMe20345(bi.me20345.isChecked() ? "45" : "-1");
-        mobileHealth.setMe20346(bi.me20346.isChecked() ? "46" : "-1");
-        mobileHealth.setMe20347(bi.me20347.isChecked() ? "47" : "-1");
-        mobileHealth.setMe20348(bi.me20348.isChecked() ? "48" : "-1");
-        mobileHealth.setMe20349(bi.me20349.isChecked() ? "49" : "-1");
-        mobileHealth.setMe20350(bi.me20350.isChecked() ? "50" : "-1");
-        mobileHealth.setMe20351(bi.me20351.isChecked() ? "51" : "-1");
-        mobileHealth.setMe20352(bi.me20352.isChecked() ? "52" : "-1");
-        mobileHealth.setMe20353(bi.me20353.isChecked() ? "53" : "-1");
-        mobileHealth.setMe20354(bi.me20354.isChecked() ? "54" : "-1");
-        mobileHealth.setMe20355(bi.me20355.isChecked() ? "55" : "-1");
-        mobileHealth.setMe20356(bi.me20356.isChecked() ? "56" : "-1");
-        mobileHealth.setMe20357(bi.me20357.isChecked() ? "57" : "-1");
-        mobileHealth.setMe20358(bi.me20358.isChecked() ? "58" : "-1");
-        mobileHealth.setMe20359(bi.me20359.isChecked() ? "59" : "-1");
-        mobileHealth.setMe20361(bi.me20361.isChecked() ? "61" : "-1");
-        mobileHealth.setMe20362(bi.me20362.isChecked() ? "62" : "-1");
-        mobileHealth.setMe20363(bi.me20363.isChecked() ? "63" : "-1");
-        mobileHealth.setMe20364(bi.me20364.isChecked() ? "64" : "-1");
-        mobileHealth.setMe20365(bi.me20365.isChecked() ? "65" : "-1");
-        mobileHealth.setMe20366(bi.me20366.isChecked() ? "66" : "-1");
-        mobileHealth.setMe20367(bi.me20367.isChecked() ? "67" : "-1");
-        mobileHealth.setMe20368(bi.me20368.isChecked() ? "68" : "-1");
-        mobileHealth.setMe20369(bi.me20369.isChecked() ? "69" : "-1");
-        mobileHealth.setMe20370(bi.me20370.isChecked() ? "70" : "-1");
-        mobileHealth.setMe20371(bi.me20371.isChecked() ? "71" : "-1");
-        mobileHealth.setMe20372(bi.me20372.isChecked() ? "72" : "-1");
-        mobileHealth.setMe20373(bi.me20373.isChecked() ? "73" : "-1");
-        mobileHealth.setMe20374(bi.me20374.isChecked() ? "74" : "-1");
-        mobileHealth.setMe20375(bi.me20375.isChecked() ? "75" : "-1");
-        mobileHealth.setMe20375x(bi.me20375x.getText().toString());
-        mobileHealth.setMe20376(bi.me20376.isChecked() ? "24" : "-1");
-        mobileHealth.setMe20376x(bi.me20376x.getText().toString());
-        mobileHealth.setMe20377(bi.me20377.isChecked() ? "24" : "-1");
-        mobileHealth.setMe20377x(bi.me20377x.getText().toString());
-        mobileHealth.setMe20378(bi.me20378.isChecked() ? "24" : "-1");
-        mobileHealth.setMe20378x(bi.me20378x.getText().toString());
-        mobileHealth.setMe20396(bi.me20396.isChecked() ? "96" : "-1");
-        mobileHealth.setMe20396x(bi.me20396x.getText().toString());
-        mobileHealth.setMe20399(bi.me20399.isChecked() ? "99" : "-1");
-        mobileHealth.setMe20301DAY(bi.me20301DAY.getText().toString());
-        mobileHealth.setMe20301QTY(bi.me20301QTY.getText().toString());
-        mobileHealth.setMe20304DAY(bi.me20304DAY.getText().toString());
-        mobileHealth.setMe20304QTY(bi.me20304QTY.getText().toString());
-        mobileHealth.setMe20307DAY(bi.me20307DAY.getText().toString());
-        mobileHealth.setMe20307QTY(bi.me20307QTY.getText().toString());
-        mobileHealth.setMe20313DAY(bi.me20313DAY.getText().toString());
-        mobileHealth.setMe20313QTY(bi.me20313QTY.getText().toString());
-        mobileHealth.setMe20322DAY(bi.me20322DAY.getText().toString());
-        mobileHealth.setMe20322QTY(bi.me20322QTY.getText().toString());
-        mobileHealth.setMe20324DAY(bi.me20324DAY.getText().toString());
-        mobileHealth.setMe20324QTY(bi.me20324QTY.getText().toString());
-        mobileHealth.setMe20333DAY(bi.me20333DAY.getText().toString());
-        mobileHealth.setMe20333QTY(bi.me20333QTY.getText().toString());
-        mobileHealth.setMe20334DAY(bi.me20334DAY.getText().toString());
-        mobileHealth.setMe20334QTY(bi.me20334QTY.getText().toString());
-        mobileHealth.setMe20335DAY(bi.me20335DAY.getText().toString());
-        mobileHealth.setMe20335QTY(bi.me20335QTY.getText().toString());
-        mobileHealth.setMe20336DAY(bi.me20336DAY.getText().toString());
-        mobileHealth.setMe20336QTY(bi.me20336QTY.getText().toString());
-        mobileHealth.setMe20337DAY(bi.me20337DAY.getText().toString());
-        mobileHealth.setMe20337QTY(bi.me20337QTY.getText().toString());
-        mobileHealth.setMe20338DAY(bi.me20338DAY.getText().toString());
-        mobileHealth.setMe20338QTY(bi.me20338QTY.getText().toString());
-        mobileHealth.setMe20339DAY(bi.me20339DAY.getText().toString());
-        mobileHealth.setMe20339QTY(bi.me20339QTY.getText().toString());
-        mobileHealth.setMe20340DAY(bi.me20340DAY.getText().toString());
-        mobileHealth.setMe20340QTY(bi.me20340QTY.getText().toString());
-        mobileHealth.setMe20341DAY(bi.me20341DAY.getText().toString());
-        mobileHealth.setMe20341QTY(bi.me20341QTY.getText().toString());
-        mobileHealth.setMe20342DAY(bi.me20342DAY.getText().toString());
-        mobileHealth.setMe20342QTY(bi.me20342QTY.getText().toString());
-        mobileHealth.setMe20343DAY(bi.me20343DAY.getText().toString());
-        mobileHealth.setMe20343QTY(bi.me20343QTY.getText().toString());
-        mobileHealth.setMe20344DAY(bi.me20344DAY.getText().toString());
-        mobileHealth.setMe20344QTY(bi.me20344QTY.getText().toString());
-        mobileHealth.setMe20345DAY(bi.me20345DAY.getText().toString());
-        mobileHealth.setMe20345QTY(bi.me20345QTY.getText().toString());
-        mobileHealth.setMe20346DAY(bi.me20346DAY.getText().toString());
-        mobileHealth.setMe20346QTY(bi.me20346QTY.getText().toString());
-        mobileHealth.setMe20347DAY(bi.me20347DAY.getText().toString());
-        mobileHealth.setMe20347QTY(bi.me20347QTY.getText().toString());
-        mobileHealth.setMe20348DAY(bi.me20348DAY.getText().toString());
-        mobileHealth.setMe20348QTY(bi.me20348QTY.getText().toString());
-        mobileHealth.setMe20349DAY(bi.me20349DAY.getText().toString());
-        mobileHealth.setMe20349QTY(bi.me20349QTY.getText().toString());
-        mobileHealth.setMe20350DAY(bi.me20350DAY.getText().toString());
-        mobileHealth.setMe20350QTY(bi.me20350QTY.getText().toString());
-        mobileHealth.setMe20351DAY(bi.me20351DAY.getText().toString());
-        mobileHealth.setMe20351QTY(bi.me20351QTY.getText().toString());
-        mobileHealth.setMe20352DAY(bi.me20352DAY.getText().toString());
-        mobileHealth.setMe20352QTY(bi.me20352QTY.getText().toString());
-        mobileHealth.setMe20353DAY(bi.me20353DAY.getText().toString());
-        mobileHealth.setMe20353QTY(bi.me20353QTY.getText().toString());
-        mobileHealth.setMe20354DAY(bi.me20354DAY.getText().toString());
-        mobileHealth.setMe20354QTY(bi.me20354QTY.getText().toString());
-        mobileHealth.setMe20355DAY(bi.me20355DAY.getText().toString());
-        mobileHealth.setMe20355QTY(bi.me20355QTY.getText().toString());
-        mobileHealth.setMe20356DAY(bi.me20356DAY.getText().toString());
-        mobileHealth.setMe20356QTY(bi.me20356QTY.getText().toString());
-        mobileHealth.setMe20357DAY(bi.me20357DAY.getText().toString());
-        mobileHealth.setMe20357QTY(bi.me20357QTY.getText().toString());
-        mobileHealth.setMe20358DAY(bi.me20358DAY.getText().toString());
-        mobileHealth.setMe20358QTY(bi.me20358QTY.getText().toString());
-        mobileHealth.setMe20359DAY(bi.me20359DAY.getText().toString());
-        mobileHealth.setMe20359QTY(bi.me20359QTY.getText().toString());
-        mobileHealth.setMe20361DAY(bi.me20361DAY.getText().toString());
-        mobileHealth.setMe20361QTY(bi.me20361QTY.getText().toString());
-        mobileHealth.setMe20362DAY(bi.me20362DAY.getText().toString());
-        mobileHealth.setMe20362QTY(bi.me20362QTY.getText().toString());
-        mobileHealth.setMe20363DAY(bi.me20363DAY.getText().toString());
-        mobileHealth.setMe20363QTY(bi.me20363QTY.getText().toString());
-        mobileHealth.setMe20364DAY(bi.me20364DAY.getText().toString());
-        mobileHealth.setMe20364QTY(bi.me20364QTY.getText().toString());
-        mobileHealth.setMe20365DAY(bi.me20365DAY.getText().toString());
-        mobileHealth.setMe20365QTY(bi.me20365QTY.getText().toString());
-        mobileHealth.setMe20366DAY(bi.me20366DAY.getText().toString());
-        mobileHealth.setMe20366QTY(bi.me20366QTY.getText().toString());
-        mobileHealth.setMe20367DAY(bi.me20367DAY.getText().toString());
-        mobileHealth.setMe20367QTY(bi.me20367QTY.getText().toString());
-        mobileHealth.setMe20368DAY(bi.me20368DAY.getText().toString());
-        mobileHealth.setMe20368QTY(bi.me20368QTY.getText().toString());
-        mobileHealth.setMe20369DAY(bi.me20369DAY.getText().toString());
-        mobileHealth.setMe20369QTY(bi.me20369QTY.getText().toString());
-        mobileHealth.setMe20370DAY(bi.me20370DAY.getText().toString());
-        mobileHealth.setMe20370QTY(bi.me20370QTY.getText().toString());
-        mobileHealth.setMe20371DAY(bi.me20371DAY.getText().toString());
-        mobileHealth.setMe20371QTY(bi.me20371QTY.getText().toString());
-        mobileHealth.setMe20372DAY(bi.me20372DAY.getText().toString());
-        mobileHealth.setMe20372QTY(bi.me20372QTY.getText().toString());
-        mobileHealth.setMe20373DAY(bi.me20373DAY.getText().toString());
-        mobileHealth.setMe20373QTY(bi.me20373QTY.getText().toString());
-        mobileHealth.setMe20374DAY(bi.me20374DAY.getText().toString());
-        mobileHealth.setMe20374QTY(bi.me20374QTY.getText().toString());
-        mobileHealth.setMe20375DAY(bi.me20375DAY.getText().toString());
-        mobileHealth.setMe20375QTY(bi.me20375QTY.getText().toString());
-        mobileHealth.setMe20376DAY(bi.me20376DAY.getText().toString());
-        mobileHealth.setMe20376QTY(bi.me20376QTY.getText().toString());
-        mobileHealth.setMe20377DAY(bi.me20377DAY.getText().toString());
-        mobileHealth.setMe20377QTY(bi.me20377QTY.getText().toString());
-        mobileHealth.setMe20378DAY(bi.me20378DAY.getText().toString());
-        mobileHealth.setMe20378QTY(bi.me20378QTY.getText().toString());
-        mobileHealth.setMe20396DAY(bi.me20396DAY.getText().toString());*/
         mobileHealth.setVs301(bi.vs301a.isChecked() ? "1"
                 : bi.vs301b.isChecked() ? "2"
                 : bi.vs30199.isChecked() ? "99"
