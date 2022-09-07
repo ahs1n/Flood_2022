@@ -215,6 +215,9 @@ class MainActivity : AppCompatActivity() {
     * */
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
+
+        val action_database = menu.findItem(R.id.action_database)
+        action_database.isVisible = MainApp.admin
         return true
     }
 
