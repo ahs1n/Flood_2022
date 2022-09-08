@@ -63,7 +63,7 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
 //        bi.ss101.setMinDate(convertDateFormat(camp.getPlan_date()));
         setupSkips();
 
-        if (MainApp.user.getDist_id().equals("345")) {
+        if (MainApp.user.getDist_id().equals("999")) {
             bi.fldGrpCVss110a.setVisibility(View.GONE);
             bi.fldGrpCVss110b.setVisibility(View.GONE);
             bi.fldGrpCVss110c.setVisibility(View.GONE);

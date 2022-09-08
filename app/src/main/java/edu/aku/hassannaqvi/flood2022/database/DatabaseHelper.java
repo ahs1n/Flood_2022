@@ -1417,7 +1417,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         };
 
         String whereClause;
-        whereClause = MHContract.MHTable.COLUMN_SYNCED + " is null ";
+        whereClause = MHContract.MHTable.COLUMN_SYNCED + " = '' OR " +
+                MHContract.MHTable.COLUMN_SYNCED + " is null ";
 
         String[] whereArgs = null;
 

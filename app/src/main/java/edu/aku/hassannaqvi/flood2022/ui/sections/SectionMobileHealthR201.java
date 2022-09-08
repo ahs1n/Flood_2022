@@ -61,7 +61,7 @@ public class SectionMobileHealthR201 extends AppCompatActivity implements EndSec
 //        bi.ss101.setMinDate(convertDateFormat(camp.getPlan_date()));
         setupSkips();
 
-        if (MainApp.user.getDist_id().equals("345")) {
+        if (MainApp.user.getDist_id().equals("999")) {
             bi.me20302.setVisibility(View.GONE);
             bi.me20303.setVisibility(View.GONE);
             bi.me20305.setVisibility(View.GONE);
