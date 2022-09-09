@@ -166,12 +166,9 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
         int age = Integer.parseInt(bi.ss107y.getText().toString());
 
         if (age >= 5) {
-            Clear.clearAllFields(bi.fldGrpCVdi202);
-            bi.fldGrpCVdi202.setVisibility(View.GONE);
             Clear.clearAllFields(bi.fldGrpU5);
             bi.fldGrpU5.setVisibility(View.GONE);
         } else {
-            bi.fldGrpCVdi202.setVisibility(View.VISIBLE);
             bi.fldGrpU5.setVisibility(View.VISIBLE);
         }
 
