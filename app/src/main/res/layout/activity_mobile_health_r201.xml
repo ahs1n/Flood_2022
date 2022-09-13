@@ -82,29 +82,47 @@
                             app:flexWrap="wrap"
                             app:justifyContent="space_evenly">
 
-                            <TextView
-                                android:id="@+id/medName"
-                                style="@style/sub_labels"
+                            <CheckBox
+                                android:id="@+id/me203101"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Medicines" />
+                                android:text="@string/me203101" />
 
-                            <TextView
-                                android:id="@+id/medQNT"
-                                style="@style/sub_labels"
-                                android:layout_width="120dp"
+                            <CheckBox
+                                android:id="@+id/me203102"
+                                android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Quantity" />
+                                android:text="@string/me203102" />
 
-                            <TextView
-                                android:id="@+id/medDAY"
-                                style="@style/sub_labels"
-                                android:layout_width="120dp"
+                            <CheckBox
+                                android:id="@+id/me203103"
+                                android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Days" />
+                                android:text="@string/me203103" />
+
+                            <CheckBox
+                                android:id="@+id/me203104"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/me203104" />
+
+                            <CheckBox
+                                android:id="@+id/me203105"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/me203105" />
+
+                            <CheckBox
+                                android:id="@+id/me203106"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/me203106" />
+
+                            <CheckBox
+                                android:id="@+id/me203107"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/me203107" />
 
                             <CheckBox
                                 android:id="@+id/me20301"
@@ -112,137 +130,17 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/me20301" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20301QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20301.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20301.checked ? me20301QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20301DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20301.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20301.checked ? me20301DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
                             <CheckBox
-                                android:id="@+id/me20302"
+                                android:id="@+id/me203108"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20302" />
+                                android:text="@string/me203108" />
 
                             <CheckBox
-                                android:id="@+id/me20303"
+                                android:id="@+id/me203109"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20303" />
-
-                            <CheckBox
-                                android:id="@+id/me20304"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20304" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20304QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20304.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20304.checked ? me20304QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20304DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20304.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20304.checked ? me20304DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20305"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20305" />
-
-                            <CheckBox
-                                android:id="@+id/me20306"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20306" />
-
-                            <CheckBox
-                                android:id="@+id/me20307"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20307" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20307QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20307.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20307.checked ? me20307QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20307DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20307.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20307.checked ? me20307DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20308"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20308" />
-
-                            <CheckBox
-                                android:id="@+id/me20309"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20309" />
+                                android:text="@string/me203109" />
 
                             <CheckBox
                                 android:id="@+id/me20310"
@@ -251,56 +149,16 @@
                                 android:text="@string/me20310" />
 
                             <CheckBox
-                                android:id="@+id/me20311"
+                                android:id="@+id/me203110"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20311" />
+                                android:text="@string/me203110" />
 
                             <CheckBox
-                                android:id="@+id/me20313"
+                                android:id="@+id/me203111"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20313" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20313QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20313.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20313.checked ? me20313QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20313DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20313.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20313.checked ? me20313DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20312"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20312" />
-
-                            <CheckBox
-                                android:id="@+id/me20314"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20314" />
+                                android:text="@string/me203111" />
 
                             <CheckBox
                                 android:id="@+id/me20315"
@@ -309,74 +167,28 @@
                                 android:text="@string/me20315" />
 
                             <CheckBox
-                                android:id="@+id/me20316"
+                                android:id="@+id/me203112"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20316" />
+                                android:text="@string/me203112" />
 
                             <CheckBox
-                                android:id="@+id/me20317"
+                                android:id="@+id/me203113"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20317" />
+                                android:text="@string/me203113" />
 
                             <CheckBox
-                                android:id="@+id/me20318"
+                                android:id="@+id/me203114"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20318" />
+                                android:text="@string/me203114" />
 
                             <CheckBox
-                                android:id="@+id/me20319"
+                                android:id="@+id/me203115"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20319" />
-
-                            <CheckBox
-                                android:id="@+id/me20320"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20320" />
-
-                            <CheckBox
-                                android:id="@+id/me20322"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20322" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20322QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20322.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20322.checked ? me20322QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20322DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20322.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20322.checked ? me20322DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20321"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20321" />
+                                android:text="@string/me203115" />
 
                             <CheckBox
                                 android:id="@+id/me20323"
@@ -385,820 +197,130 @@
                                 android:text="@string/me20323" />
 
                             <CheckBox
-                                android:id="@+id/me20324"
+                                android:id="@+id/me203116"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20324" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20324QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20324.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20324.checked ? me20324QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20324DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20324.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20324.checked ? me20324DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203116" />
 
                             <CheckBox
-                                android:id="@+id/me20333"
+                                android:id="@+id/me203117"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20333" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20333QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20333.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20333.checked ? me20333QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20333DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20333.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20333.checked ? me20333DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203117" />
 
                             <CheckBox
-                                android:id="@+id/me20334"
+                                android:id="@+id/me203118"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20334" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20334QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20334.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20334.checked ? me20334QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20334DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20334.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20334.checked ? me20334DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203118" />
 
                             <CheckBox
-                                android:id="@+id/me20335"
+                                android:id="@+id/me203119"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20335" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20335QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20335.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20335.checked ? me20335QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20335DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20335.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20335.checked ? me20335DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203119" />
 
                             <CheckBox
-                                android:id="@+id/me20336"
+                                android:id="@+id/me203120"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20336" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20336QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20336.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20336.checked ? me20336QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20336DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20336.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20336.checked ? me20336DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203120" />
 
                             <CheckBox
-                                android:id="@+id/me20337"
+                                android:id="@+id/me203121"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20337" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20337QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20337.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20337.checked ? me20337QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20337DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20337.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20337.checked ? me20337DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203121" />
 
                             <CheckBox
-                                android:id="@+id/me20338"
+                                android:id="@+id/me203122"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20338" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20338QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20338.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20338.checked ? me20338QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20338DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20338.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20338.checked ? me20338DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203122" />
 
                             <CheckBox
-                                android:id="@+id/me20339"
+                                android:id="@+id/me203123"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20339" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20339QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20339.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20339.checked ? me20339QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20339DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20339.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20339.checked ? me20339DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203123" />
 
                             <CheckBox
-                                android:id="@+id/me20340"
+                                android:id="@+id/me203124"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20340" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20340QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20340.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20340.checked ? me20340QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20340DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20340.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20340.checked ? me20340DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203124" />
 
                             <CheckBox
-                                android:id="@+id/me20341"
+                                android:id="@+id/me203125"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20341" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20341QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20341.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20341.checked ? me20341QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20341DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20341.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20341.checked ? me20341DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203125" />
 
                             <CheckBox
-                                android:id="@+id/me20342"
+                                android:id="@+id/me203126"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20342" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20342QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20342.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20342.checked ? me20342QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20342DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20342.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20342.checked ? me20342DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203126" />
 
                             <CheckBox
-                                android:id="@+id/me20343"
+                                android:id="@+id/me20307"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20343" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20343QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20343.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20343.checked ? me20343QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20343DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20343.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20343.checked ? me20343DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me20307" />
 
                             <CheckBox
-                                android:id="@+id/me20344"
+                                android:id="@+id/me203127"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20344" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20344QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20344.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20344.checked ? me20344QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20344DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20344.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20344.checked ? me20344DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203127" />
 
                             <CheckBox
-                                android:id="@+id/me20345"
+                                android:id="@+id/me203128"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20345" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20345QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20345.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20345.checked ? me20345QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20345DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20345.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20345.checked ? me20345DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203128" />
 
                             <CheckBox
-                                android:id="@+id/me20346"
+                                android:id="@+id/me203129"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20346" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20346QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20346.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20346.checked ? me20345QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20346DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20346.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20346.checked ? me20345QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203129" />
 
                             <CheckBox
-                                android:id="@+id/me20347"
+                                android:id="@+id/me203130"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20347" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20347QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20347.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20347.checked ? me20347QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20347DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20347.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20347.checked ? me20347DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203130" />
 
                             <CheckBox
-                                android:id="@+id/me20348"
+                                android:id="@+id/me203131"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20348" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20348QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20348.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20348.checked ? me20348QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20348DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20348.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20348.checked ? me20348DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203131" />
 
                             <CheckBox
-                                android:id="@+id/me20349"
+                                android:id="@+id/me20322"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20349" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20349QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20349.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20349.checked ? me20349QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20349DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20349.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20349.checked ? me20349DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me20322" />
 
                             <CheckBox
-                                android:id="@+id/me20350"
+                                android:id="@+id/me203132"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20350" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20350QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20350.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20350.checked ? me20350QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20350DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20350.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20350.checked ? me20350DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203132" />
 
                             <CheckBox
-                                android:id="@+id/me20351"
+                                android:id="@+id/me203133"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20351" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20351QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20351.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20351.checked ? me20351QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20351DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20351.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20351.checked ? me20351DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203133" />
 
                             <CheckBox
-                                android:id="@+id/me20352"
+                                android:id="@+id/me203134"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20352" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20352QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20352.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20352.checked ? me20352QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20352DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20352.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20352.checked ? me20352DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20353"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20353" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20353QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20353.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20353.checked ? me20353QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20353DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20353.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20353.checked ? me20353DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20354"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20354" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20354QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20354.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20354.checked ? me20354QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20354DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20354.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20354.checked ? me20354DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20355"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20355" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20355QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20355.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20355.checked ? me20355QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20355DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20355.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20355.checked ? me20355DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203134" />
 
                             <CheckBox
                                 android:id="@+id/me20356"
@@ -1206,781 +328,17 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/me20356" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20356QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20356.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20356.checked ? me20356QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20356DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20356.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20356.checked ? me20356DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
                             <CheckBox
-                                android:id="@+id/me20357"
+                                android:id="@+id/me203135"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
-                                android:text="@string/me20357" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20357QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20357.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20357.checked ? me20357QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20357DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20357.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20357.checked ? me20357DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20358"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20358" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20358QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20358.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20358.checked ? me20358QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20358DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20358.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20358.checked ? me20358DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20359"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20359" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20359QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20359.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20359.checked ? me20359QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20359DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20359.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20359.checked ? me20359DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20361"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20361" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20361QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20361.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20361.checked ? me20361QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20361DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20361.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20361.checked ? me20361DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20362"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20362" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20362QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20362.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20362.checked ? me20362QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20362DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20362.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20362.checked ? me20362DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20363"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20363" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20363QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20363.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20363.checked ? me20363QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20363DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20363.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20363.checked ? me20363DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20364"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20364" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20364QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20364.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20364.checked ? me20364QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20364DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20364.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20364.checked ? me20364DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20365"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20365" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20365QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20365.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20365.checked ? me20365QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20365DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20365.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20365.checked ? me20365DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20366"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20366" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20366QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20366.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20366.checked ? me20366QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20366DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20366.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20366.checked ? me20366DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20367"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20367" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20367QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20367.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20367.checked ? me20367QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20367DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20367.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20367.checked ? me20367DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20368"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20368" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20368QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20368.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20368.checked ? me20368QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20368DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20368.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20368.checked ? me20368DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20369"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20369" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20369QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20369.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20369.checked ? me20369QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20369DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20369.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20369.checked ? me20369DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20370"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20370" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20370QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20370.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20370.checked ? me20370QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20370DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20370.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20370.checked ? me20370DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20371"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20371" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20371QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20371.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20371.checked ? me20371QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20371DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20371.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20371.checked ? me20371DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20372"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20372" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20372QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20372.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20372.checked ? me20372QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20372DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20372.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20372.checked ? me20372DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20373"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20373" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20373QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20373.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20373.checked ? me20373QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20373DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20373.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20373.checked ? me20373DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20374"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20374" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20374QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20374.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20374.checked ? me20374QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20374DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20374.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20374.checked ? me20374DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
+                                android:text="@string/me203135" />
 
                             <CheckBox
                                 android:id="@+id/me20396"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
                                 android:text="@string/me20396" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20396QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20396.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20396.checked ? me20396QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20396DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20396.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20396.checked ? me20396DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20375"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20375" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20375QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20375.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20375.checked ? me20375QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20375DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20375.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20375.checked ? me20375DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20376"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20376" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20376QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20376.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20376.checked ? me20376QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20376DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20376.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20376.checked ? me20376DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20377"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20377" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20377QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20377.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20377.checked ? me20377QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20377DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20377.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20377.checked ? me20377DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <CheckBox
-                                android:id="@+id/me20378"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20378" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20378QTY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20378.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20378.checked ? me20378QTY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/me20378DAY"
-                                android:layout_width="120dp"
-                                android:layout_height="wrap_content"
-                                android:enabled="@{me20378.checked}"
-                                android:gravity="center"
-                                android:hint="##"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:text='@{me20378.checked ? me20378DAY.getText().toString() : ""}'
-                                app:maxValue="99"
-                                app:minValue="0"
-                                app:type="range" />
 
                         </com.google.android.flexbox.FlexboxLayout>
 
@@ -2004,46 +362,45 @@
                             android:text='@{me20396.checked ? me20396x.getText().toString() : ""}'
                             android:visibility='@{me20396.checked? View.VISIBLE : View.GONE}' />
 
-                        <EditText
-                            android:id="@+id/me20375x"
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--vs310  Input-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVvs310"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
-                            android:hint="@string/me20375"
-                            android:tag="me20375"
-                            android:text='@{me20375.checked? me20375x.getText().toString() : ""}'
-                            android:visibility='@{me20375.checked? View.VISIBLE : View.GONE}' />
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_vs310" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/vs310" />
+                        </LinearLayout>
 
                         <EditText
-                            android:id="@+id/me20376x"
+                            android:id="@+id/vs310"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
-                            android:hint="@string/me20376"
-                            android:tag="me20376"
-                            android:text='@{me20376.checked? me20376x.getText().toString() : ""}'
-                            android:visibility='@{me20376.checked? View.VISIBLE : View.GONE}' />
-
-                        <EditText
-                            android:id="@+id/me20377x"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
-                            android:hint="@string/me20377"
-                            android:tag="me20377"
-                            android:text='@{me20377.checked? me20377x.getText().toString() : ""}'
-                            android:visibility='@{me20377.checked? View.VISIBLE : View.GONE}' />
-
-                        <EditText
-                            android:id="@+id/me20378x"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789,. "
-                            android:hint="@string/me20378"
-                            android:tag="me20378"
-                            android:text='@{me20378.checked? me20378x.getText().toString() : ""}'
-                            android:visibility='@{me20378.checked? View.VISIBLE : View.GONE}' />
-
+                            android:layout_height="56dp"
+                            android:layout_marginBottom="12dp"
+                            android:hint="@string/vs310" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
