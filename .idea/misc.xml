@@ -9,8 +9,8 @@
         <entry key="..\:/Android Office Work/Floods_2022/app/src/main/res/layout/activity_info_mobile_health_r2.xml" value="0.31328125" />
         <entry key="..\:/Android Office Work/Floods_2022/app/src/main/res/layout/activity_login.xml" value="0.54" />
         <entry key="..\:/Android Office Work/Floods_2022/app/src/main/res/layout/activity_main.xml" value="0.53625" />
-        <entry key="..\:/Android Office Work/Floods_2022/app/src/main/res/layout/activity_mobile_health_r2.xml" value="0.5125" />
-        <entry key="..\:/Android Office Work/Floods_2022/app/src/main/res/layout/activity_mobile_health_r201.xml" value="0.5125" />
+        <entry key="..\:/Android Office Work/Floods_2022/app/src/main/res/layout/activity_mobile_health_r2.xml" value="0.53625" />
+        <entry key="..\:/Android Office Work/Floods_2022/app/src/main/res/layout/activity_mobile_health_r201.xml" value="0.3738219895287958" />
         <entry key="..\:/Android Office Work/Floods_2022/app/src/main/res/layout/activity_sync.xml" value="0.53625" />
         <entry key="..\:/Android Office Work/Floods_2022/app/src/main/res/layout/sync_list_adapter.xml" value="0.371875" />
         <entry key="..\:/Android Office Work/SHRC_camps/app/src/main/res/drawable/all_round_corners.xml" value="0.3880208333333333" />
@@ -23,10 +23,14 @@
         <entry key="..\:/Android Office Work/SHRC_camps/app/src/main/res/layout/activity_sync.xml" value="0.35625" />
         <entry key="..\:/Android Office Work/SHRC_camps/app/src/main/res/layout/item_dialog.xml" value="0.371875" />
         <entry key="..\:/Android Office Work/SHRC_camps/app/src/main/res/menu/main_menu.xml" value="0.371875" />
+        <entry key="..\:/Users/hussain.siddiqui/Desktop/Android Office Work/Flood_2022/app/src/main/res/layout/activity_info_mobile_health_r2.xml" value="0.259375" />
+        <entry key="..\:/Users/hussain.siddiqui/Desktop/Android Office Work/Flood_2022/app/src/main/res/layout/activity_mobile_health_r2.xml" value="0.11367267747089706" />
+        <entry key="..\:/Users/hussain.siddiqui/Desktop/Android Office Work/Flood_2022/app/src/main/res/layout/activity_mobile_health_r201.xml" value="0.259375" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

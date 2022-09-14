@@ -745,7 +745,6 @@ public class MobileHealth extends BaseObservable {
                     .put("ss110ghrx", ss110ghrx)
                     .put("ss110g99", ss110g99)
                     .put("vs306h", vs306h)
-                    .put("vs310", vs310)
                     .put("pc20121", pc20121)
                     .put("pc20122", pc20122)
                     .put("pc20123", pc20123)
@@ -880,7 +879,8 @@ public class MobileHealth extends BaseObservable {
                     .put("me203132", me203132)
                     .put("me203133", me203133)
                     .put("me203134", me203134)
-                    .put("me203135", me203135);
+                    .put("me203135", me203135)
+                    .put("vs310", vs310);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -1011,7 +1011,6 @@ public class MobileHealth extends BaseObservable {
             this.ss110ghrx = json.getString("ss110ghrx");
             this.ss110g99 = json.getString("ss110g99");
             this.vs306h = json.getString("vs306h");
-            this.vs310 = json.getString("vs310");
             this.pc20121 = json.getString("pc20121");
             this.pc20122 = json.getString("pc20122");
             this.pc20123 = json.getString("pc20123");
@@ -1148,6 +1147,7 @@ public class MobileHealth extends BaseObservable {
             this.me203133 = json.has("me203133") ? json.getString("me203133") : "";
             this.me203134 = json.has("me203134") ? json.getString("me203134") : "";
             this.me203135 = json.has("me203135") ? json.getString("me203135") : "";
+            this.vs310 = json.has("vs310") ? json.getString("vs310") : "";
         }
     }
 
