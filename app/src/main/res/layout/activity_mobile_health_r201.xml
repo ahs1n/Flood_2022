@@ -7,11 +7,11 @@
 
         <variable
             name="camps"
-            type="edu.aku.hassannaqvi.flood2022.models.Camps" />
+            type="edu.aku.hassannaqvi.flood2022v2.models.Camps" />
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.flood2022.ui.sections.SectionMobileHealthR201" />
+            type="edu.aku.hassannaqvi.flood2022v2.ui.sections.SectionMobileHealthR201" />
     </data>
 
     <LinearLayout

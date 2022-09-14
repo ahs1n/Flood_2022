@@ -8,7 +8,7 @@
 
         <variable
             name="childCard"
-            type="edu.aku.hassannaqvi.flood2022.models.ChildCard" />
+            type="edu.aku.hassannaqvi.flood2022v2.models.ChildCard" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

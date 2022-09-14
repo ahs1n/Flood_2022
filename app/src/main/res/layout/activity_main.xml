@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.flood2022.ui.MainActivity" />
+            type="edu.aku.hassannaqvi.flood2022v2.ui.MainActivity" />
     </data>
 
     <LinearLayout

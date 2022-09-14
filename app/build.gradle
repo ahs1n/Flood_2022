@@ -58,7 +58,7 @@ android {
         versionProps.store(versionPropsFile.newWriter(), null)
 
         defaultConfig {
-            applicationId "edu.aku.hassannaqvi.flood2022"
+            applicationId "edu.aku.hassannaqvi.flood2022v2"
             versionCode versionBuild
             versionName "${versionNumber}.${versionPatch}${versionType}"
             minSdkVersion 22
@@ -68,7 +68,7 @@ android {
         applicationVariants.all { variant ->
             variant.outputs.each { output ->
 
-                def appName = "Floods_2022"
+                def appName = "Floods_2022_V2"
                 def date = new Date()
                 def formattedDate = date.format('yyyy_MM_dd')
 

@@ -10,7 +10,7 @@
 
         <variable
             name="form"
-            type="edu.aku.hassannaqvi.flood2022.models.Form" />
+            type="edu.aku.hassannaqvi.flood2022v2.models.Form" />
     </data>
 
 

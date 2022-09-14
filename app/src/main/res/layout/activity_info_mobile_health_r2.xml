@@ -11,7 +11,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.flood2022.ui.sections.InfoSectionMobileHealth" />
+            type="edu.aku.hassannaqvi.flood2022v2.ui.sections.InfoSectionMobileHealth" />
 
     </data>
 
