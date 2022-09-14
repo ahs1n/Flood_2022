@@ -699,43 +699,25 @@ public class MobileHealth extends BaseObservable {
                     .put("pc20101", pc20101)
                     .put("pc20102", pc20102)
                     .put("pc20103", pc20103)
-                    .put("pc20104", pc20104)
-                    .put("pc20105", pc20105)
-                    .put("pc20106", pc20106)
                     .put("pc20107", pc20107)
-                    .put("pc20108", pc20108)
                     .put("pc20109", pc20109)
                     .put("pc20110", pc20110)
                     .put("pc20111", pc20111)
                     .put("pc20112", pc20112)
                     .put("pc20113", pc20113)
                     .put("pc20114", pc20114)
-                    .put("pc20115", pc20115)
-                    .put("pc20116", pc20116)
                     .put("pc20117", pc20117)
-                    .put("pc20118", pc20118)
                     .put("pc20119", pc20119)
                     .put("pc20196", pc20196)
                     .put("pc20196x", pc20196x)
                     .put("pc20199", pc20199)
                     .put("di20201", di20201)
-                    .put("di20202", di20202)
                     .put("di20203", di20203)
-                    .put("di20204", di20204)
                     .put("di20205", di20205)
-                    .put("di20206", di20206)
-                    .put("di20207", di20207)
-                    .put("di20208", di20208)
                     .put("di20209", di20209)
                     .put("di20210", di20210)
                     .put("di20211", di20211)
-                    .put("di20212", di20212)
-                    .put("di20213", di20213)
-                    .put("di20214", di20214)
-                    .put("di20215", di20215)
                     .put("di20216", di20216)
-                    .put("di20217", di20217)
-                    .put("di20218", di20218)
                     .put("di20219", di20219)
                     .put("di20296", di20296)
                     .put("di20296x", di20296x)
@@ -855,184 +837,15 @@ public class MobileHealth extends BaseObservable {
 
         try {
             json.put("me20301", me20301)
-                    .put("me20302", me20302)
-                    .put("me20303", me20303)
-                    .put("me20304", me20304)
-                    .put("me20305", me20305)
-                    .put("me20306", me20306)
                     .put("me20307", me20307)
-                    .put("me20308", me20308)
-                    .put("me20309", me20309)
                     .put("me20310", me20310)
-                    .put("me20311", me20311)
-                    .put("me20312", me20312)
-                    .put("me20313", me20313)
-                    .put("me20314", me20314)
                     .put("me20315", me20315)
-                    .put("me20316", me20316)
-                    .put("me20317", me20317)
-                    .put("me20318", me20318)
-                    .put("me20319", me20319)
-                    .put("me20320", me20320)
-                    .put("me20321", me20321)
                     .put("me20322", me20322)
                     .put("me20323", me20323)
-                    .put("me20324", me20324)
-                    .put("me20333", me20333)
-                    .put("me20335", me20335)
-                    .put("me20336", me20336)
-                    .put("me20337", me20337)
-                    .put("me20338", me20338)
-                    .put("me20339", me20339)
-                    .put("me20340", me20340)
-                    .put("me20341", me20341)
-                    .put("me20342", me20342)
-                    .put("me20343", me20343)
-                    .put("me20344", me20344)
-                    .put("me20345", me20345)
-                    .put("me20346", me20346)
-                    .put("me20347", me20347)
-                    .put("me20348", me20348)
-                    .put("me20349", me20349)
-                    .put("me20350", me20350)
-                    .put("me20351", me20351)
-                    .put("me20352", me20352)
-                    .put("me20353", me20353)
-                    .put("me20354", me20354)
-                    .put("me20355", me20355)
                     .put("me20356", me20356)
-                    .put("me20357", me20357)
-                    .put("me20358", me20358)
-                    .put("me20359", me20359)
-                    .put("me20361", me20361)
-                    .put("me20362", me20362)
-                    .put("me20363", me20363)
-                    .put("me20364", me20364)
-                    .put("me20365", me20365)
-                    .put("me20366", me20366)
-                    .put("me20367", me20367)
-                    .put("me20368", me20368)
-                    .put("me20369", me20369)
-                    .put("me20370", me20370)
-                    .put("me20371", me20371)
-                    .put("me20372", me20372)
-                    .put("me20373", me20373)
-                    .put("me20374", me20374)
-                    .put("me20375", me20375)
-                    .put("me20376", me20376)
-                    .put("me20377", me20377)
-                    .put("me20378", me20378)
-                    .put("me20375x", me20375x)
-                    .put("me20376x", me20376x)
-                    .put("me20377x", me20377x)
-                    .put("me20378x", me20378x)
                     .put("me20396", me20396)
                     .put("me20396x", me20396x)
                     .put("me20399", me20399)
-                    .put("me20301DAY", me20301DAY)
-                    .put("me20301QTY", me20301QTY)
-                    .put("me20304DAY", me20304DAY)
-                    .put("me20304QTY", me20304QTY)
-                    .put("me20307DAY", me20307DAY)
-                    .put("me20307QTY", me20307QTY)
-                    .put("me20313DAY", me20313DAY)
-                    .put("me20313QTY", me20313QTY)
-                    .put("me20322DAY", me20322DAY)
-                    .put("me20322QTY", me20322QTY)
-                    .put("me20324DAY", me20324DAY)
-                    .put("me20324QTY", me20324QTY)
-                    .put("me20333DAY", me20333DAY)
-                    .put("me20333QTY", me20333QTY)
-                    .put("me20334DAY", me20334DAY)
-                    .put("me20334QTY", me20334QTY)
-                    .put("me20335DAY", me20335DAY)
-                    .put("me20335QTY", me20335QTY)
-                    .put("me20336DAY", me20336DAY)
-                    .put("me20336QTY", me20336QTY)
-                    .put("me20337DAY", me20337DAY)
-                    .put("me20337QTY", me20337QTY)
-                    .put("me20338DAY", me20338DAY)
-                    .put("me20338QTY", me20338QTY)
-                    .put("me20339DAY", me20339DAY)
-                    .put("me20339QTY", me20339QTY)
-                    .put("me20340DAY", me20340DAY)
-                    .put("me20340QTY", me20340QTY)
-                    .put("me20341DAY", me20341DAY)
-                    .put("me20341QTY", me20341QTY)
-                    .put("me20342DAY", me20342DAY)
-                    .put("me20342QTY", me20342QTY)
-                    .put("me20343DAY", me20343DAY)
-                    .put("me20343QTY", me20343QTY)
-                    .put("me20344DAY", me20344DAY)
-                    .put("me20344QTY", me20344QTY)
-                    .put("me20345DAY", me20345DAY)
-                    .put("me20345QTY", me20345QTY)
-                    .put("me20346DAY", me20346DAY)
-                    .put("me20346QTY", me20346QTY)
-                    .put("me20347DAY", me20347DAY)
-                    .put("me20347QTY", me20347QTY)
-                    .put("me20348DAY", me20348DAY)
-                    .put("me20348QTY", me20348QTY)
-                    .put("me20349DAY", me20349DAY)
-                    .put("me20349QTY", me20349QTY)
-                    .put("me20350DAY", me20350DAY)
-                    .put("me20350QTY", me20350QTY)
-                    .put("me20351DAY", me20351DAY)
-                    .put("me20351QTY", me20351QTY)
-                    .put("me20352DAY", me20352DAY)
-                    .put("me20352QTY", me20352QTY)
-                    .put("me20353DAY", me20353DAY)
-                    .put("me20353QTY", me20353QTY)
-                    .put("me20354DAY", me20354DAY)
-                    .put("me20354QTY", me20354QTY)
-                    .put("me20355DAY", me20355DAY)
-                    .put("me20355QTY", me20355QTY)
-                    .put("me20356DAY", me20356DAY)
-                    .put("me20356QTY", me20356QTY)
-                    .put("me20357DAY", me20357DAY)
-                    .put("me20357QTY", me20357QTY)
-                    .put("me20358DAY", me20358DAY)
-                    .put("me20358QTY", me20358QTY)
-                    .put("me20359DAY", me20359DAY)
-                    .put("me20359QTY", me20359QTY)
-                    .put("me20361DAY", me20361DAY)
-                    .put("me20361QTY", me20361QTY)
-                    .put("me20362DAY", me20362DAY)
-                    .put("me20362QTY", me20362QTY)
-                    .put("me20363DAY", me20363DAY)
-                    .put("me20363QTY", me20363QTY)
-                    .put("me20364DAY", me20364DAY)
-                    .put("me20364QTY", me20364QTY)
-                    .put("me20365DAY", me20365DAY)
-                    .put("me20365QTY", me20365QTY)
-                    .put("me20366DAY", me20366DAY)
-                    .put("me20366QTY", me20366QTY)
-                    .put("me20367DAY", me20367DAY)
-                    .put("me20367QTY", me20367QTY)
-                    .put("me20368DAY", me20368DAY)
-                    .put("me20368QTY", me20368QTY)
-                    .put("me20369DAY", me20369DAY)
-                    .put("me20369QTY", me20369QTY)
-                    .put("me20370DAY", me20370DAY)
-                    .put("me20370QTY", me20370QTY)
-                    .put("me20371DAY", me20371DAY)
-                    .put("me20371QTY", me20371QTY)
-                    .put("me20372DAY", me20372DAY)
-                    .put("me20372QTY", me20372QTY)
-                    .put("me20373DAY", me20373DAY)
-                    .put("me20373QTY", me20373QTY)
-                    .put("me20374DAY", me20374DAY)
-                    .put("me20374QTY", me20374QTY)
-                    .put("me20375DAY", me20375DAY)
-                    .put("me20375QTY", me20375QTY)
-                    .put("me20376DAY", me20376DAY)
-                    .put("me20376QTY", me20376QTY)
-                    .put("me20377DAY", me20377DAY)
-                    .put("me20377QTY", me20377QTY)
-                    .put("me20378DAY", me20378DAY)
-                    .put("me20378QTY", me20378QTY)
-                    .put("me20396DAY", me20396DAY)
-                    .put("me20396QTY", me20396QTY)
                     .put("me203101", me203101)
                     .put("me203102", me203102)
                     .put("me203103", me203103)
@@ -1152,43 +965,25 @@ public class MobileHealth extends BaseObservable {
             this.pc20101 = json.getString("pc20101");
             this.pc20102 = json.getString("pc20102");
             this.pc20103 = json.getString("pc20103");
-            this.pc20104 = json.getString("pc20104");
-            this.pc20105 = json.getString("pc20105");
-            this.pc20106 = json.getString("pc20106");
             this.pc20107 = json.getString("pc20107");
-            this.pc20108 = json.getString("pc20108");
             this.pc20109 = json.getString("pc20109");
             this.pc20110 = json.getString("pc20110");
             this.pc20111 = json.getString("pc20111");
             this.pc20112 = json.getString("pc20112");
             this.pc20113 = json.getString("pc20113");
             this.pc20114 = json.getString("pc20114");
-            this.pc20115 = json.getString("pc20115");
-            this.pc20116 = json.getString("pc20116");
             this.pc20117 = json.getString("pc20117");
-            this.pc20118 = json.getString("pc20118");
             this.pc20119 = json.getString("pc20119");
             this.pc20196 = json.getString("pc20196");
             this.pc20196x = json.getString("pc20196x");
             this.pc20199 = json.getString("pc20199");
             this.di20201 = json.getString("di20201");
-            this.di20202 = json.getString("di20202");
             this.di20203 = json.getString("di20203");
-            this.di20204 = json.getString("di20204");
             this.di20205 = json.getString("di20205");
-            this.di20206 = json.getString("di20206");
-            this.di20207 = json.getString("di20207");
-            this.di20208 = json.getString("di20208");
             this.di20209 = json.getString("di20209");
             this.di20210 = json.getString("di20210");
             this.di20211 = json.getString("di20211");
-            this.di20212 = json.getString("di20212");
-            this.di20213 = json.getString("di20213");
-            this.di20214 = json.getString("di20214");
-            this.di20215 = json.getString("di20215");
             this.di20216 = json.getString("di20216");
-            this.di20217 = json.getString("di20217");
-            this.di20218 = json.getString("di20218");
             this.di20219 = json.getString("di20219");
             this.di20296 = json.getString("di20296");
             this.di20296x = json.getString("di20296x");
@@ -1309,219 +1104,50 @@ public class MobileHealth extends BaseObservable {
             JSONObject json = null;
             json = new JSONObject(string);
             this.me20301 = json.has("me20301") ? json.getString("me20301") : "";
-            this.me20302 = json.has("me20302") ? json.getString("me20302") : "";
-            this.me20303 = json.has("me20303") ? json.getString("me20303") : "";
-            this.me20304 = json.has("me20304") ? json.getString("me20304") : "";
-            this.me20305 = json.has("me20305") ? json.getString("me20305") : "";
-            this.me20306 = json.has("me20306") ? json.getString("me20306") : "";
             this.me20307 = json.has("me20307") ? json.getString("me20307") : "";
-            this.me20308 = json.has("me20308") ? json.getString("me20308") : "";
-            this.me20309 = json.has("me20309") ? json.getString("me20309") : "";
             this.me20310 = json.has("me20310") ? json.getString("me20310") : "";
-            this.me20311 = json.has("me20311") ? json.getString("me20311") : "";
-            this.me20312 = json.has("me20312") ? json.getString("me20312") : "";
-            this.me20313 = json.has("me20313") ? json.getString("me20313") : "";
-            this.me20314 = json.has("me20314") ? json.getString("me20314") : "";
             this.me20315 = json.has("me20315") ? json.getString("me20315") : "";
-            this.me20316 = json.has("me20316") ? json.getString("me20316") : "";
-            this.me20317 = json.has("me20317") ? json.getString("me20317") : "";
-            this.me20318 = json.has("me20318") ? json.getString("me20318") : "";
-            this.me20319 = json.has("me20319") ? json.getString("me20319") : "";
-            this.me20320 = json.has("me20320") ? json.getString("me20320") : "";
-            this.me20321 = json.has("me20321") ? json.getString("me20321") : "";
             this.me20322 = json.has("me20322") ? json.getString("me20322") : "";
             this.me20323 = json.has("me20323") ? json.getString("me20323") : "";
-            this.me20324 = json.has("me20324") ? json.getString("me20324") : "";
-            this.me20333 = json.has("me20333") ? json.getString("me20333") : "";
-            this.me20335 = json.has("me20335") ? json.getString("me20335") : "";
-            this.me20336 = json.has("me20336") ? json.getString("me20336") : "";
-            this.me20337 = json.has("me20337") ? json.getString("me20337") : "";
-            this.me20338 = json.has("me20338") ? json.getString("me20338") : "";
-            this.me20339 = json.has("me20339") ? json.getString("me20339") : "";
-            this.me20340 = json.has("me20340") ? json.getString("me20340") : "";
-            this.me20341 = json.has("me20341") ? json.getString("me20341") : "";
-            this.me20342 = json.has("me20342") ? json.getString("me20342") : "";
-            this.me20343 = json.has("me20343") ? json.getString("me20343") : "";
-            this.me20344 = json.has("me20344") ? json.getString("me20344") : "";
-            this.me20345 = json.has("me20345") ? json.getString("me20345") : "";
-            this.me20346 = json.has("me20346") ? json.getString("me20346") : "";
-            this.me20347 = json.has("me20347") ? json.getString("me20347") : "";
-            this.me20348 = json.has("me20348") ? json.getString("me20348") : "";
-            this.me20349 = json.has("me20349") ? json.getString("me20349") : "";
-            this.me20350 = json.has("me20350") ? json.getString("me20350") : "";
-            this.me20351 = json.has("me20351") ? json.getString("me20351") : "";
-            this.me20352 = json.has("me20352") ? json.getString("me20352") : "";
-            this.me20353 = json.has("me20353") ? json.getString("me20353") : "";
-            this.me20354 = json.has("me20354") ? json.getString("me20354") : "";
-            this.me20355 = json.has("me20355") ? json.getString("me20355") : "";
             this.me20356 = json.has("me20356") ? json.getString("me20356") : "";
-            this.me20357 = json.has("me20357") ? json.getString("me20357") : "";
-            this.me20358 = json.has("me20358") ? json.getString("me20358") : "";
-            this.me20359 = json.has("me20359") ? json.getString("me20359") : "";
-            this.me20361 = json.has("me20361") ? json.getString("me20361") : "";
-            this.me20362 = json.has("me20362") ? json.getString("me20362") : "";
-            this.me20363 = json.has("me20363") ? json.getString("me20363") : "";
-            this.me20364 = json.has("me20364") ? json.getString("me20364") : "";
-            this.me20365 = json.has("me20365") ? json.getString("me20365") : "";
-            this.me20366 = json.has("me20366") ? json.getString("me20366") : "";
-            this.me20367 = json.has("me20367") ? json.getString("me20367") : "";
-            this.me20368 = json.has("me20368") ? json.getString("me20368") : "";
-            this.me20369 = json.has("me20369") ? json.getString("me20369") : "";
-            this.me20370 = json.has("me20370") ? json.getString("me20370") : "";
-            this.me20371 = json.has("me20371") ? json.getString("me20371") : "";
-            this.me20372 = json.has("me20372") ? json.getString("me20372") : "";
-            this.me20373 = json.has("me20373") ? json.getString("me20373") : "";
-            this.me20374 = json.has("me20374") ? json.getString("me20374") : "";
-            this.me20375 = json.has("me20375") ? json.getString("me20375") : "";
-            this.me20376 = json.has("me20376") ? json.getString("me20376") : "";
-            this.me20377 = json.has("me20377") ? json.getString("me20377") : "";
-            this.me20378 = json.has("me20378") ? json.getString("me20378") : "";
-            this.me20375x = json.has("me20375x") ? json.getString("me20375x") : "";
-            this.me20376x = json.has("me20376x") ? json.getString("me20376x") : "";
-            this.me20377x = json.has("me20377x") ? json.getString("me20377x") : "";
-            this.me20378x = json.has("me20378x") ? json.getString("me20378x") : "";
             this.me20396 = json.has("me20396") ? json.getString("me20396") : "";
             this.me20396x = json.has("me20396x") ? json.getString("me20396x") : "";
             this.me20399 = json.has("me20399") ? json.getString("me20399") : "";
-            this.me20301DAY = json.has("me20301DAY") ? json.getString("me20301DAY") : "";
-            this.me20301QTY = json.has("me20301QTY") ? json.getString("me20301QTY") : "";
-            this.me20304DAY = json.has("me20304DAY") ? json.getString("me20304DAY") : "";
-            this.me20304QTY = json.has("me20304QTY") ? json.getString("me20304QTY") : "";
-            this.me20307DAY = json.has("me20307DAY") ? json.getString("me20307DAY") : "";
-            this.me20307QTY = json.has("me20307QTY") ? json.getString("me20307QTY") : "";
-            this.me20313DAY = json.has("me20313DAY") ? json.getString("me20313DAY") : "";
-            this.me20313QTY = json.has("me20313QTY") ? json.getString("me20313QTY") : "";
-            this.me20322DAY = json.has("me20322DAY") ? json.getString("me20322DAY") : "";
-            this.me20322QTY = json.has("me20322QTY") ? json.getString("me20322QTY") : "";
-            this.me20324DAY = json.has("me20324DAY") ? json.getString("me20324DAY") : "";
-            this.me20324QTY = json.has("me20324QTY") ? json.getString("me20324QTY") : "";
-            this.me20333DAY = json.has("me20333DAY") ? json.getString("me20333DAY") : "";
-            this.me20333QTY = json.has("me20333QTY") ? json.getString("me20333QTY") : "";
-            this.me20334DAY = json.has("me20334DAY") ? json.getString("me20334DAY") : "";
-            this.me20334QTY = json.has("me20334QTY") ? json.getString("me20334QTY") : "";
-            this.me20335DAY = json.has("me20335DAY") ? json.getString("me20335DAY") : "";
-            this.me20335QTY = json.has("me20335QTY") ? json.getString("me20335QTY") : "";
-            this.me20336DAY = json.has("me20336DAY") ? json.getString("me20336DAY") : "";
-            this.me20336QTY = json.has("me20336QTY") ? json.getString("me20336QTY") : "";
-            this.me20337DAY = json.has("me20337DAY") ? json.getString("me20337DAY") : "";
-            this.me20337QTY = json.has("me20337QTY") ? json.getString("me20337QTY") : "";
-            this.me20338DAY = json.has("me20338DAY") ? json.getString("me20338DAY") : "";
-            this.me20338QTY = json.has("me20338QTY") ? json.getString("me20338QTY") : "";
-            this.me20339DAY = json.has("me20339DAY") ? json.getString("me20339DAY") : "";
-            this.me20339QTY = json.has("me20339QTY") ? json.getString("me20339QTY") : "";
-            this.me20340DAY = json.has("me20340DAY") ? json.getString("me20340DAY") : "";
-            this.me20340QTY = json.has("me20340QTY") ? json.getString("me20340QTY") : "";
-            this.me20341DAY = json.has("me20341DAY") ? json.getString("me20341DAY") : "";
-            this.me20341QTY = json.has("me20341QTY") ? json.getString("me20341QTY") : "";
-            this.me20342DAY = json.has("me20342DAY") ? json.getString("me20342DAY") : "";
-            this.me20342QTY = json.has("me20342QTY") ? json.getString("me20342QTY") : "";
-            this.me20343DAY = json.has("me20343DAY") ? json.getString("me20343DAY") : "";
-            this.me20343QTY = json.has("me20343QTY") ? json.getString("me20343QTY") : "";
-            this.me20344DAY = json.has("me20344DAY") ? json.getString("me20344DAY") : "";
-            this.me20344QTY = json.has("me20344QTY") ? json.getString("me20344QTY") : "";
-            this.me20345DAY = json.has("me20345DAY") ? json.getString("me20345DAY") : "";
-            this.me20345QTY = json.has("me20345QTY") ? json.getString("me20345QTY") : "";
-            this.me20346DAY = json.has("me20346DAY") ? json.getString("me20346DAY") : "";
-            this.me20346QTY = json.has("me20346QTY") ? json.getString("me20346QTY") : "";
-            this.me20347DAY = json.has("me20347DAY") ? json.getString("me20347DAY") : "";
-            this.me20347QTY = json.has("me20347QTY") ? json.getString("me20347QTY") : "";
-            this.me20348DAY = json.has("me20348DAY") ? json.getString("me20348DAY") : "";
-            this.me20348QTY = json.has("me20348QTY") ? json.getString("me20348QTY") : "";
-            this.me20349DAY = json.has("me20349DAY") ? json.getString("me20349DAY") : "";
-            this.me20349QTY = json.has("me20349QTY") ? json.getString("me20349QTY") : "";
-            this.me20350DAY = json.has("me20350DAY") ? json.getString("me20350DAY") : "";
-            this.me20350QTY = json.has("me20350QTY") ? json.getString("me20350QTY") : "";
-            this.me20351DAY = json.has("me20351DAY") ? json.getString("me20351DAY") : "";
-            this.me20351QTY = json.has("me20351QTY") ? json.getString("me20351QTY") : "";
-            this.me20352DAY = json.has("me20352DAY") ? json.getString("me20352DAY") : "";
-            this.me20352QTY = json.has("me20352QTY") ? json.getString("me20352QTY") : "";
-            this.me20353DAY = json.has("me20353DAY") ? json.getString("me20353DAY") : "";
-            this.me20353QTY = json.has("me20353QTY") ? json.getString("me20353QTY") : "";
-            this.me20354DAY = json.has("me20354DAY") ? json.getString("me20354DAY") : "";
-            this.me20354QTY = json.has("me20354QTY") ? json.getString("me20354QTY") : "";
-            this.me20355DAY = json.has("me20355DAY") ? json.getString("me20355DAY") : "";
-            this.me20355QTY = json.has("me20355QTY") ? json.getString("me20355QTY") : "";
-            this.me20356DAY = json.has("me20356DAY") ? json.getString("me20356DAY") : "";
-            this.me20356QTY = json.has("me20356QTY") ? json.getString("me20356QTY") : "";
-            this.me20357DAY = json.has("me20357DAY") ? json.getString("me20357DAY") : "";
-            this.me20357QTY = json.has("me20357QTY") ? json.getString("me20357QTY") : "";
-            this.me20358DAY = json.has("me20358DAY") ? json.getString("me20358DAY") : "";
-            this.me20358QTY = json.has("me20358QTY") ? json.getString("me20358QTY") : "";
-            this.me20359DAY = json.has("me20359DAY") ? json.getString("me20359DAY") : "";
-            this.me20359QTY = json.has("me20359QTY") ? json.getString("me20359QTY") : "";
-            this.me20361DAY = json.has("me20361DAY") ? json.getString("me20361DAY") : "";
-            this.me20361QTY = json.has("me20361QTY") ? json.getString("me20361QTY") : "";
-            this.me20362DAY = json.has("me20362DAY") ? json.getString("me20362DAY") : "";
-            this.me20362QTY = json.has("me20362QTY") ? json.getString("me20362QTY") : "";
-            this.me20363DAY = json.has("me20363DAY") ? json.getString("me20363DAY") : "";
-            this.me20363QTY = json.has("me20363QTY") ? json.getString("me20363QTY") : "";
-            this.me20364DAY = json.has("me20364DAY") ? json.getString("me20364DAY") : "";
-            this.me20364QTY = json.has("me20364QTY") ? json.getString("me20364QTY") : "";
-            this.me20365DAY = json.has("me20365DAY") ? json.getString("me20365DAY") : "";
-            this.me20365QTY = json.has("me20365QTY") ? json.getString("me20365QTY") : "";
-            this.me20366DAY = json.has("me20366DAY") ? json.getString("me20366DAY") : "";
-            this.me20366QTY = json.has("me20366QTY") ? json.getString("me20366QTY") : "";
-            this.me20367DAY = json.has("me20367DAY") ? json.getString("me20367DAY") : "";
-            this.me20367QTY = json.has("me20367QTY") ? json.getString("me20367QTY") : "";
-            this.me20368DAY = json.has("me20368DAY") ? json.getString("me20368DAY") : "";
-            this.me20368QTY = json.has("me20368QTY") ? json.getString("me20368QTY") : "";
-            this.me20369DAY = json.has("me20369DAY") ? json.getString("me20369DAY") : "";
-            this.me20369QTY = json.has("me20369QTY") ? json.getString("me20369QTY") : "";
-            this.me20370DAY = json.has("me20370DAY") ? json.getString("me20370DAY") : "";
-            this.me20370QTY = json.has("me20370QTY") ? json.getString("me20370QTY") : "";
-            this.me20371DAY = json.has("me20371DAY") ? json.getString("me20371DAY") : "";
-            this.me20371QTY = json.has("me20371QTY") ? json.getString("me20371QTY") : "";
-            this.me20372DAY = json.has("me20372DAY") ? json.getString("me20372DAY") : "";
-            this.me20372QTY = json.has("me20372QTY") ? json.getString("me20372QTY") : "";
-            this.me20373DAY = json.has("me20373DAY") ? json.getString("me20373DAY") : "";
-            this.me20373QTY = json.has("me20373QTY") ? json.getString("me20373QTY") : "";
-            this.me20374DAY = json.has("me20374DAY") ? json.getString("me20374DAY") : "";
-            this.me20374QTY = json.has("me20374QTY") ? json.getString("me20374QTY") : "";
-            this.me20375DAY = json.has("me20375DAY") ? json.getString("me20375DAY") : "";
-            this.me20375QTY = json.has("me20375QTY") ? json.getString("me20375QTY") : "";
-            this.me20376DAY = json.has("me20376DAY") ? json.getString("me20376DAY") : "";
-            this.me20376QTY = json.has("me20376QTY") ? json.getString("me20376QTY") : "";
-            this.me20377DAY = json.has("me20377DAY") ? json.getString("me20377DAY") : "";
-            this.me20377QTY = json.has("me20377QTY") ? json.getString("me20377QTY") : "";
-            this.me20378DAY = json.has("me20378DAY") ? json.getString("me20378DAY") : "";
-            this.me20378QTY = json.has("me20378QTY") ? json.getString("me20378QTY") : "";
-            this.me20396DAY = json.has("me20396DAY") ? json.getString("me20396DAY") : "";
-            this.me20396QTY = json.has("me20396QTY") ? json.getString("me20396QTY") : "";
-            this.me203101 = json.getString("me203101");
-            this.me203102 = json.getString("me203102");
-            this.me203103 = json.getString("me203103");
-            this.me203104 = json.getString("me203104");
-            this.me203105 = json.getString("me203105");
-            this.me203106 = json.getString("me203106");
-            this.me203107 = json.getString("me203107");
-            this.me203108 = json.getString("me203108");
-            this.me203109 = json.getString("me203109");
-            this.me203110 = json.getString("me203110");
-            this.me203111 = json.getString("me203111");
-            this.me203112 = json.getString("me203112");
-            this.me203113 = json.getString("me203113");
-            this.me203114 = json.getString("me203114");
-            this.me203115 = json.getString("me203115");
-            this.me203116 = json.getString("me203116");
-            this.me203117 = json.getString("me203117");
-            this.me203118 = json.getString("me203118");
-            this.me203119 = json.getString("me203119");
-            this.me203120 = json.getString("me203120");
-            this.me203121 = json.getString("me203121");
-            this.me203122 = json.getString("me203122");
-            this.me203123 = json.getString("me203123");
-            this.me203124 = json.getString("me203124");
-            this.me203125 = json.getString("me203125");
-            this.me203126 = json.getString("me203126");
-            this.me203127 = json.getString("me203127");
-            this.me203128 = json.getString("me203128");
-            this.me203129 = json.getString("me203129");
-            this.me203130 = json.getString("me203130");
-            this.me203131 = json.getString("me203131");
-            this.me203132 = json.getString("me203132");
-            this.me203133 = json.getString("me203133");
-            this.me203134 = json.getString("me203134");
-            this.me203135 = json.getString("me203135");
+            this.me203101 = json.has("me203101") ? json.getString("me203101") : "";
+            this.me203102 = json.has("me203102") ? json.getString("me203102") : "";
+            this.me203103 = json.has("me203103") ? json.getString("me203103") : "";
+            this.me203104 = json.has("me203104") ? json.getString("me203104") : "";
+            this.me203105 = json.has("me203105") ? json.getString("me203105") : "";
+            this.me203106 = json.has("me203106") ? json.getString("me203106") : "";
+            this.me203107 = json.has("me203107") ? json.getString("me203107") : "";
+            this.me203108 = json.has("me203108") ? json.getString("me203108") : "";
+            this.me203109 = json.has("me203109") ? json.getString("me203109") : "";
+            this.me203110 = json.has("me203110") ? json.getString("me203110") : "";
+            this.me203111 = json.has("me203111") ? json.getString("me203111") : "";
+            this.me203112 = json.has("me203112") ? json.getString("me203112") : "";
+            this.me203113 = json.has("me203113") ? json.getString("me203113") : "";
+            this.me203114 = json.has("me203114") ? json.getString("me203114") : "";
+            this.me203115 = json.has("me203115") ? json.getString("me203115") : "";
+            this.me203116 = json.has("me203116") ? json.getString("me203116") : "";
+            this.me203117 = json.has("me203117") ? json.getString("me203117") : "";
+            this.me203118 = json.has("me203118") ? json.getString("me203118") : "";
+            this.me203119 = json.has("me203119") ? json.getString("me203119") : "";
+            this.me203120 = json.has("me203120") ? json.getString("me203120") : "";
+            this.me203121 = json.has("me203121") ? json.getString("me203121") : "";
+            this.me203122 = json.has("me203122") ? json.getString("me203122") : "";
+            this.me203123 = json.has("me203123") ? json.getString("me203123") : "";
+            this.me203124 = json.has("me203124") ? json.getString("me203124") : "";
+            this.me203125 = json.has("me203125") ? json.getString("me203125") : "";
+            this.me203126 = json.has("me203126") ? json.getString("me203126") : "";
+            this.me203127 = json.has("me203127") ? json.getString("me203127") : "";
+            this.me203128 = json.has("me203128") ? json.getString("me203128") : "";
+            this.me203129 = json.has("me203129") ? json.getString("me203129") : "";
+            this.me203130 = json.has("me203130") ? json.getString("me203130") : "";
+            this.me203131 = json.has("me203131") ? json.getString("me203131") : "";
+            this.me203132 = json.has("me203132") ? json.getString("me203132") : "";
+            this.me203133 = json.has("me203133") ? json.getString("me203133") : "";
+            this.me203134 = json.has("me203134") ? json.getString("me203134") : "";
+            this.me203135 = json.has("me203135") ? json.getString("me203135") : "";
         }
     }
 
