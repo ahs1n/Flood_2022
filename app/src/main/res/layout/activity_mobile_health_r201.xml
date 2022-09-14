@@ -83,6 +83,18 @@
                             app:justifyContent="space_evenly">
 
                             <CheckBox
+                                android:id="@+id/me20356"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/me20356" />
+
+                            <CheckBox
+                                android:id="@+id/me203135"
+                                android:layout_width="260dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/me203135" />
+
+                            <CheckBox
                                 android:id="@+id/me203101"
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
@@ -321,18 +333,6 @@
                                 android:layout_width="260dp"
                                 android:layout_height="wrap_content"
                                 android:text="@string/me203134" />
-
-                            <CheckBox
-                                android:id="@+id/me20356"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me20356" />
-
-                            <CheckBox
-                                android:id="@+id/me203135"
-                                android:layout_width="260dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/me203135" />
 
                             <CheckBox
                                 android:id="@+id/me20396"

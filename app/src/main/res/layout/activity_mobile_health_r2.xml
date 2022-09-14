@@ -570,11 +570,12 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
-                                android:hint="###"
+                                android:hint="##.#"
                                 android:inputType="number"
                                 android:maxLength="3"
-                                app:maxValue="106"
-                                app:minValue="95"
+                                app:mask="##.#"
+                                app:maxValue="45.0"
+                                app:minValue="08.0"
                                 app:type="range" />
 
                             <CheckBox
@@ -3657,10 +3658,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
+
                     <!-- vs302  Radio   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVvs302"
-                        style="@style/cardView">
+                        style="@style/cardView"
+                        android:visibility="gone">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -3721,7 +3725,8 @@
                     <!-- vs303  Radio   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVvs303"
-                        style="@style/cardView">
+                        style="@style/cardView"
+                        android:visibility="gone">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -3782,7 +3787,8 @@
                     <!-- vs304  Radio   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVvs304"
-                        style="@style/cardView">
+                        style="@style/cardView"
+                        android:visibility="gone">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -3852,7 +3858,8 @@
                     <!-- vs305  Radio   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVvs305"
-                        style="@style/cardView">
+                        style="@style/cardView"
+                        android:visibility="gone">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -4032,7 +4039,8 @@
                     <!-- vs307  Radio   -->
                     <androidx.cardview.widget.CardView
                         android:id="@+id/fldGrpCVvs307"
-                        style="@style/cardView">
+                        style="@style/cardView"
+                        android:visibility="gone">
 
                         <LinearLayout
                             android:layout_width="match_parent"
