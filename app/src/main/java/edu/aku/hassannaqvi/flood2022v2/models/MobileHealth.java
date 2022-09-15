@@ -309,6 +309,7 @@ public class MobileHealth extends BaseObservable {
     public String ss110g99;
     public String vs306h;
     public String vs310;
+    public String vs311;
     public String pc20121;
     public String pc20122;
     public String pc20123;
@@ -657,7 +658,7 @@ public class MobileHealth extends BaseObservable {
         //this.sA = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SA));
 
         sAHydrate(cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SA)));
-        sBHydrate(cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SB)));
+//        sBHydrate(cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SB)));
 
         return this;
     }
@@ -691,11 +692,11 @@ public class MobileHealth extends BaseObservable {
                     .put("ss110d99", ss110d99)
                     .put("ss110ehbx", ss110ehbx)
                     .put("ss110e99", ss110e99)
-                    .put("ss111a", ss111a)
+                    /*.put("ss111a", ss111a)
                     .put("ss111b", ss111b)
                     .put("ss111c", ss111c)
                     .put("ss111d", ss111d)
-                    .put("ss11199", ss11199)
+                    .put("ss11199", ss11199)*/
                     .put("pc20101", pc20101)
                     .put("pc20102", pc20102)
                     .put("pc20103", pc20103)
@@ -723,10 +724,10 @@ public class MobileHealth extends BaseObservable {
                     .put("di20296x", di20296x)
                     .put("di20299", di20299)
                     .put("vs301", vs301)
-                    .put("vs302", vs302)
+                    /*.put("vs302", vs302)
                     .put("vs303", vs303)
                     .put("vs304", vs304)
-                    .put("vs305", vs305)
+                    .put("vs305", vs305)*/
                     .put("vs306a", vs306a)
                     .put("vs306b", vs306b)
                     .put("vs306c", vs306c)
@@ -736,8 +737,8 @@ public class MobileHealth extends BaseObservable {
                     .put("vs306g", vs306g)
                     .put("vs306i", vs306i)
                     .put("vs30699", vs30699)
-                    .put("vs307", vs307)
-                    .put("vs308", vs308)
+                    /*.put("vs307", vs307)
+                    .put("vs308", vs308)*/
                     .put("ss110muac", ss110muac)
                     .put("ss110mm99", ss110mm99)
                     .put("ss110fosx", ss110fosx)
@@ -821,7 +822,54 @@ public class MobileHealth extends BaseObservable {
                     .put("di20278", di20278)
                     .put("di20279", di20279)
                     .put("di20280", di20280)
-                    .put("di20281", di20281);
+                    .put("di20281", di20281)
+                    .put("me20301", me20301)
+                    .put("me20307", me20307)
+                    .put("me20310", me20310)
+                    .put("me20315", me20315)
+                    .put("me20322", me20322)
+                    .put("me20323", me20323)
+                    .put("me20356", me20356)
+                    .put("me20396", me20396)
+                    .put("me20396x", me20396x)
+                    .put("me20399", me20399)
+                    .put("me203101", me203101)
+                    .put("me203102", me203102)
+                    .put("me203103", me203103)
+                    .put("me203104", me203104)
+                    .put("me203105", me203105)
+                    .put("me203106", me203106)
+                    .put("me203107", me203107)
+                    .put("me203108", me203108)
+                    .put("me203109", me203109)
+                    .put("me203110", me203110)
+                    .put("me203111", me203111)
+                    .put("me203112", me203112)
+                    .put("me203113", me203113)
+                    .put("me203114", me203114)
+                    .put("me203115", me203115)
+                    .put("me203116", me203116)
+                    .put("me203117", me203117)
+                    .put("me203118", me203118)
+                    .put("me203119", me203119)
+                    .put("me203120", me203120)
+                    .put("me203121", me203121)
+                    .put("me203122", me203122)
+                    .put("me203123", me203123)
+                    .put("me203124", me203124)
+                    .put("me203125", me203125)
+                    .put("me203126", me203126)
+                    .put("me203127", me203127)
+                    .put("me203128", me203128)
+                    .put("me203129", me203129)
+                    .put("me203130", me203130)
+                    .put("me203131", me203131)
+                    .put("me203132", me203132)
+                    .put("me203133", me203133)
+                    .put("me203134", me203134)
+                    .put("me203135", me203135)
+                    .put("vs310", vs310)
+                    .put("vs311", vs311);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -916,7 +964,7 @@ public class MobileHealth extends BaseObservable {
         json.put(MHContract.MHTable.COLUMN_SS107, this.ss107);
 
         json.put(MHContract.MHTable.COLUMN_SA, new JSONObject(sAtoString()));
-        json.put(MHContract.MHTable.COLUMN_SB, new JSONObject(sBtoString()));
+//        json.put(MHContract.MHTable.COLUMN_SB, new JSONObject(sBtoString()));
 
         //For ChildCount
         //json.put(MHContract.MHTable.COLUMN_SA, this.sA == null ? JSONObject.NULL : this.sA);
@@ -957,11 +1005,11 @@ public class MobileHealth extends BaseObservable {
             this.ss110d99 = json.getString("ss110d99");
             this.ss110ehbx = json.getString("ss110ehbx");
             this.ss110e99 = json.getString("ss110e99");
-            this.ss111a = json.getString("ss111a");
+            /*this.ss111a = json.getString("ss111a");
             this.ss111b = json.getString("ss111b");
             this.ss111c = json.getString("ss111c");
             this.ss111d = json.getString("ss111d");
-            this.ss11199 = json.getString("ss11199");
+            this.ss11199 = json.getString("ss11199");*/
             this.pc20101 = json.getString("pc20101");
             this.pc20102 = json.getString("pc20102");
             this.pc20103 = json.getString("pc20103");
@@ -989,10 +1037,10 @@ public class MobileHealth extends BaseObservable {
             this.di20296x = json.getString("di20296x");
             this.di20299 = json.getString("di20299");
             this.vs301 = json.getString("vs301");
-            this.vs302 = json.getString("vs302");
+            /*this.vs302 = json.getString("vs302");
             this.vs303 = json.getString("vs303");
             this.vs304 = json.getString("vs304");
-            this.vs305 = json.getString("vs305");
+            this.vs305 = json.getString("vs305");*/
             this.vs306a = json.getString("vs306a");
             this.vs306b = json.getString("vs306b");
             this.vs306c = json.getString("vs306c");
@@ -1002,8 +1050,8 @@ public class MobileHealth extends BaseObservable {
             this.vs306g = json.getString("vs306g");
             this.vs306i = json.getString("vs306i");
             this.vs30699 = json.getString("vs30699");
-            this.vs307 = json.getString("vs307");
-            this.vs308 = json.getString("vs308");
+            /*this.vs307 = json.getString("vs307");
+            this.vs308 = json.getString("vs308");*/
             this.ss110muac = json.getString("ss110muac");
             this.ss110mm99 = json.getString("ss110mm99");
             this.ss110fosx = json.getString("ss110fosx");
@@ -1088,7 +1136,53 @@ public class MobileHealth extends BaseObservable {
             this.di20279 = json.getString("di20279");
             this.di20280 = json.getString("di20280");
             this.di20281 = json.getString("di20281");
-
+            this.me20301 = json.has("me20301") ? json.getString("me20301") : "";
+            this.me20307 = json.has("me20307") ? json.getString("me20307") : "";
+            this.me20310 = json.has("me20310") ? json.getString("me20310") : "";
+            this.me20315 = json.has("me20315") ? json.getString("me20315") : "";
+            this.me20322 = json.has("me20322") ? json.getString("me20322") : "";
+            this.me20323 = json.has("me20323") ? json.getString("me20323") : "";
+            this.me20356 = json.has("me20356") ? json.getString("me20356") : "";
+            this.me20396 = json.has("me20396") ? json.getString("me20396") : "";
+            this.me20396x = json.has("me20396x") ? json.getString("me20396x") : "";
+            this.me20399 = json.has("me20399") ? json.getString("me20399") : "";
+            this.me203101 = json.has("me203101") ? json.getString("me203101") : "";
+            this.me203102 = json.has("me203102") ? json.getString("me203102") : "";
+            this.me203103 = json.has("me203103") ? json.getString("me203103") : "";
+            this.me203104 = json.has("me203104") ? json.getString("me203104") : "";
+            this.me203105 = json.has("me203105") ? json.getString("me203105") : "";
+            this.me203106 = json.has("me203106") ? json.getString("me203106") : "";
+            this.me203107 = json.has("me203107") ? json.getString("me203107") : "";
+            this.me203108 = json.has("me203108") ? json.getString("me203108") : "";
+            this.me203109 = json.has("me203109") ? json.getString("me203109") : "";
+            this.me203110 = json.has("me203110") ? json.getString("me203110") : "";
+            this.me203111 = json.has("me203111") ? json.getString("me203111") : "";
+            this.me203112 = json.has("me203112") ? json.getString("me203112") : "";
+            this.me203113 = json.has("me203113") ? json.getString("me203113") : "";
+            this.me203114 = json.has("me203114") ? json.getString("me203114") : "";
+            this.me203115 = json.has("me203115") ? json.getString("me203115") : "";
+            this.me203116 = json.has("me203116") ? json.getString("me203116") : "";
+            this.me203117 = json.has("me203117") ? json.getString("me203117") : "";
+            this.me203118 = json.has("me203118") ? json.getString("me203118") : "";
+            this.me203119 = json.has("me203119") ? json.getString("me203119") : "";
+            this.me203120 = json.has("me203120") ? json.getString("me203120") : "";
+            this.me203121 = json.has("me203121") ? json.getString("me203121") : "";
+            this.me203122 = json.has("me203122") ? json.getString("me203122") : "";
+            this.me203123 = json.has("me203123") ? json.getString("me203123") : "";
+            this.me203124 = json.has("me203124") ? json.getString("me203124") : "";
+            this.me203125 = json.has("me203125") ? json.getString("me203125") : "";
+            this.me203126 = json.has("me203126") ? json.getString("me203126") : "";
+            this.me203127 = json.has("me203127") ? json.getString("me203127") : "";
+            this.me203128 = json.has("me203128") ? json.getString("me203128") : "";
+            this.me203129 = json.has("me203129") ? json.getString("me203129") : "";
+            this.me203130 = json.has("me203130") ? json.getString("me203130") : "";
+            this.me203131 = json.has("me203131") ? json.getString("me203131") : "";
+            this.me203132 = json.has("me203132") ? json.getString("me203132") : "";
+            this.me203133 = json.has("me203133") ? json.getString("me203133") : "";
+            this.me203134 = json.has("me203134") ? json.getString("me203134") : "";
+            this.me203135 = json.has("me203135") ? json.getString("me203135") : "";
+            this.vs310 = json.has("vs310") ? json.getString("vs310") : "";
+            this.vs311 = json.has("vs311") ? json.getString("vs311") : "";
 
         }
     }
@@ -3995,6 +4089,16 @@ public class MobileHealth extends BaseObservable {
     public void setVs310(String vs310) {
         this.vs310 = vs310;
         notifyPropertyChanged(BR.vs310);
+    }
+
+    @Bindable
+    public String getVs311() {
+        return vs311;
+    }
+
+    public void setVs311(String vs311) {
+        this.vs311 = vs311;
+        notifyPropertyChanged(BR.vs311);
     }
 
     @Bindable

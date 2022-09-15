@@ -789,6 +789,10 @@
     <string name="me203134">Normal Saline Vials</string>
     <string name="me203135">Tab Metronidazole /KLINT</string>
     <string name="vs310">Remarks</string>
+    <string name="vs311">Referred?</string>
+    <string name="vs311a">Yes</string>
+    <string name="vs311b">No</string>
+    <string name="vs311nr">Not Reported</string>
 
     <string name="me20333">Syp:Brufen </string>
     <string name="me20334">Tab:Diclofenac</string>
@@ -880,6 +884,7 @@
     <string name='Q_dstitle'>dstitle</string>
     <string name='Q_me203'>me203</string>
     <string name='Q_vs310'>vs310</string>
+    <string name='Q_vs311'>vs311</string>
     <string name='Q_metitle'>metitle</string>
     <string name='Q_pc201'>pc201</string>
     <string name='Q_pctitle'>pctitle</string>

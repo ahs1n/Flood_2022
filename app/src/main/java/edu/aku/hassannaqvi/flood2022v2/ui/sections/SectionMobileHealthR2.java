@@ -76,18 +76,18 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
     private void setupSkips() {
 
         bi.ss108.setOnCheckedChangeListener((radioGroup, i) -> {
-//            if (i == bi.ss108a.getId()) {
-//                Clear.clearAllFields(bi.fldGrpCVss109);
-//                bi.fldGrpCVss109.setVisibility(View.GONE);
-//                Clear.clearAllFields(bi.fldGrpCVvs301);
-//                bi.fldGrpCVvs301.setVisibility(View.GONE);
-//            } else {
-//                if (TextUtils.isEmpty(bi.ss107y.getText().toString())) {
-//                    return;
-//                } else if (Integer.parseInt(bi.ss107y.getText().toString()) >= 14) {
-//                    bi.fldGrpCVss109.setVisibility(View.VISIBLE);
-//                    bi.fldGrpCVvs301.setVisibility(View.VISIBLE);
-//                }
+/*            if (i == bi.ss108a.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVss109);
+                bi.fldGrpCVss109.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVvs301);
+                bi.fldGrpCVvs301.setVisibility(View.GONE);
+            } else {
+                if (TextUtils.isEmpty(bi.ss107y.getText().toString())) {
+                    return;
+                } else if (Integer.parseInt(bi.ss107y.getText().toString()) >= 14) {
+                    bi.fldGrpCVss109.setVisibility(View.VISIBLE);
+                    bi.fldGrpCVvs301.setVisibility(View.VISIBLE);
+                }*/
 
 
             if (bi.ss108a.isChecked()) {
@@ -95,25 +95,25 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
                 bi.fldGrpCVss109.setVisibility(View.GONE);
                 Clear.clearAllFields(bi.fldGrpCVvs301);
                 bi.fldGrpCVvs301.setVisibility(View.GONE);
-            } else if (bi.ss11199.isChecked() && (!TextUtils.isEmpty(bi.ss107y.getText().toString()) && Integer.parseInt(bi.ss107y.getText().toString()) < 14)) {
+            } else if ((!TextUtils.isEmpty(bi.ss107y.getText().toString()) && Integer.parseInt(bi.ss107y.getText().toString()) < 14)) {
                 bi.fldGrpCVss109.setVisibility(View.VISIBLE);
                 bi.fldGrpCVvs301.setVisibility(View.VISIBLE);
-                bi.ss111a.setEnabled(false);
+                /*bi.ss111a.setEnabled(false);
                 bi.ss111b.setEnabled(false);
                 bi.ss111c.setEnabled(true);
-                bi.ss111d.setEnabled(true);
+                bi.ss111d.setEnabled(true);*/
             }
         });
 
 
         bi.ss108.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.fldGrpCVvs301));
-        bi.vs307.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.fldGrpCVvs308));
+//        bi.vs307.setOnCheckedChangeListener((radioGroup, i) -> Clear.clearAllFields(bi.fldGrpCVvs308));
 
         bi.vs30699.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.vs306check, !b));
 
 //        bi.ss11199.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.ss111check, !b));
 
-        bi.ss11199.setOnCheckedChangeListener(((compoundButton, b) -> {
+        /*bi.ss11199.setOnCheckedChangeListener(((compoundButton, b) -> {
             if (b) {
                 Clear.clearAllFields(bi.ss111check);
                 bi.ss111a.setEnabled(false);
@@ -137,7 +137,7 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
                 bi.ss111d.setEnabled(true);
 
             }
-        }));
+        }));*/
         bi.pc20199.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.pc201check, !b));
         bi.di20299.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.di202check, !b));
 //        bi.me20399.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.me203check, !b));
@@ -159,6 +159,7 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
         bi.ss110d99.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.ss110drbsx, !b));
         bi.ss110e99.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.ss110ehbx, !b));
 
+        bi.me20399.setOnCheckedChangeListener((compoundButton, b) -> Clear.clearAllFields(bi.me203check, !b));
     }
 
     public void ss107yOnTextChanged(CharSequence s, int start, int before, int count) {
@@ -170,10 +171,10 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
         int age = Integer.parseInt(bi.ss107y.getText().toString());
 
         if (age >= 5) {
-            Clear.clearAllFields(bi.fldGrpU5);
-            bi.fldGrpU5.setVisibility(View.GONE);
+            Clear.clearAllFields(bi.fldGrpCVvs306);
+            bi.fldGrpCVvs306.setVisibility(View.GONE);
         } else {
-            bi.fldGrpU5.setVisibility(View.VISIBLE);
+            bi.fldGrpCVvs306.setVisibility(View.VISIBLE);
         }
 
         if (age < 14) {
@@ -181,14 +182,14 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
             bi.fldGrpCVss109.setVisibility(View.GONE);
             Clear.clearAllFields(bi.fldGrpCVvs301);
             bi.fldGrpCVvs301.setVisibility(View.GONE);
-            Clear.clearAllFields(bi.fldGrpCVss111);
+            /*Clear.clearAllFields(bi.fldGrpCVss111);
             bi.ss111a.setEnabled(false);
-            bi.ss111b.setEnabled(false);
+            bi.ss111b.setEnabled(false);*/
         } else {
             bi.fldGrpCVss109.setVisibility(View.VISIBLE);
             bi.fldGrpCVvs301.setVisibility(View.VISIBLE);
-            bi.ss111a.setEnabled(true);
-            bi.ss111b.setEnabled(true);
+//            bi.ss111a.setEnabled(true);
+//            bi.ss111b.setEnabled(true);
         }
     }
 
@@ -343,11 +344,11 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
         mobileHealth.setSs110ehbx(bi.ss110ehbx.getText().toString());
         mobileHealth.setSs110e99(bi.ss110e99.isChecked() ? "99" : "-1");
 
-        mobileHealth.setSs111a(bi.ss111a.isChecked() ? "1" : "-1");
+        /*mobileHealth.setSs111a(bi.ss111a.isChecked() ? "1" : "-1");
         mobileHealth.setSs111b(bi.ss111b.isChecked() ? "2" : "-1");
         mobileHealth.setSs111c(bi.ss111c.isChecked() ? "3" : "-1");
         mobileHealth.setSs111d(bi.ss111d.isChecked() ? "4" : "-1");
-        mobileHealth.setSs11199(bi.ss11199.isChecked() ? "99" : "-1");
+        mobileHealth.setSs11199(bi.ss11199.isChecked() ? "99" : "-1");*/
         mobileHealth.setPc20101(bi.pc20101.isChecked() ? "1" : "-1");
         mobileHealth.setPc20102(bi.pc20102.isChecked() ? "2" : "-1");
         mobileHealth.setPc20103(bi.pc20103.isChecked() ? "3" : "-1");
@@ -473,7 +474,7 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
                 : bi.vs301b.isChecked() ? "2"
                 : bi.vs30199.isChecked() ? "99"
                 : "-1");
-        mobileHealth.setVs302(bi.vs302a.isChecked() ? "1"
+        /*mobileHealth.setVs302(bi.vs302a.isChecked() ? "1"
                 : bi.vs302b.isChecked() ? "2"
                 : bi.vs30299.isChecked() ? "99"
                 : "-1");
@@ -492,7 +493,7 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
                 : bi.vs305c.isChecked() ? "3"
                 : bi.vs305d.isChecked() ? "4"
                 : bi.vs30599.isChecked() ? "99"
-                : "-1");
+                : "-1");*/
         mobileHealth.setVs306a(bi.vs306a.isChecked() ? "1" : "-1");
         mobileHealth.setVs306b(bi.vs306b.isChecked() ? "2" : "-1");
         mobileHealth.setVs306c(bi.vs306c.isChecked() ? "3" : "-1");
@@ -503,12 +504,63 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
         mobileHealth.setVs306i(bi.vs306i.isChecked() ? "8" : "-1");
         mobileHealth.setVs306h(bi.vs306h.isChecked() ? "9" : "-1");
         mobileHealth.setVs30699(bi.vs30699.isChecked() ? "99" : "-1");
-        mobileHealth.setVs307(bi.vs307a.isChecked() ? "1"
+        /*mobileHealth.setVs307(bi.vs307a.isChecked() ? "1"
                 : bi.vs307b.isChecked() ? "2"
                 : bi.vs30799.isChecked() ? "99"
                 : "-1");
         mobileHealth.setVs308(bi.vs308a.isChecked() ? "1"
                 : bi.vs308b.isChecked() ? "2"
+                : "-1");*/
+
+        mobileHealth.setMe20301(bi.me20301.isChecked() ? "1" : "-1");
+        mobileHealth.setMe20307(bi.me20307.isChecked() ? "7" : "-1");
+        mobileHealth.setMe20310(bi.me20310.isChecked() ? "10" : "-1");
+        mobileHealth.setMe20315(bi.me20315.isChecked() ? "15" : "-1");
+        mobileHealth.setMe20322(bi.me20322.isChecked() ? "22" : "-1");
+        mobileHealth.setMe20323(bi.me20323.isChecked() ? "23" : "-1");
+        mobileHealth.setMe20356(bi.me20356.isChecked() ? "56" : "-1");
+        mobileHealth.setMe203101(bi.me203101.isChecked() ? "101" : "-1");
+        mobileHealth.setMe203102(bi.me203102.isChecked() ? "102" : "-1");
+        mobileHealth.setMe203103(bi.me203103.isChecked() ? "103" : "-1");
+        mobileHealth.setMe203104(bi.me203104.isChecked() ? "104" : "-1");
+        mobileHealth.setMe203105(bi.me203105.isChecked() ? "105" : "-1");
+        mobileHealth.setMe203106(bi.me203106.isChecked() ? "106" : "-1");
+        mobileHealth.setMe203107(bi.me203107.isChecked() ? "107" : "-1");
+        mobileHealth.setMe203108(bi.me203108.isChecked() ? "108" : "-1");
+        mobileHealth.setMe203109(bi.me203109.isChecked() ? "109" : "-1");
+        mobileHealth.setMe203110(bi.me203110.isChecked() ? "110" : "-1");
+        mobileHealth.setMe203111(bi.me203111.isChecked() ? "111" : "-1");
+        mobileHealth.setMe203112(bi.me203112.isChecked() ? "112" : "-1");
+        mobileHealth.setMe203113(bi.me203113.isChecked() ? "113" : "-1");
+        mobileHealth.setMe203114(bi.me203114.isChecked() ? "114" : "-1");
+        mobileHealth.setMe203115(bi.me203115.isChecked() ? "115" : "-1");
+        mobileHealth.setMe203116(bi.me203116.isChecked() ? "116" : "-1");
+        mobileHealth.setMe203117(bi.me203117.isChecked() ? "117" : "-1");
+        mobileHealth.setMe203118(bi.me203118.isChecked() ? "118" : "-1");
+        mobileHealth.setMe203119(bi.me203119.isChecked() ? "119" : "-1");
+        mobileHealth.setMe203120(bi.me203120.isChecked() ? "120" : "-1");
+        mobileHealth.setMe203121(bi.me203121.isChecked() ? "121" : "-1");
+        mobileHealth.setMe203122(bi.me203122.isChecked() ? "122" : "-1");
+        mobileHealth.setMe203123(bi.me203123.isChecked() ? "123" : "-1");
+        mobileHealth.setMe203124(bi.me203124.isChecked() ? "124" : "-1");
+        mobileHealth.setMe203125(bi.me203125.isChecked() ? "125" : "-1");
+        mobileHealth.setMe203126(bi.me203126.isChecked() ? "126" : "-1");
+        mobileHealth.setMe203127(bi.me203127.isChecked() ? "127" : "-1");
+        mobileHealth.setMe203129(bi.me203129.isChecked() ? "129" : "-1");
+        mobileHealth.setMe203128(bi.me203128.isChecked() ? "128" : "-1");
+        mobileHealth.setMe203130(bi.me203130.isChecked() ? "130" : "-1");
+        mobileHealth.setMe203131(bi.me203131.isChecked() ? "131" : "-1");
+        mobileHealth.setMe203132(bi.me203132.isChecked() ? "132" : "-1");
+        mobileHealth.setMe203133(bi.me203133.isChecked() ? "133" : "-1");
+        mobileHealth.setMe203134(bi.me203134.isChecked() ? "134" : "-1");
+        mobileHealth.setMe203135(bi.me203135.isChecked() ? "135" : "-1");
+        mobileHealth.setMe20396(bi.me20396.isChecked() ? "96" : "-1");
+        mobileHealth.setMe20396x(bi.me20396x.getText().toString());
+        mobileHealth.setMe20399(bi.me20399.isChecked() ? "99" : "-1");
+        mobileHealth.setVs310(bi.vs310.getText().toString());
+        mobileHealth.setVs311(bi.vs311a.isChecked() ? "1"
+                : bi.vs311b.isChecked() ? "2"
+                : bi.vs311nr.isChecked() ? "99"
                 : "-1");
 
     }
@@ -518,9 +570,9 @@ public class SectionMobileHealthR2 extends AppCompatActivity implements EndSecti
         if (!formValidation()) return;
         saveDraft();
         if (UpdateDB()) {
-//            Toast.makeText(this, "Patient Added", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Patient Added", Toast.LENGTH_SHORT).show();
             finish();
-            gotoActivityWithPutExtra(this, SectionMobileHealthR201.class, "complete", true);
+            gotoActivityWithPutExtra(this, SectionMobileHealthR2.class, "complete", true);
         }
     }
 

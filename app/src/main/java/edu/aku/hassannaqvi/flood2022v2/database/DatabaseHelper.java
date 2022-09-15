@@ -306,7 +306,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(MHContract.MHTable.COLUMN_USERNAME, mobileHealth.getUserName());
         values.put(MHContract.MHTable.COLUMN_SYSDATE, mobileHealth.getSysDate());
         values.put(MHContract.MHTable.COLUMN_SA, mobileHealth.sAtoString());
-        values.put(MHContract.MHTable.COLUMN_SB, mobileHealth.sBtoString());
+//        values.put(MHContract.MHTable.COLUMN_SB, mobileHealth.sBtoString());
         values.put(MHContract.MHTable.COLUMN_SS101, mobileHealth.getSs101());
         values.put(MHContract.MHTable.COLUMN_SS102, mobileHealth.getSs102());
         values.put(MHContract.MHTable.COLUMN_SS103, mobileHealth.getSs103());
@@ -1412,8 +1412,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 MHContract.MHTable.COLUMN_SS105,
                 MHContract.MHTable.COLUMN_SS106,
                 MHContract.MHTable.COLUMN_SS107,
-                MHContract.MHTable.COLUMN_SA,
-                MHContract.MHTable.COLUMN_SB
+                MHContract.MHTable.COLUMN_SA
         };
 
         String whereClause;
