@@ -1397,6 +1397,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 MHContract.MHTable.COLUMN_ID,
                 MHContract.MHTable.COLUMN_UID,
                 MHContract.MHTable.COLUMN_USERNAME,
+                MHContract.MHTable.COLUMN_PROJECT_NAME,
                 MHContract.MHTable.COLUMN_SYSDATE,
                 MHContract.MHTable.COLUMN_DEVICEID,
                 MHContract.MHTable.COLUMN_DEVICETAGID,

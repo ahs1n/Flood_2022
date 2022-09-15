@@ -610,6 +610,7 @@ public class MobileHealth extends BaseObservable {
         this.id = jsonObject.getString(MHContract.MHTable.COLUMN_ID);
         this.uid = jsonObject.getString(MHContract.MHTable.COLUMN_UID);
         this.userName = jsonObject.getString(MHContract.MHTable.COLUMN_USERNAME);
+        this.projectName = jsonObject.getString(MHContract.MHTable.COLUMN_PROJECT_NAME);
         this.sysDate = jsonObject.getString(MHContract.MHTable.COLUMN_SYSDATE);
         this.deviceId = jsonObject.getString(MHContract.MHTable.COLUMN_DEVICEID);
         this.deviceTag = jsonObject.getString(MHContract.MHTable.COLUMN_DEVICETAGID);
@@ -638,6 +639,7 @@ public class MobileHealth extends BaseObservable {
         this.id = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_ID));
         this.uid = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_UID));
         this.userName = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_USERNAME));
+        this.projectName = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_PROJECT_NAME));
         this.sysDate = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SYSDATE));
         this.deviceId = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_DEVICEID));
         this.deviceTag = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_DEVICETAGID));
@@ -947,6 +949,7 @@ public class MobileHealth extends BaseObservable {
         json.put(MHContract.MHTable.COLUMN_ID, this.id);
         json.put(MHContract.MHTable.COLUMN_UID, this.uid);
         json.put(MHContract.MHTable.COLUMN_USERNAME, this.userName);
+        json.put(MHContract.MHTable.COLUMN_PROJECT_NAME, this.projectName);
         json.put(MHContract.MHTable.COLUMN_SYSDATE, this.sysDate);
         json.put(MHContract.MHTable.COLUMN_DEVICEID, this.deviceId);
         json.put(MHContract.MHTable.COLUMN_DEVICETAGID, this.deviceTag);
