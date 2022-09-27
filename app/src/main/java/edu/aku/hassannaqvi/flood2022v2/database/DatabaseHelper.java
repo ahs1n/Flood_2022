@@ -4,6 +4,7 @@ import static edu.aku.hassannaqvi.flood2022v2.core.MainApp.IBAHC;
 import static edu.aku.hassannaqvi.flood2022v2.core.MainApp.PROJECT_NAME;
 import static edu.aku.hassannaqvi.flood2022v2.core.MainApp.mobileHealth;
 import static edu.aku.hassannaqvi.flood2022v2.core.UserAuth.checkPassword;
+import static edu.aku.hassannaqvi.flood2022v2.database.CreateTable.SQL_ALTER_MOBILEHEALTH_ADD_COLUMNSB;
 import static edu.aku.hassannaqvi.flood2022v2.database.CreateTable.SQL_ALTER_USERS_ENABLED;
 import static edu.aku.hassannaqvi.flood2022v2.database.CreateTable.SQL_ALTER_USERS_ISNEW_USER;
 import static edu.aku.hassannaqvi.flood2022v2.database.CreateTable.SQL_ALTER_USERS_PWD_EXPIRY;
@@ -79,7 +80,7 @@ import edu.aku.hassannaqvi.flood2022v2.models.Users.UsersTable;
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = PROJECT_NAME + ".db";
     public static final String DATABASE_COPY = PROJECT_NAME + "_copy.db";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
     public static final String DATABASE_PASSWORD = IBAHC;
     private final String TAG = "DatabaseHelper";
     private final Context mContext;
@@ -114,6 +115,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 db.execSQL(SQL_ALTER_USERS_ENABLED);
                 db.execSQL(SQL_ALTER_USERS_ISNEW_USER);
                 db.execSQL(SQL_ALTER_USERS_PWD_EXPIRY);
+            case 2:
+                db.execSQL(SQL_ALTER_MOBILEHEALTH_ADD_COLUMNSB);
         }
     }
 
@@ -306,7 +309,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(MHContract.MHTable.COLUMN_USERNAME, mobileHealth.getUserName());
         values.put(MHContract.MHTable.COLUMN_SYSDATE, mobileHealth.getSysDate());
         values.put(MHContract.MHTable.COLUMN_SA, mobileHealth.sAtoString());
-//        values.put(MHContract.MHTable.COLUMN_SB, mobileHealth.sBtoString());
+        values.put(MHContract.MHTable.COLUMN_SB, mobileHealth.sBtoString());
         values.put(MHContract.MHTable.COLUMN_SS101, mobileHealth.getSs101());
         values.put(MHContract.MHTable.COLUMN_SS102, mobileHealth.getSs102());
         values.put(MHContract.MHTable.COLUMN_SS103, mobileHealth.getSs103());
@@ -1413,7 +1416,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 MHContract.MHTable.COLUMN_SS105,
                 MHContract.MHTable.COLUMN_SS106,
                 MHContract.MHTable.COLUMN_SS107,
-                MHContract.MHTable.COLUMN_SA
+                MHContract.MHTable.COLUMN_SA,
+                MHContract.MHTable.COLUMN_SB
         };
 
         String whereClause;
@@ -1624,6 +1628,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 MHTable.COLUMN_SS106,
                 MHTable.COLUMN_SS107,
                 MHTable.COLUMN_SA,
+                MHTable.COLUMN_SB,
                 MHTable.COLUMN_SYNCED,
 
         };
@@ -1656,6 +1661,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             fc.setSs107(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SS107)));
             fc.setSynced(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SYNCED)));
             fc.sAHydrate(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SA)));
+            fc.sAHydrate(c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SB)));
             Log.d(TAG, "getFormsByCluster: " + c.getString(c.getColumnIndexOrThrow(MHTable.COLUMN_SA)));
             allFC.add(fc);
         }

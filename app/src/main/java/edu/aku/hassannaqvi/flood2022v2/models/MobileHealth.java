@@ -423,6 +423,178 @@ public class MobileHealth extends BaseObservable {
     public String me203134;
     public String me203135;
 
+    public String di20282;
+    public String di20283;
+    public String di20284;
+    public String di20285;
+    public String me203136;
+    public String me203136QTY;
+    public String me203136DAY;
+    public String me203137;
+    public String me203137QTY;
+    public String me203137DAY;
+    public String me203138;
+    public String me203138QTY;
+    public String me203138DAY;
+    public String me203139;
+    public String me203139QTY;
+    public String me203139DAY;
+    public String me203140;
+    public String me203140QTY;
+    public String me203140DAY;
+    public String me203141;
+    public String me203141QTY;
+    public String me203141DAY;
+    public String me203142;
+    public String me203142QTY;
+    public String me203142DAY;
+    public String me203143;
+    public String me203143QTY;
+    public String me203143DAY;
+    public String me203144;
+    public String me203144QTY;
+    public String me203144DAY;
+    public String me203145;
+    public String me203145QTY;
+    public String me203145DAY;
+    public String me203146;
+    public String me203146QTY;
+    public String me203146DAY;
+    public String me203147;
+    public String me203147QTY;
+    public String me203147DAY;
+    public String me203148;
+    public String me203148QTY;
+    public String me203148DAY;
+    public String me203149;
+    public String me203149QTY;
+    public String me203149DAY;
+    public String me203150;
+    public String me203150QTY;
+    public String me203150DAY;
+    public String me203151;
+    public String me203151QTY;
+    public String me203151DAY;
+    public String me203152;
+    public String me203152QTY;
+    public String me203152DAY;
+    public String me203153;
+    public String me203153QTY;
+    public String me203153DAY;
+    public String me203154;
+    public String me203154QTY;
+    public String me203154DAY;
+    public String me203155;
+    public String me203155QTY;
+    public String me203155DAY;
+    public String me203156;
+    public String me203156QTY;
+    public String me203156DAY;
+    public String me203157;
+    public String me203157QTY;
+    public String me203157DAY;
+    public String me203158;
+    public String me203158QTY;
+    public String me203158DAY;
+    public String me203159;
+    public String me203159QTY;
+    public String me203159DAY;
+    public String me203160;
+    public String me203160QTY;
+    public String me203160DAY;
+    public String me203161;
+    public String me203161QTY;
+    public String me203161DAY;
+    public String me203162;
+    public String me203162QTY;
+    public String me203162DAY;
+    public String me203163;
+    public String me203163QTY;
+    public String me203163DAY;
+    public String me203164;
+    public String me203164QTY;
+    public String me203164DAY;
+    public String me203165;
+    public String me203165QTY;
+    public String me203165DAY;
+    public String me203166;
+    public String me203166QTY;
+    public String me203166DAY;
+    public String me203167;
+    public String me203167QTY;
+    public String me203167DAY;
+    public String me203168;
+    public String me203168QTY;
+    public String me203168DAY;
+    public String me203169;
+    public String me203169QTY;
+    public String me203169DAY;
+    public String me203170;
+    public String me203170QTY;
+    public String me203170DAY;
+    public String me203171;
+    public String me203171QTY;
+    public String me203171DAY;
+    public String me203172;
+    public String me203172QTY;
+    public String me203172DAY;
+    public String me203173;
+    public String me203173QTY;
+    public String me203173DAY;
+    public String me203174;
+    public String me203174QTY;
+    public String me203174DAY;
+    public String me203175;
+    public String me203175QTY;
+    public String me203175DAY;
+    public String me203176;
+    public String me203176QTY;
+    public String me203176DAY;
+    public String me203177;
+    public String me203177QTY;
+    public String me203177DAY;
+    public String me203178;
+    public String me203178QTY;
+    public String me203178DAY;
+    public String me203179;
+    public String me203179QTY;
+    public String me203179DAY;
+    public String me203180;
+    public String me203180QTY;
+    public String me203180DAY;
+    public String me203181;
+    public String me203181QTY;
+    public String me203181DAY;
+    public String me203182;
+    public String me203182QTY;
+    public String me203182DAY;
+    public String me203183;
+    public String me203183QTY;
+    public String me203183DAY;
+    public String me203184;
+    public String me203184QTY;
+    public String me203184DAY;
+    public String me203185;
+    public String me203185QTY;
+    public String me203185DAY;
+    public String me203186;
+    public String me203186QTY;
+    public String me203186DAY;
+    public String me203187;
+    public String me203187QTY;
+    public String me203187DAY;
+    public String me203188;
+    public String me203188QTY;
+    public String me203188DAY;
+    public String me203189;
+    public String me203189QTY;
+    public String me203189DAY;
+    public String me203190;
+    public String me203190QTY;
+    public String me203190DAY;
+    public String me203191;
+    public String me203191QTY;
+    public String me203191DAY;
 
     // APP VARIABLES
     private String projectName = MainApp.PROJECT_NAME;
@@ -603,649 +775,6 @@ public class MobileHealth extends BaseObservable {
     public void setStatus(String status) {
         this.status = status;
         notifyPropertyChanged(BR.status);
-    }
-
-
-    public MobileHealth Sync(JSONObject jsonObject) throws JSONException {
-        this.id = jsonObject.getString(MHContract.MHTable.COLUMN_ID);
-        this.uid = jsonObject.getString(MHContract.MHTable.COLUMN_UID);
-        this.userName = jsonObject.getString(MHContract.MHTable.COLUMN_USERNAME);
-        this.projectName = jsonObject.getString(MHContract.MHTable.COLUMN_PROJECT_NAME);
-        this.sysDate = jsonObject.getString(MHContract.MHTable.COLUMN_SYSDATE);
-        this.deviceId = jsonObject.getString(MHContract.MHTable.COLUMN_DEVICEID);
-        this.deviceTag = jsonObject.getString(MHContract.MHTable.COLUMN_DEVICETAGID);
-        this.appver = jsonObject.getString(MHContract.MHTable.COLUMN_APPVERSION);
-        this.synced = jsonObject.getString(MHContract.MHTable.COLUMN_SYNCED);
-        this.syncDate = jsonObject.getString(MHContract.MHTable.COLUMN_SYNCED_DATE);
-        this.status = jsonObject.getString(MHContract.MHTable.COLUMN_STATUS);
-        this.serial = jsonObject.getString(MHContract.MHTable.COLUMN_SERIAL);
-        this.ss101 = jsonObject.getString(MHContract.MHTable.COLUMN_SS101);
-        this.ss102 = jsonObject.getString(MHContract.MHTable.COLUMN_SS102);
-        this.ss103 = jsonObject.getString(MHContract.MHTable.COLUMN_SS103);
-        this.ss104 = jsonObject.getString(MHContract.MHTable.COLUMN_SS104);
-        this.ss105 = jsonObject.getString(MHContract.MHTable.COLUMN_SS105);
-        this.ss106 = jsonObject.getString(MHContract.MHTable.COLUMN_SS106);
-        this.ss107 = jsonObject.getString(MHContract.MHTable.COLUMN_SS107);
-
-        this.sA = jsonObject.getString(MHContract.MHTable.COLUMN_SA);
-        this.sB = jsonObject.getString(MHContract.MHTable.COLUMN_SB);
-
-        return this;
-
-    }
-
-
-    public MobileHealth Hydrate(Cursor cursor) throws JSONException {
-        this.id = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_ID));
-        this.uid = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_UID));
-        this.userName = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_USERNAME));
-        this.projectName = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_PROJECT_NAME));
-        this.sysDate = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SYSDATE));
-        this.deviceId = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_DEVICEID));
-        this.deviceTag = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_DEVICETAGID));
-        this.appver = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_APPVERSION));
-        this.synced = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SYNCED));
-        this.syncDate = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SYNCED_DATE));
-        this.status = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_STATUS));
-        this.serial = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SERIAL));
-        this.ss101 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS101));
-        this.ss102 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS102));
-        this.ss103 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS103));
-        this.ss104 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS104));
-        this.ss105 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS105));
-        this.ss106 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS106));
-        this.ss107 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS107));
-
-        //For childCount
-        //this.sA = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SA));
-
-        sAHydrate(cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SA)));
-//        sBHydrate(cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SB)));
-
-        return this;
-    }
-
-
-    //TODO: Try this instead of toJSONObject
-    @Override
-    public String toString() {
-        return new GsonBuilder().create().toJson(this, MobileHealth.class);
-    }
-
-
-    public String sAtoString() {
-        JSONObject json = new JSONObject();
-
-        try {
-            json.put("ss107d", ss107d)
-                    .put("ss107m", ss107m)
-                    .put("ss107y", ss107y)
-                    .put("ss108", ss108)
-                    .put("ss109", ss109)
-                    .put("ss110", ss110)
-                    .put("ss11099", ss11099)
-                    .put("ss110atempx", ss110atempx)
-                    .put("ss110a99", ss110a99)
-                    .put("ss110bdiastolicx", ss110bdiastolicx)
-                    .put("ss110bsystolicx", ss110bsystolicx)
-                    .put("ss110b99", ss110b99)
-                    .put("ss110c", ss110c)
-                    .put("ss110drbsx", ss110drbsx)
-                    .put("ss110d99", ss110d99)
-                    .put("ss110ehbx", ss110ehbx)
-                    .put("ss110e99", ss110e99)
-                    /*.put("ss111a", ss111a)
-                    .put("ss111b", ss111b)
-                    .put("ss111c", ss111c)
-                    .put("ss111d", ss111d)
-                    .put("ss11199", ss11199)*/
-                    .put("pc20101", pc20101)
-                    .put("pc20102", pc20102)
-                    .put("pc20103", pc20103)
-                    .put("pc20107", pc20107)
-                    .put("pc20109", pc20109)
-                    .put("pc20110", pc20110)
-                    .put("pc20111", pc20111)
-                    .put("pc20112", pc20112)
-                    .put("pc20113", pc20113)
-                    .put("pc20114", pc20114)
-                    .put("pc20117", pc20117)
-                    .put("pc20119", pc20119)
-                    .put("pc20196", pc20196)
-                    .put("pc20196x", pc20196x)
-                    .put("pc20199", pc20199)
-                    .put("di20201", di20201)
-                    .put("di20203", di20203)
-                    .put("di20205", di20205)
-                    .put("di20209", di20209)
-                    .put("di20210", di20210)
-                    .put("di20211", di20211)
-                    .put("di20216", di20216)
-                    .put("di20219", di20219)
-                    .put("di20296", di20296)
-                    .put("di20296x", di20296x)
-                    .put("di20299", di20299)
-                    .put("vs301", vs301)
-                    /*.put("vs302", vs302)
-                    .put("vs303", vs303)
-                    .put("vs304", vs304)
-                    .put("vs305", vs305)*/
-                    .put("vs306a", vs306a)
-                    .put("vs306b", vs306b)
-                    .put("vs306c", vs306c)
-                    .put("vs306d", vs306d)
-                    .put("vs306e", vs306e)
-                    .put("vs306f", vs306f)
-                    .put("vs306g", vs306g)
-                    .put("vs306i", vs306i)
-                    .put("vs30699", vs30699)
-                    /*.put("vs307", vs307)
-                    .put("vs308", vs308)*/
-                    .put("ss110muac", ss110muac)
-                    .put("ss110mm99", ss110mm99)
-                    .put("ss110fosx", ss110fosx)
-                    .put("ss110f99", ss110f99)
-                    .put("ss110ghrx", ss110ghrx)
-                    .put("ss110g99", ss110g99)
-                    .put("vs306h", vs306h)
-                    .put("pc20121", pc20121)
-                    .put("pc20122", pc20122)
-                    .put("pc20123", pc20123)
-                    .put("pc20124", pc20124)
-                    .put("pc20125", pc20125)
-                    .put("pc20126", pc20126)
-                    .put("pc20127", pc20127)
-                    .put("pc20128", pc20128)
-                    .put("pc20129", pc20129)
-                    .put("pc20130", pc20130)
-                    .put("pc20131", pc20131)
-                    .put("pc20132", pc20132)
-                    .put("pc20133", pc20133)
-                    .put("pc20134", pc20134)
-                    .put("pc20135", pc20135)
-                    .put("pc20136", pc20136)
-                    .put("di20221", di20221)
-                    .put("di20222", di20222)
-                    .put("di20223", di20223)
-                    .put("di20224", di20224)
-                    .put("di20225", di20225)
-                    .put("di20226", di20226)
-                    .put("di20227", di20227)
-                    .put("di20228", di20228)
-                    .put("di20229", di20229)
-                    .put("di20230", di20230)
-                    .put("di20231", di20231)
-                    .put("di20232", di20232)
-                    .put("di20233", di20233)
-                    .put("di20234", di20234)
-                    .put("di20235", di20235)
-                    .put("di20236", di20236)
-                    .put("di20237", di20237)
-                    .put("di20238", di20238)
-                    .put("di20239", di20239)
-                    .put("di20240", di20240)
-                    .put("di20241", di20241)
-                    .put("di20242", di20242)
-                    .put("di20243", di20243)
-                    .put("di20244", di20244)
-                    .put("di20245", di20245)
-                    .put("di20246", di20246)
-                    .put("di20247", di20247)
-                    .put("di20248", di20248)
-                    .put("di20249", di20249)
-                    .put("di20250", di20250)
-                    .put("di20251", di20251)
-                    .put("di20252", di20252)
-                    .put("di20253", di20253)
-                    .put("di20254", di20254)
-                    .put("di20255", di20255)
-                    .put("di20256", di20256)
-                    .put("di20257", di20257)
-                    .put("di20258", di20258)
-                    .put("di20259", di20259)
-                    .put("di20260", di20260)
-                    .put("di20261", di20261)
-                    .put("di20262", di20262)
-                    .put("di20263", di20263)
-                    .put("di20264", di20264)
-                    .put("di20265", di20265)
-                    .put("di20266", di20266)
-                    .put("di20267", di20267)
-                    .put("di20268", di20268)
-                    .put("di20269", di20269)
-                    .put("di20270", di20270)
-                    .put("di20271", di20271)
-                    .put("di20272", di20272)
-                    .put("di20273", di20273)
-                    .put("di20274", di20274)
-                    .put("di20275", di20275)
-                    .put("di20276", di20276)
-                    .put("di20277", di20277)
-                    .put("di20278", di20278)
-                    .put("di20279", di20279)
-                    .put("di20280", di20280)
-                    .put("di20281", di20281)
-                    .put("me20301", me20301)
-                    .put("me20307", me20307)
-                    .put("me20310", me20310)
-                    .put("me20315", me20315)
-                    .put("me20322", me20322)
-                    .put("me20323", me20323)
-                    .put("me20356", me20356)
-                    .put("me20396", me20396)
-                    .put("me20396x", me20396x)
-                    .put("me20399", me20399)
-                    .put("me203101", me203101)
-                    .put("me203102", me203102)
-                    .put("me203103", me203103)
-                    .put("me203104", me203104)
-                    .put("me203105", me203105)
-                    .put("me203106", me203106)
-                    .put("me203107", me203107)
-                    .put("me203108", me203108)
-                    .put("me203109", me203109)
-                    .put("me203110", me203110)
-                    .put("me203111", me203111)
-                    .put("me203112", me203112)
-                    .put("me203113", me203113)
-                    .put("me203114", me203114)
-                    .put("me203115", me203115)
-                    .put("me203116", me203116)
-                    .put("me203117", me203117)
-                    .put("me203118", me203118)
-                    .put("me203119", me203119)
-                    .put("me203120", me203120)
-                    .put("me203121", me203121)
-                    .put("me203122", me203122)
-                    .put("me203123", me203123)
-                    .put("me203124", me203124)
-                    .put("me203125", me203125)
-                    .put("me203126", me203126)
-                    .put("me203127", me203127)
-                    .put("me203128", me203128)
-                    .put("me203129", me203129)
-                    .put("me203130", me203130)
-                    .put("me203131", me203131)
-                    .put("me203132", me203132)
-                    .put("me203133", me203133)
-                    .put("me203134", me203134)
-                    .put("me203135", me203135)
-                    .put("vs310", vs310)
-                    .put("vs311", vs311);
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-            return "\"error\":, \"" + e.getMessage() + "\"";
-
-        }
-        return json.toString();
-    }
-
-    public String sBtoString() {
-        JSONObject json = new JSONObject();
-
-        try {
-            json.put("me20301", me20301)
-                    .put("me20307", me20307)
-                    .put("me20310", me20310)
-                    .put("me20315", me20315)
-                    .put("me20322", me20322)
-                    .put("me20323", me20323)
-                    .put("me20356", me20356)
-                    .put("me20396", me20396)
-                    .put("me20396x", me20396x)
-                    .put("me20399", me20399)
-                    .put("me203101", me203101)
-                    .put("me203102", me203102)
-                    .put("me203103", me203103)
-                    .put("me203104", me203104)
-                    .put("me203105", me203105)
-                    .put("me203106", me203106)
-                    .put("me203107", me203107)
-                    .put("me203108", me203108)
-                    .put("me203109", me203109)
-                    .put("me203110", me203110)
-                    .put("me203111", me203111)
-                    .put("me203112", me203112)
-                    .put("me203113", me203113)
-                    .put("me203114", me203114)
-                    .put("me203115", me203115)
-                    .put("me203116", me203116)
-                    .put("me203117", me203117)
-                    .put("me203118", me203118)
-                    .put("me203119", me203119)
-                    .put("me203120", me203120)
-                    .put("me203121", me203121)
-                    .put("me203122", me203122)
-                    .put("me203123", me203123)
-                    .put("me203124", me203124)
-                    .put("me203125", me203125)
-                    .put("me203126", me203126)
-                    .put("me203127", me203127)
-                    .put("me203128", me203128)
-                    .put("me203129", me203129)
-                    .put("me203130", me203130)
-                    .put("me203131", me203131)
-                    .put("me203132", me203132)
-                    .put("me203133", me203133)
-                    .put("me203134", me203134)
-                    .put("me203135", me203135)
-                    .put("vs310", vs310);
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-            return "\"error\":, \"" + e.getMessage() + "\"";
-
-        }
-        return json.toString();
-    }
-
-
-    public JSONObject toJSONObject() throws JSONException {
-
-        JSONObject json = new JSONObject();
-
-
-        json.put(MHContract.MHTable.COLUMN_ID, this.id);
-        json.put(MHContract.MHTable.COLUMN_UID, this.uid);
-        json.put(MHContract.MHTable.COLUMN_USERNAME, this.userName);
-        json.put(MHContract.MHTable.COLUMN_PROJECT_NAME, this.projectName);
-        json.put(MHContract.MHTable.COLUMN_SYSDATE, this.sysDate);
-        json.put(MHContract.MHTable.COLUMN_DEVICEID, this.deviceId);
-        json.put(MHContract.MHTable.COLUMN_DEVICETAGID, this.deviceTag);
-        json.put(MHContract.MHTable.COLUMN_APPVERSION, this.appver);
-        json.put(MHContract.MHTable.COLUMN_SYNCED, this.synced);
-        json.put(MHContract.MHTable.COLUMN_SYNCED_DATE, this.syncDate);
-        json.put(MHContract.MHTable.COLUMN_STATUS, this.status);
-        json.put(MHContract.MHTable.COLUMN_SERIAL, this.serial);
-        json.put(MHContract.MHTable.COLUMN_SS101, this.ss101);
-        json.put(MHContract.MHTable.COLUMN_SS102, this.ss102);
-        json.put(MHContract.MHTable.COLUMN_SS103, this.ss103);
-        json.put(MHContract.MHTable.COLUMN_SS104, this.ss104);
-        json.put(MHContract.MHTable.COLUMN_SS105, this.ss105);
-        json.put(MHContract.MHTable.COLUMN_SS106, this.ss106);
-        json.put(MHContract.MHTable.COLUMN_SS107, this.ss107);
-
-        json.put(MHContract.MHTable.COLUMN_SA, new JSONObject(sAtoString()));
-//        json.put(MHContract.MHTable.COLUMN_SB, new JSONObject(sBtoString()));
-
-        //For ChildCount
-        //json.put(MHContract.MHTable.COLUMN_SA, this.sA == null ? JSONObject.NULL : this.sA);
-
-
-/*
-            if (this.sA != null && !this.sA.equals("")) {
-                json.put(MHContract.MHTable.COLUMN_SA, new JSONObject(this.sA));
-            }*/
-
-        return json;
-
-    }
-
-
-    public void sAHydrate(String string) throws JSONException {
-        Log.d("sAHydrateS", "string: " + string);
-
-        if (string != null) {
-
-
-            JSONObject json = null;
-            json = new JSONObject(string);
-            this.ss107d = json.getString("ss107d");
-            this.ss107m = json.getString("ss107m");
-            this.ss107y = json.getString("ss107y");
-            this.ss108 = json.getString("ss108");
-            this.ss109 = json.getString("ss109");
-            this.ss110 = json.getString("ss110");
-            this.ss11099 = json.getString("ss11099");
-            this.ss110atempx = json.getString("ss110atempx");
-            this.ss110a99 = json.getString("ss110a99");
-            this.ss110bdiastolicx = json.getString("ss110bdiastolicx");
-            this.ss110bsystolicx = json.getString("ss110bsystolicx");
-            this.ss110b99 = json.getString("ss110b99");
-            this.ss110c = json.getString("ss110c");
-            this.ss110drbsx = json.getString("ss110drbsx");
-            this.ss110d99 = json.getString("ss110d99");
-            this.ss110ehbx = json.getString("ss110ehbx");
-            this.ss110e99 = json.getString("ss110e99");
-            /*this.ss111a = json.getString("ss111a");
-            this.ss111b = json.getString("ss111b");
-            this.ss111c = json.getString("ss111c");
-            this.ss111d = json.getString("ss111d");
-            this.ss11199 = json.getString("ss11199");*/
-            this.pc20101 = json.getString("pc20101");
-            this.pc20102 = json.getString("pc20102");
-            this.pc20103 = json.getString("pc20103");
-            this.pc20107 = json.getString("pc20107");
-            this.pc20109 = json.getString("pc20109");
-            this.pc20110 = json.getString("pc20110");
-            this.pc20111 = json.getString("pc20111");
-            this.pc20112 = json.getString("pc20112");
-            this.pc20113 = json.getString("pc20113");
-            this.pc20114 = json.getString("pc20114");
-            this.pc20117 = json.getString("pc20117");
-            this.pc20119 = json.getString("pc20119");
-            this.pc20196 = json.getString("pc20196");
-            this.pc20196x = json.getString("pc20196x");
-            this.pc20199 = json.getString("pc20199");
-            this.di20201 = json.getString("di20201");
-            this.di20203 = json.getString("di20203");
-            this.di20205 = json.getString("di20205");
-            this.di20209 = json.getString("di20209");
-            this.di20210 = json.getString("di20210");
-            this.di20211 = json.getString("di20211");
-            this.di20216 = json.getString("di20216");
-            this.di20219 = json.getString("di20219");
-            this.di20296 = json.getString("di20296");
-            this.di20296x = json.getString("di20296x");
-            this.di20299 = json.getString("di20299");
-            this.vs301 = json.getString("vs301");
-            /*this.vs302 = json.getString("vs302");
-            this.vs303 = json.getString("vs303");
-            this.vs304 = json.getString("vs304");
-            this.vs305 = json.getString("vs305");*/
-            this.vs306a = json.getString("vs306a");
-            this.vs306b = json.getString("vs306b");
-            this.vs306c = json.getString("vs306c");
-            this.vs306d = json.getString("vs306d");
-            this.vs306e = json.getString("vs306e");
-            this.vs306f = json.getString("vs306f");
-            this.vs306g = json.getString("vs306g");
-            this.vs306i = json.getString("vs306i");
-            this.vs30699 = json.getString("vs30699");
-            /*this.vs307 = json.getString("vs307");
-            this.vs308 = json.getString("vs308");*/
-            this.ss110muac = json.getString("ss110muac");
-            this.ss110mm99 = json.getString("ss110mm99");
-            this.ss110fosx = json.getString("ss110fosx");
-            this.ss110f99 = json.getString("ss110f99");
-            this.ss110ghrx = json.getString("ss110ghrx");
-            this.ss110g99 = json.getString("ss110g99");
-            this.vs306h = json.getString("vs306h");
-            this.pc20121 = json.getString("pc20121");
-            this.pc20122 = json.getString("pc20122");
-            this.pc20123 = json.getString("pc20123");
-            this.pc20124 = json.getString("pc20124");
-            this.pc20125 = json.getString("pc20125");
-            this.pc20126 = json.getString("pc20126");
-            this.pc20127 = json.getString("pc20127");
-            this.pc20128 = json.getString("pc20128");
-            this.pc20129 = json.getString("pc20129");
-            this.pc20130 = json.getString("pc20130");
-            this.pc20131 = json.getString("pc20131");
-            this.pc20132 = json.getString("pc20132");
-            this.pc20133 = json.getString("pc20133");
-            this.pc20134 = json.getString("pc20134");
-            this.pc20135 = json.getString("pc20135");
-            this.pc20136 = json.getString("pc20136");
-            this.di20221 = json.getString("di20221");
-            this.di20222 = json.getString("di20222");
-            this.di20223 = json.getString("di20223");
-            this.di20224 = json.getString("di20224");
-            this.di20225 = json.getString("di20225");
-            this.di20226 = json.getString("di20226");
-            this.di20227 = json.getString("di20227");
-            this.di20228 = json.getString("di20228");
-            this.di20229 = json.getString("di20229");
-            this.di20230 = json.getString("di20230");
-            this.di20231 = json.getString("di20231");
-            this.di20232 = json.getString("di20232");
-            this.di20233 = json.getString("di20233");
-            this.di20234 = json.getString("di20234");
-            this.di20235 = json.getString("di20235");
-            this.di20236 = json.getString("di20236");
-            this.di20237 = json.getString("di20237");
-            this.di20238 = json.getString("di20238");
-            this.di20239 = json.getString("di20239");
-            this.di20240 = json.getString("di20240");
-            this.di20241 = json.getString("di20241");
-            this.di20242 = json.getString("di20242");
-            this.di20243 = json.getString("di20243");
-            this.di20244 = json.getString("di20244");
-            this.di20245 = json.getString("di20245");
-            this.di20246 = json.getString("di20246");
-            this.di20247 = json.getString("di20247");
-            this.di20248 = json.getString("di20248");
-            this.di20249 = json.getString("di20249");
-            this.di20250 = json.getString("di20250");
-            this.di20251 = json.getString("di20251");
-            this.di20252 = json.getString("di20252");
-            this.di20253 = json.getString("di20253");
-            this.di20254 = json.getString("di20254");
-            this.di20255 = json.getString("di20255");
-            this.di20256 = json.getString("di20256");
-            this.di20257 = json.getString("di20257");
-            this.di20258 = json.getString("di20258");
-            this.di20259 = json.getString("di20259");
-            this.di20260 = json.getString("di20260");
-            this.di20261 = json.getString("di20261");
-            this.di20262 = json.getString("di20262");
-            this.di20263 = json.getString("di20263");
-            this.di20264 = json.getString("di20264");
-            this.di20265 = json.getString("di20265");
-            this.di20266 = json.getString("di20266");
-            this.di20267 = json.getString("di20267");
-            this.di20268 = json.getString("di20268");
-            this.di20269 = json.getString("di20269");
-            this.di20270 = json.getString("di20270");
-            this.di20271 = json.getString("di20271");
-            this.di20272 = json.getString("di20272");
-            this.di20273 = json.getString("di20273");
-            this.di20274 = json.getString("di20274");
-            this.di20275 = json.getString("di20275");
-            this.di20276 = json.getString("di20276");
-            this.di20277 = json.getString("di20277");
-            this.di20278 = json.getString("di20278");
-            this.di20279 = json.getString("di20279");
-            this.di20280 = json.getString("di20280");
-            this.di20281 = json.getString("di20281");
-            this.me20301 = json.has("me20301") ? json.getString("me20301") : "";
-            this.me20307 = json.has("me20307") ? json.getString("me20307") : "";
-            this.me20310 = json.has("me20310") ? json.getString("me20310") : "";
-            this.me20315 = json.has("me20315") ? json.getString("me20315") : "";
-            this.me20322 = json.has("me20322") ? json.getString("me20322") : "";
-            this.me20323 = json.has("me20323") ? json.getString("me20323") : "";
-            this.me20356 = json.has("me20356") ? json.getString("me20356") : "";
-            this.me20396 = json.has("me20396") ? json.getString("me20396") : "";
-            this.me20396x = json.has("me20396x") ? json.getString("me20396x") : "";
-            this.me20399 = json.has("me20399") ? json.getString("me20399") : "";
-            this.me203101 = json.has("me203101") ? json.getString("me203101") : "";
-            this.me203102 = json.has("me203102") ? json.getString("me203102") : "";
-            this.me203103 = json.has("me203103") ? json.getString("me203103") : "";
-            this.me203104 = json.has("me203104") ? json.getString("me203104") : "";
-            this.me203105 = json.has("me203105") ? json.getString("me203105") : "";
-            this.me203106 = json.has("me203106") ? json.getString("me203106") : "";
-            this.me203107 = json.has("me203107") ? json.getString("me203107") : "";
-            this.me203108 = json.has("me203108") ? json.getString("me203108") : "";
-            this.me203109 = json.has("me203109") ? json.getString("me203109") : "";
-            this.me203110 = json.has("me203110") ? json.getString("me203110") : "";
-            this.me203111 = json.has("me203111") ? json.getString("me203111") : "";
-            this.me203112 = json.has("me203112") ? json.getString("me203112") : "";
-            this.me203113 = json.has("me203113") ? json.getString("me203113") : "";
-            this.me203114 = json.has("me203114") ? json.getString("me203114") : "";
-            this.me203115 = json.has("me203115") ? json.getString("me203115") : "";
-            this.me203116 = json.has("me203116") ? json.getString("me203116") : "";
-            this.me203117 = json.has("me203117") ? json.getString("me203117") : "";
-            this.me203118 = json.has("me203118") ? json.getString("me203118") : "";
-            this.me203119 = json.has("me203119") ? json.getString("me203119") : "";
-            this.me203120 = json.has("me203120") ? json.getString("me203120") : "";
-            this.me203121 = json.has("me203121") ? json.getString("me203121") : "";
-            this.me203122 = json.has("me203122") ? json.getString("me203122") : "";
-            this.me203123 = json.has("me203123") ? json.getString("me203123") : "";
-            this.me203124 = json.has("me203124") ? json.getString("me203124") : "";
-            this.me203125 = json.has("me203125") ? json.getString("me203125") : "";
-            this.me203126 = json.has("me203126") ? json.getString("me203126") : "";
-            this.me203127 = json.has("me203127") ? json.getString("me203127") : "";
-            this.me203128 = json.has("me203128") ? json.getString("me203128") : "";
-            this.me203129 = json.has("me203129") ? json.getString("me203129") : "";
-            this.me203130 = json.has("me203130") ? json.getString("me203130") : "";
-            this.me203131 = json.has("me203131") ? json.getString("me203131") : "";
-            this.me203132 = json.has("me203132") ? json.getString("me203132") : "";
-            this.me203133 = json.has("me203133") ? json.getString("me203133") : "";
-            this.me203134 = json.has("me203134") ? json.getString("me203134") : "";
-            this.me203135 = json.has("me203135") ? json.getString("me203135") : "";
-            this.vs310 = json.has("vs310") ? json.getString("vs310") : "";
-            this.vs311 = json.has("vs311") ? json.getString("vs311") : "";
-
-        }
-    }
-
-
-    public void sBHydrate(String string) throws JSONException {
-        Log.d("sBHydrate", "string: " + string);
-
-        if (string != null) {
-
-
-            JSONObject json = null;
-            json = new JSONObject(string);
-            this.me20301 = json.has("me20301") ? json.getString("me20301") : "";
-            this.me20307 = json.has("me20307") ? json.getString("me20307") : "";
-            this.me20310 = json.has("me20310") ? json.getString("me20310") : "";
-            this.me20315 = json.has("me20315") ? json.getString("me20315") : "";
-            this.me20322 = json.has("me20322") ? json.getString("me20322") : "";
-            this.me20323 = json.has("me20323") ? json.getString("me20323") : "";
-            this.me20356 = json.has("me20356") ? json.getString("me20356") : "";
-            this.me20396 = json.has("me20396") ? json.getString("me20396") : "";
-            this.me20396x = json.has("me20396x") ? json.getString("me20396x") : "";
-            this.me20399 = json.has("me20399") ? json.getString("me20399") : "";
-            this.me203101 = json.has("me203101") ? json.getString("me203101") : "";
-            this.me203102 = json.has("me203102") ? json.getString("me203102") : "";
-            this.me203103 = json.has("me203103") ? json.getString("me203103") : "";
-            this.me203104 = json.has("me203104") ? json.getString("me203104") : "";
-            this.me203105 = json.has("me203105") ? json.getString("me203105") : "";
-            this.me203106 = json.has("me203106") ? json.getString("me203106") : "";
-            this.me203107 = json.has("me203107") ? json.getString("me203107") : "";
-            this.me203108 = json.has("me203108") ? json.getString("me203108") : "";
-            this.me203109 = json.has("me203109") ? json.getString("me203109") : "";
-            this.me203110 = json.has("me203110") ? json.getString("me203110") : "";
-            this.me203111 = json.has("me203111") ? json.getString("me203111") : "";
-            this.me203112 = json.has("me203112") ? json.getString("me203112") : "";
-            this.me203113 = json.has("me203113") ? json.getString("me203113") : "";
-            this.me203114 = json.has("me203114") ? json.getString("me203114") : "";
-            this.me203115 = json.has("me203115") ? json.getString("me203115") : "";
-            this.me203116 = json.has("me203116") ? json.getString("me203116") : "";
-            this.me203117 = json.has("me203117") ? json.getString("me203117") : "";
-            this.me203118 = json.has("me203118") ? json.getString("me203118") : "";
-            this.me203119 = json.has("me203119") ? json.getString("me203119") : "";
-            this.me203120 = json.has("me203120") ? json.getString("me203120") : "";
-            this.me203121 = json.has("me203121") ? json.getString("me203121") : "";
-            this.me203122 = json.has("me203122") ? json.getString("me203122") : "";
-            this.me203123 = json.has("me203123") ? json.getString("me203123") : "";
-            this.me203124 = json.has("me203124") ? json.getString("me203124") : "";
-            this.me203125 = json.has("me203125") ? json.getString("me203125") : "";
-            this.me203126 = json.has("me203126") ? json.getString("me203126") : "";
-            this.me203127 = json.has("me203127") ? json.getString("me203127") : "";
-            this.me203128 = json.has("me203128") ? json.getString("me203128") : "";
-            this.me203129 = json.has("me203129") ? json.getString("me203129") : "";
-            this.me203130 = json.has("me203130") ? json.getString("me203130") : "";
-            this.me203131 = json.has("me203131") ? json.getString("me203131") : "";
-            this.me203132 = json.has("me203132") ? json.getString("me203132") : "";
-            this.me203133 = json.has("me203133") ? json.getString("me203133") : "";
-            this.me203134 = json.has("me203134") ? json.getString("me203134") : "";
-            this.me203135 = json.has("me203135") ? json.getString("me203135") : "";
-            this.vs310 = json.has("vs310") ? json.getString("vs310") : "";
-        }
     }
 
     @Bindable
@@ -5222,5 +4751,2610 @@ public class MobileHealth extends BaseObservable {
     public void setMe203135(String me203135) {
         this.me203135 = me203135;
         notifyPropertyChanged(BR.me203135);
+    }
+
+    @Bindable
+    public String getDi20282() {
+        return di20282;
+    }
+
+    public void setDi20282(String di20282) {
+        this.di20282 = di20282;
+        notifyPropertyChanged(BR.di20282);
+    }
+
+    @Bindable
+    public String getDi20283() {
+        return di20283;
+    }
+
+    public void setDi20283(String di20283) {
+        this.di20283 = di20283;
+        notifyPropertyChanged(BR.di20283);
+    }
+
+    @Bindable
+    public String getDi20284() {
+        return di20284;
+    }
+
+    public void setDi20284(String di20284) {
+        this.di20284 = di20284;
+        notifyPropertyChanged(BR.di20284);
+    }
+
+    @Bindable
+    public String getDi20285() {
+        return di20285;
+    }
+
+    public void setDi20285(String di20285) {
+        this.di20285 = di20285;
+        notifyPropertyChanged(BR.di20285);
+    }
+
+    @Bindable
+    public String getMe203136() {
+        return me203136;
+    }
+
+    public void setMe203136(String me203136) {
+        this.me203136 = me203136;
+        notifyPropertyChanged(BR.me203136);
+    }
+
+    @Bindable
+    public String getMe203136QTY() {
+        return me203136QTY;
+    }
+
+    public void setMe203136QTY(String me203136QTY) {
+        this.me203136QTY = me203136QTY;
+        notifyPropertyChanged(BR.me203136QTY);
+    }
+
+    @Bindable
+    public String getMe203136DAY() {
+        return me203136DAY;
+    }
+
+    public void setMe203136DAY(String me203136DAY) {
+        this.me203136DAY = me203136DAY;
+        notifyPropertyChanged(BR.me203136DAY);
+    }
+
+    @Bindable
+    public String getMe203137() {
+        return me203137;
+    }
+
+    public void setMe203137(String me203137) {
+        this.me203137 = me203137;
+        notifyPropertyChanged(BR.me203137);
+    }
+
+    @Bindable
+    public String getMe203137QTY() {
+        return me203137QTY;
+    }
+
+    public void setMe203137QTY(String me203137QTY) {
+        this.me203137QTY = me203137QTY;
+        notifyPropertyChanged(BR.me203137QTY);
+    }
+
+    @Bindable
+    public String getMe203137DAY() {
+        return me203137DAY;
+    }
+
+    public void setMe203137DAY(String me203137DAY) {
+        this.me203137DAY = me203137DAY;
+        notifyPropertyChanged(BR.me203137DAY);
+    }
+
+    @Bindable
+    public String getMe203138() {
+        return me203138;
+    }
+
+    public void setMe203138(String me203138) {
+        this.me203138 = me203138;
+        notifyPropertyChanged(BR.me203138);
+    }
+
+    @Bindable
+    public String getMe203138QTY() {
+        return me203138QTY;
+    }
+
+    public void setMe203138QTY(String me203138QTY) {
+        this.me203138QTY = me203138QTY;
+        notifyPropertyChanged(BR.me203138QTY);
+    }
+
+    @Bindable
+    public String getMe203138DAY() {
+        return me203138DAY;
+    }
+
+    public void setMe203138DAY(String me203138DAY) {
+        this.me203138DAY = me203138DAY;
+        notifyPropertyChanged(BR.me203138DAY);
+    }
+
+    @Bindable
+    public String getMe203139() {
+        return me203139;
+    }
+
+    public void setMe203139(String me203139) {
+        this.me203139 = me203139;
+        notifyPropertyChanged(BR.me203139);
+    }
+
+    @Bindable
+    public String getMe203139QTY() {
+        return me203139QTY;
+    }
+
+    public void setMe203139QTY(String me203139QTY) {
+        this.me203139QTY = me203139QTY;
+        notifyPropertyChanged(BR.me203139QTY);
+    }
+
+    @Bindable
+    public String getMe203139DAY() {
+        return me203139DAY;
+    }
+
+    public void setMe203139DAY(String me203139DAY) {
+        this.me203139DAY = me203139DAY;
+        notifyPropertyChanged(BR.me203139DAY);
+    }
+
+    @Bindable
+    public String getMe203140() {
+        return me203140;
+    }
+
+    public void setMe203140(String me203140) {
+        this.me203140 = me203140;
+        notifyPropertyChanged(BR.me203140);
+    }
+
+    @Bindable
+    public String getMe203140QTY() {
+        return me203140QTY;
+    }
+
+    public void setMe203140QTY(String me203140QTY) {
+        this.me203140QTY = me203140QTY;
+        notifyPropertyChanged(BR.me203140QTY);
+    }
+
+    @Bindable
+    public String getMe203140DAY() {
+        return me203140DAY;
+    }
+
+    public void setMe203140DAY(String me203140DAY) {
+        this.me203140DAY = me203140DAY;
+        notifyPropertyChanged(BR.me203140DAY);
+    }
+
+    @Bindable
+    public String getMe203141() {
+        return me203141;
+    }
+
+    public void setMe203141(String me203141) {
+        this.me203141 = me203141;
+        notifyPropertyChanged(BR.me203141);
+    }
+
+    @Bindable
+    public String getMe203141QTY() {
+        return me203141QTY;
+    }
+
+    public void setMe203141QTY(String me203141QTY) {
+        this.me203141QTY = me203141QTY;
+        notifyPropertyChanged(BR.me203141QTY);
+    }
+
+    @Bindable
+    public String getMe203141DAY() {
+        return me203141DAY;
+    }
+
+    public void setMe203141DAY(String me203141DAY) {
+        this.me203141DAY = me203141DAY;
+        notifyPropertyChanged(BR.me203141DAY);
+    }
+
+    @Bindable
+    public String getMe203142() {
+        return me203142;
+    }
+
+    public void setMe203142(String me203142) {
+        this.me203142 = me203142;
+        notifyPropertyChanged(BR.me203142);
+    }
+
+    @Bindable
+    public String getMe203142QTY() {
+        return me203142QTY;
+    }
+
+    public void setMe203142QTY(String me203142QTY) {
+        this.me203142QTY = me203142QTY;
+        notifyPropertyChanged(BR.me203142QTY);
+    }
+
+    @Bindable
+    public String getMe203142DAY() {
+        return me203142DAY;
+    }
+
+    public void setMe203142DAY(String me203142DAY) {
+        this.me203142DAY = me203142DAY;
+        notifyPropertyChanged(BR.me203142DAY);
+    }
+
+    @Bindable
+    public String getMe203143() {
+        return me203143;
+    }
+
+    public void setMe203143(String me203143) {
+        this.me203143 = me203143;
+        notifyPropertyChanged(BR.me203143);
+    }
+
+    @Bindable
+    public String getMe203143QTY() {
+        return me203143QTY;
+    }
+
+    public void setMe203143QTY(String me203143QTY) {
+        this.me203143QTY = me203143QTY;
+        notifyPropertyChanged(BR.me203143QTY);
+    }
+
+    @Bindable
+    public String getMe203143DAY() {
+        return me203143DAY;
+    }
+
+    public void setMe203143DAY(String me203143DAY) {
+        this.me203143DAY = me203143DAY;
+        notifyPropertyChanged(BR.me203143DAY);
+    }
+
+    @Bindable
+    public String getMe203144() {
+        return me203144;
+    }
+
+    public void setMe203144(String me203144) {
+        this.me203144 = me203144;
+        notifyPropertyChanged(BR.me203144);
+    }
+
+    @Bindable
+    public String getMe203144QTY() {
+        return me203144QTY;
+    }
+
+    public void setMe203144QTY(String me203144QTY) {
+        this.me203144QTY = me203144QTY;
+        notifyPropertyChanged(BR.me203144QTY);
+    }
+
+    @Bindable
+    public String getMe203144DAY() {
+        return me203144DAY;
+    }
+
+    public void setMe203144DAY(String me203144DAY) {
+        this.me203144DAY = me203144DAY;
+        notifyPropertyChanged(BR.me203144DAY);
+    }
+
+    @Bindable
+    public String getMe203145() {
+        return me203145;
+    }
+
+    public void setMe203145(String me203145) {
+        this.me203145 = me203145;
+        notifyPropertyChanged(BR.me203145);
+    }
+
+    @Bindable
+    public String getMe203145QTY() {
+        return me203145QTY;
+    }
+
+    public void setMe203145QTY(String me203145QTY) {
+        this.me203145QTY = me203145QTY;
+        notifyPropertyChanged(BR.me203145QTY);
+    }
+
+    @Bindable
+    public String getMe203145DAY() {
+        return me203145DAY;
+    }
+
+    public void setMe203145DAY(String me203145DAY) {
+        this.me203145DAY = me203145DAY;
+        notifyPropertyChanged(BR.me203145DAY);
+    }
+
+    @Bindable
+    public String getMe203146() {
+        return me203146;
+    }
+
+    public void setMe203146(String me203146) {
+        this.me203146 = me203146;
+        notifyPropertyChanged(BR.me203146);
+    }
+
+    @Bindable
+    public String getMe203146QTY() {
+        return me203146QTY;
+    }
+
+    public void setMe203146QTY(String me203146QTY) {
+        this.me203146QTY = me203146QTY;
+        notifyPropertyChanged(BR.me203146QTY);
+    }
+
+    @Bindable
+    public String getMe203146DAY() {
+        return me203146DAY;
+    }
+
+    public void setMe203146DAY(String me203146DAY) {
+        this.me203146DAY = me203146DAY;
+        notifyPropertyChanged(BR.me203146DAY);
+    }
+
+    @Bindable
+    public String getMe203147() {
+        return me203147;
+    }
+
+    public void setMe203147(String me203147) {
+        this.me203147 = me203147;
+        notifyPropertyChanged(BR.me203147);
+    }
+
+    @Bindable
+    public String getMe203147QTY() {
+        return me203147QTY;
+    }
+
+    public void setMe203147QTY(String me203147QTY) {
+        this.me203147QTY = me203147QTY;
+        notifyPropertyChanged(BR.me203147QTY);
+    }
+
+    @Bindable
+    public String getMe203147DAY() {
+        return me203147DAY;
+    }
+
+    public void setMe203147DAY(String me203147DAY) {
+        this.me203147DAY = me203147DAY;
+        notifyPropertyChanged(BR.me203147DAY);
+    }
+
+    @Bindable
+    public String getMe203148() {
+        return me203148;
+    }
+
+    public void setMe203148(String me203148) {
+        this.me203148 = me203148;
+        notifyPropertyChanged(BR.me203148);
+    }
+
+    @Bindable
+    public String getMe203148QTY() {
+        return me203148QTY;
+    }
+
+    public void setMe203148QTY(String me203148QTY) {
+        this.me203148QTY = me203148QTY;
+        notifyPropertyChanged(BR.me203148QTY);
+    }
+
+    @Bindable
+    public String getMe203148DAY() {
+        return me203148DAY;
+    }
+
+    public void setMe203148DAY(String me203148DAY) {
+        this.me203148DAY = me203148DAY;
+        notifyPropertyChanged(BR.me203148DAY);
+    }
+
+    @Bindable
+    public String getMe203149() {
+        return me203149;
+    }
+
+    public void setMe203149(String me203149) {
+        this.me203149 = me203149;
+        notifyPropertyChanged(BR.me203149);
+    }
+
+    @Bindable
+    public String getMe203149QTY() {
+        return me203149QTY;
+    }
+
+    public void setMe203149QTY(String me203149QTY) {
+        this.me203149QTY = me203149QTY;
+        notifyPropertyChanged(BR.me203149QTY);
+    }
+
+    @Bindable
+    public String getMe203149DAY() {
+        return me203149DAY;
+    }
+
+    public void setMe203149DAY(String me203149DAY) {
+        this.me203149DAY = me203149DAY;
+        notifyPropertyChanged(BR.me203149DAY);
+    }
+
+    @Bindable
+    public String getMe203150() {
+        return me203150;
+    }
+
+    public void setMe203150(String me203150) {
+        this.me203150 = me203150;
+        notifyPropertyChanged(BR.me203150);
+    }
+
+    @Bindable
+    public String getMe203150QTY() {
+        return me203150QTY;
+    }
+
+    public void setMe203150QTY(String me203150QTY) {
+        this.me203150QTY = me203150QTY;
+        notifyPropertyChanged(BR.me203150QTY);
+    }
+
+    @Bindable
+    public String getMe203150DAY() {
+        return me203150DAY;
+    }
+
+    public void setMe203150DAY(String me203150DAY) {
+        this.me203150DAY = me203150DAY;
+        notifyPropertyChanged(BR.me203150DAY);
+    }
+
+    @Bindable
+    public String getMe203151() {
+        return me203151;
+    }
+
+    public void setMe203151(String me203151) {
+        this.me203151 = me203151;
+        notifyPropertyChanged(BR.me203151);
+    }
+
+    @Bindable
+    public String getMe203151QTY() {
+        return me203151QTY;
+    }
+
+    public void setMe203151QTY(String me203151QTY) {
+        this.me203151QTY = me203151QTY;
+        notifyPropertyChanged(BR.me203151QTY);
+    }
+
+    @Bindable
+    public String getMe203151DAY() {
+        return me203151DAY;
+    }
+
+    public void setMe203151DAY(String me203151DAY) {
+        this.me203151DAY = me203151DAY;
+        notifyPropertyChanged(BR.me203151DAY);
+    }
+
+    @Bindable
+    public String getMe203152() {
+        return me203152;
+    }
+
+    public void setMe203152(String me203152) {
+        this.me203152 = me203152;
+        notifyPropertyChanged(BR.me203152);
+    }
+
+    @Bindable
+    public String getMe203152QTY() {
+        return me203152QTY;
+    }
+
+    public void setMe203152QTY(String me203152QTY) {
+        this.me203152QTY = me203152QTY;
+        notifyPropertyChanged(BR.me203152QTY);
+    }
+
+    @Bindable
+    public String getMe203152DAY() {
+        return me203152DAY;
+    }
+
+    public void setMe203152DAY(String me203152DAY) {
+        this.me203152DAY = me203152DAY;
+        notifyPropertyChanged(BR.me203152DAY);
+    }
+
+    @Bindable
+    public String getMe203153() {
+        return me203153;
+    }
+
+    public void setMe203153(String me203153) {
+        this.me203153 = me203153;
+        notifyPropertyChanged(BR.me203153);
+    }
+
+    @Bindable
+    public String getMe203153QTY() {
+        return me203153QTY;
+    }
+
+    public void setMe203153QTY(String me203153QTY) {
+        this.me203153QTY = me203153QTY;
+        notifyPropertyChanged(BR.me203153QTY);
+    }
+
+    @Bindable
+    public String getMe203153DAY() {
+        return me203153DAY;
+    }
+
+    public void setMe203153DAY(String me203153DAY) {
+        this.me203153DAY = me203153DAY;
+        notifyPropertyChanged(BR.me203153DAY);
+    }
+
+    @Bindable
+    public String getMe203154() {
+        return me203154;
+    }
+
+    public void setMe203154(String me203154) {
+        this.me203154 = me203154;
+        notifyPropertyChanged(BR.me203154);
+    }
+
+    @Bindable
+    public String getMe203154QTY() {
+        return me203154QTY;
+    }
+
+    public void setMe203154QTY(String me203154QTY) {
+        this.me203154QTY = me203154QTY;
+        notifyPropertyChanged(BR.me203154QTY);
+    }
+
+    @Bindable
+    public String getMe203154DAY() {
+        return me203154DAY;
+    }
+
+    public void setMe203154DAY(String me203154DAY) {
+        this.me203154DAY = me203154DAY;
+        notifyPropertyChanged(BR.me203154DAY);
+    }
+
+    @Bindable
+    public String getMe203155() {
+        return me203155;
+    }
+
+    public void setMe203155(String me203155) {
+        this.me203155 = me203155;
+        notifyPropertyChanged(BR.me203155);
+    }
+
+    @Bindable
+    public String getMe203155QTY() {
+        return me203155QTY;
+    }
+
+    public void setMe203155QTY(String me203155QTY) {
+        this.me203155QTY = me203155QTY;
+        notifyPropertyChanged(BR.me203155QTY);
+    }
+
+    @Bindable
+    public String getMe203155DAY() {
+        return me203155DAY;
+    }
+
+    public void setMe203155DAY(String me203155DAY) {
+        this.me203155DAY = me203155DAY;
+        notifyPropertyChanged(BR.me203155DAY);
+    }
+
+    @Bindable
+    public String getMe203156() {
+        return me203156;
+    }
+
+    public void setMe203156(String me203156) {
+        this.me203156 = me203156;
+        notifyPropertyChanged(BR.me203156);
+    }
+
+    @Bindable
+    public String getMe203156QTY() {
+        return me203156QTY;
+    }
+
+    public void setMe203156QTY(String me203156QTY) {
+        this.me203156QTY = me203156QTY;
+        notifyPropertyChanged(BR.me203156QTY);
+    }
+
+    @Bindable
+    public String getMe203156DAY() {
+        return me203156DAY;
+    }
+
+    public void setMe203156DAY(String me203156DAY) {
+        this.me203156DAY = me203156DAY;
+        notifyPropertyChanged(BR.me203156DAY);
+    }
+
+    @Bindable
+    public String getMe203157() {
+        return me203157;
+    }
+
+    public void setMe203157(String me203157) {
+        this.me203157 = me203157;
+        notifyPropertyChanged(BR.me203157);
+    }
+
+    @Bindable
+    public String getMe203157QTY() {
+        return me203157QTY;
+    }
+
+    public void setMe203157QTY(String me203157QTY) {
+        this.me203157QTY = me203157QTY;
+        notifyPropertyChanged(BR.me203157QTY);
+    }
+
+    @Bindable
+    public String getMe203157DAY() {
+        return me203157DAY;
+    }
+
+    public void setMe203157DAY(String me203157DAY) {
+        this.me203157DAY = me203157DAY;
+        notifyPropertyChanged(BR.me203157DAY);
+    }
+
+    @Bindable
+    public String getMe203158() {
+        return me203158;
+    }
+
+    public void setMe203158(String me203158) {
+        this.me203158 = me203158;
+        notifyPropertyChanged(BR.me203158);
+    }
+
+    @Bindable
+    public String getMe203158QTY() {
+        return me203158QTY;
+    }
+
+    public void setMe203158QTY(String me203158QTY) {
+        this.me203158QTY = me203158QTY;
+        notifyPropertyChanged(BR.me203158QTY);
+    }
+
+    @Bindable
+    public String getMe203158DAY() {
+        return me203158DAY;
+    }
+
+    public void setMe203158DAY(String me203158DAY) {
+        this.me203158DAY = me203158DAY;
+        notifyPropertyChanged(BR.me203158DAY);
+    }
+
+    @Bindable
+    public String getMe203159() {
+        return me203159;
+    }
+
+    public void setMe203159(String me203159) {
+        this.me203159 = me203159;
+        notifyPropertyChanged(BR.me203159);
+    }
+
+    @Bindable
+    public String getMe203159QTY() {
+        return me203159QTY;
+    }
+
+    public void setMe203159QTY(String me203159QTY) {
+        this.me203159QTY = me203159QTY;
+        notifyPropertyChanged(BR.me203159QTY);
+    }
+
+    @Bindable
+    public String getMe203159DAY() {
+        return me203159DAY;
+    }
+
+    public void setMe203159DAY(String me203159DAY) {
+        this.me203159DAY = me203159DAY;
+        notifyPropertyChanged(BR.me203159DAY);
+    }
+
+    @Bindable
+    public String getMe203160() {
+        return me203160;
+    }
+
+    public void setMe203160(String me203160) {
+        this.me203160 = me203160;
+        notifyPropertyChanged(BR.me203160);
+    }
+
+    @Bindable
+    public String getMe203160QTY() {
+        return me203160QTY;
+    }
+
+    public void setMe203160QTY(String me203160QTY) {
+        this.me203160QTY = me203160QTY;
+        notifyPropertyChanged(BR.me203160QTY);
+    }
+
+    @Bindable
+    public String getMe203160DAY() {
+        return me203160DAY;
+    }
+
+    public void setMe203160DAY(String me203160DAY) {
+        this.me203160DAY = me203160DAY;
+        notifyPropertyChanged(BR.me203160DAY);
+    }
+
+    @Bindable
+    public String getMe203161() {
+        return me203161;
+    }
+
+    public void setMe203161(String me203161) {
+        this.me203161 = me203161;
+        notifyPropertyChanged(BR.me203161);
+    }
+
+    @Bindable
+    public String getMe203161QTY() {
+        return me203161QTY;
+    }
+
+    public void setMe203161QTY(String me203161QTY) {
+        this.me203161QTY = me203161QTY;
+        notifyPropertyChanged(BR.me203161QTY);
+    }
+
+    @Bindable
+    public String getMe203161DAY() {
+        return me203161DAY;
+    }
+
+    public void setMe203161DAY(String me203161DAY) {
+        this.me203161DAY = me203161DAY;
+        notifyPropertyChanged(BR.me203161DAY);
+    }
+
+    @Bindable
+    public String getMe203162() {
+        return me203162;
+    }
+
+    public void setMe203162(String me203162) {
+        this.me203162 = me203162;
+        notifyPropertyChanged(BR.me203162);
+    }
+
+    @Bindable
+    public String getMe203162QTY() {
+        return me203162QTY;
+    }
+
+    public void setMe203162QTY(String me203162QTY) {
+        this.me203162QTY = me203162QTY;
+        notifyPropertyChanged(BR.me203162QTY);
+    }
+
+    @Bindable
+    public String getMe203162DAY() {
+        return me203162DAY;
+    }
+
+    public void setMe203162DAY(String me203162DAY) {
+        this.me203162DAY = me203162DAY;
+        notifyPropertyChanged(BR.me203162DAY);
+    }
+
+    @Bindable
+    public String getMe203163() {
+        return me203163;
+    }
+
+    public void setMe203163(String me203163) {
+        this.me203163 = me203163;
+        notifyPropertyChanged(BR.me203163);
+    }
+
+    @Bindable
+    public String getMe203163QTY() {
+        return me203163QTY;
+    }
+
+    public void setMe203163QTY(String me203163QTY) {
+        this.me203163QTY = me203163QTY;
+        notifyPropertyChanged(BR.me203163QTY);
+    }
+
+    @Bindable
+    public String getMe203163DAY() {
+        return me203163DAY;
+    }
+
+    public void setMe203163DAY(String me203163DAY) {
+        this.me203163DAY = me203163DAY;
+        notifyPropertyChanged(BR.me203163DAY);
+    }
+
+    @Bindable
+    public String getMe203164() {
+        return me203164;
+    }
+
+    public void setMe203164(String me203164) {
+        this.me203164 = me203164;
+        notifyPropertyChanged(BR.me203164);
+    }
+
+    @Bindable
+    public String getMe203164QTY() {
+        return me203164QTY;
+    }
+
+    public void setMe203164QTY(String me203164QTY) {
+        this.me203164QTY = me203164QTY;
+        notifyPropertyChanged(BR.me203164QTY);
+    }
+
+    @Bindable
+    public String getMe203164DAY() {
+        return me203164DAY;
+    }
+
+    public void setMe203164DAY(String me203164DAY) {
+        this.me203164DAY = me203164DAY;
+        notifyPropertyChanged(BR.me203164DAY);
+    }
+
+    @Bindable
+    public String getMe203165() {
+        return me203165;
+    }
+
+    public void setMe203165(String me203165) {
+        this.me203165 = me203165;
+        notifyPropertyChanged(BR.me203165);
+    }
+
+    @Bindable
+    public String getMe203165QTY() {
+        return me203165QTY;
+    }
+
+    public void setMe203165QTY(String me203165QTY) {
+        this.me203165QTY = me203165QTY;
+        notifyPropertyChanged(BR.me203165QTY);
+    }
+
+    @Bindable
+    public String getMe203165DAY() {
+        return me203165DAY;
+    }
+
+    public void setMe203165DAY(String me203165DAY) {
+        this.me203165DAY = me203165DAY;
+        notifyPropertyChanged(BR.me203165DAY);
+    }
+
+    @Bindable
+    public String getMe203166() {
+        return me203166;
+    }
+
+    public void setMe203166(String me203166) {
+        this.me203166 = me203166;
+        notifyPropertyChanged(BR.me203166);
+    }
+
+    @Bindable
+    public String getMe203166QTY() {
+        return me203166QTY;
+    }
+
+    public void setMe203166QTY(String me203166QTY) {
+        this.me203166QTY = me203166QTY;
+        notifyPropertyChanged(BR.me203166QTY);
+    }
+
+    @Bindable
+    public String getMe203166DAY() {
+        return me203166DAY;
+    }
+
+    public void setMe203166DAY(String me203166DAY) {
+        this.me203166DAY = me203166DAY;
+        notifyPropertyChanged(BR.me203166DAY);
+    }
+
+    @Bindable
+    public String getMe203167() {
+        return me203167;
+    }
+
+    public void setMe203167(String me203167) {
+        this.me203167 = me203167;
+        notifyPropertyChanged(BR.me203167);
+    }
+
+    @Bindable
+    public String getMe203167QTY() {
+        return me203167QTY;
+    }
+
+    public void setMe203167QTY(String me203167QTY) {
+        this.me203167QTY = me203167QTY;
+        notifyPropertyChanged(BR.me203167QTY);
+    }
+
+    @Bindable
+    public String getMe203167DAY() {
+        return me203167DAY;
+    }
+
+    public void setMe203167DAY(String me203167DAY) {
+        this.me203167DAY = me203167DAY;
+        notifyPropertyChanged(BR.me203167DAY);
+    }
+
+    @Bindable
+    public String getMe203168() {
+        return me203168;
+    }
+
+    public void setMe203168(String me203168) {
+        this.me203168 = me203168;
+        notifyPropertyChanged(BR.me203168);
+    }
+
+    @Bindable
+    public String getMe203168QTY() {
+        return me203168QTY;
+    }
+
+    public void setMe203168QTY(String me203168QTY) {
+        this.me203168QTY = me203168QTY;
+        notifyPropertyChanged(BR.me203168QTY);
+    }
+
+    @Bindable
+    public String getMe203168DAY() {
+        return me203168DAY;
+    }
+
+    public void setMe203168DAY(String me203168DAY) {
+        this.me203168DAY = me203168DAY;
+        notifyPropertyChanged(BR.me203168DAY);
+    }
+
+    @Bindable
+    public String getMe203169() {
+        return me203169;
+    }
+
+    public void setMe203169(String me203169) {
+        this.me203169 = me203169;
+        notifyPropertyChanged(BR.me203169);
+    }
+
+    @Bindable
+    public String getMe203169QTY() {
+        return me203169QTY;
+    }
+
+    public void setMe203169QTY(String me203169QTY) {
+        this.me203169QTY = me203169QTY;
+        notifyPropertyChanged(BR.me203169QTY);
+    }
+
+    @Bindable
+    public String getMe203169DAY() {
+        return me203169DAY;
+    }
+
+    public void setMe203169DAY(String me203169DAY) {
+        this.me203169DAY = me203169DAY;
+        notifyPropertyChanged(BR.me203169DAY);
+    }
+
+    @Bindable
+    public String getMe203170() {
+        return me203170;
+    }
+
+    public void setMe203170(String me203170) {
+        this.me203170 = me203170;
+        notifyPropertyChanged(BR.me203170);
+    }
+
+    @Bindable
+    public String getMe203170QTY() {
+        return me203170QTY;
+    }
+
+    public void setMe203170QTY(String me203170QTY) {
+        this.me203170QTY = me203170QTY;
+        notifyPropertyChanged(BR.me203170QTY);
+    }
+
+    @Bindable
+    public String getMe203170DAY() {
+        return me203170DAY;
+    }
+
+    public void setMe203170DAY(String me203170DAY) {
+        this.me203170DAY = me203170DAY;
+        notifyPropertyChanged(BR.me203170DAY);
+    }
+
+    @Bindable
+    public String getMe203171() {
+        return me203171;
+    }
+
+    public void setMe203171(String me203171) {
+        this.me203171 = me203171;
+        notifyPropertyChanged(BR.me203171);
+    }
+
+    @Bindable
+    public String getMe203171QTY() {
+        return me203171QTY;
+    }
+
+    public void setMe203171QTY(String me203171QTY) {
+        this.me203171QTY = me203171QTY;
+        notifyPropertyChanged(BR.me203171QTY);
+    }
+
+    @Bindable
+    public String getMe203171DAY() {
+        return me203171DAY;
+    }
+
+    public void setMe203171DAY(String me203171DAY) {
+        this.me203171DAY = me203171DAY;
+        notifyPropertyChanged(BR.me203171DAY);
+    }
+
+    @Bindable
+    public String getMe203172() {
+        return me203172;
+    }
+
+    public void setMe203172(String me203172) {
+        this.me203172 = me203172;
+        notifyPropertyChanged(BR.me203172);
+    }
+
+    @Bindable
+    public String getMe203172QTY() {
+        return me203172QTY;
+    }
+
+    public void setMe203172QTY(String me203172QTY) {
+        this.me203172QTY = me203172QTY;
+        notifyPropertyChanged(BR.me203172QTY);
+    }
+
+    @Bindable
+    public String getMe203172DAY() {
+        return me203172DAY;
+    }
+
+    public void setMe203172DAY(String me203172DAY) {
+        this.me203172DAY = me203172DAY;
+        notifyPropertyChanged(BR.me203172DAY);
+    }
+
+    @Bindable
+    public String getMe203173() {
+        return me203173;
+    }
+
+    public void setMe203173(String me203173) {
+        this.me203173 = me203173;
+        notifyPropertyChanged(BR.me203173);
+    }
+
+    @Bindable
+    public String getMe203173QTY() {
+        return me203173QTY;
+    }
+
+    public void setMe203173QTY(String me203173QTY) {
+        this.me203173QTY = me203173QTY;
+        notifyPropertyChanged(BR.me203173QTY);
+    }
+
+    @Bindable
+    public String getMe203173DAY() {
+        return me203173DAY;
+    }
+
+    public void setMe203173DAY(String me203173DAY) {
+        this.me203173DAY = me203173DAY;
+        notifyPropertyChanged(BR.me203173DAY);
+    }
+
+    @Bindable
+    public String getMe203174() {
+        return me203174;
+    }
+
+    public void setMe203174(String me203174) {
+        this.me203174 = me203174;
+        notifyPropertyChanged(BR.me203174);
+    }
+
+    @Bindable
+    public String getMe203174QTY() {
+        return me203174QTY;
+    }
+
+    public void setMe203174QTY(String me203174QTY) {
+        this.me203174QTY = me203174QTY;
+        notifyPropertyChanged(BR.me203174QTY);
+    }
+
+    @Bindable
+    public String getMe203174DAY() {
+        return me203174DAY;
+    }
+
+    public void setMe203174DAY(String me203174DAY) {
+        this.me203174DAY = me203174DAY;
+        notifyPropertyChanged(BR.me203174DAY);
+    }
+
+    @Bindable
+    public String getMe203175() {
+        return me203175;
+    }
+
+    public void setMe203175(String me203175) {
+        this.me203175 = me203175;
+        notifyPropertyChanged(BR.me203175);
+    }
+
+    @Bindable
+    public String getMe203175QTY() {
+        return me203175QTY;
+    }
+
+    public void setMe203175QTY(String me203175QTY) {
+        this.me203175QTY = me203175QTY;
+        notifyPropertyChanged(BR.me203175QTY);
+    }
+
+    @Bindable
+    public String getMe203175DAY() {
+        return me203175DAY;
+    }
+
+    public void setMe203175DAY(String me203175DAY) {
+        this.me203175DAY = me203175DAY;
+        notifyPropertyChanged(BR.me203175DAY);
+    }
+
+    @Bindable
+    public String getMe203176() {
+        return me203176;
+    }
+
+    public void setMe203176(String me203176) {
+        this.me203176 = me203176;
+        notifyPropertyChanged(BR.me203176);
+    }
+
+    @Bindable
+    public String getMe203176QTY() {
+        return me203176QTY;
+    }
+
+    public void setMe203176QTY(String me203176QTY) {
+        this.me203176QTY = me203176QTY;
+        notifyPropertyChanged(BR.me203176QTY);
+    }
+
+    @Bindable
+    public String getMe203176DAY() {
+        return me203176DAY;
+    }
+
+    public void setMe203176DAY(String me203176DAY) {
+        this.me203176DAY = me203176DAY;
+        notifyPropertyChanged(BR.me203176DAY);
+    }
+
+    @Bindable
+    public String getMe203177() {
+        return me203177;
+    }
+
+    public void setMe203177(String me203177) {
+        this.me203177 = me203177;
+        notifyPropertyChanged(BR.me203177);
+    }
+
+    @Bindable
+    public String getMe203177QTY() {
+        return me203177QTY;
+    }
+
+    public void setMe203177QTY(String me203177QTY) {
+        this.me203177QTY = me203177QTY;
+        notifyPropertyChanged(BR.me203177QTY);
+    }
+
+    @Bindable
+    public String getMe203177DAY() {
+        return me203177DAY;
+    }
+
+    public void setMe203177DAY(String me203177DAY) {
+        this.me203177DAY = me203177DAY;
+        notifyPropertyChanged(BR.me203177DAY);
+    }
+
+    @Bindable
+    public String getMe203178() {
+        return me203178;
+    }
+
+    public void setMe203178(String me203178) {
+        this.me203178 = me203178;
+        notifyPropertyChanged(BR.me203178);
+    }
+
+    @Bindable
+    public String getMe203178QTY() {
+        return me203178QTY;
+    }
+
+    public void setMe203178QTY(String me203178QTY) {
+        this.me203178QTY = me203178QTY;
+        notifyPropertyChanged(BR.me203178QTY);
+    }
+
+    @Bindable
+    public String getMe203178DAY() {
+        return me203178DAY;
+    }
+
+    public void setMe203178DAY(String me203178DAY) {
+        this.me203178DAY = me203178DAY;
+        notifyPropertyChanged(BR.me203178DAY);
+    }
+
+    @Bindable
+    public String getMe203179() {
+        return me203179;
+    }
+
+    public void setMe203179(String me203179) {
+        this.me203179 = me203179;
+        notifyPropertyChanged(BR.me203179);
+    }
+
+    @Bindable
+    public String getMe203179QTY() {
+        return me203179QTY;
+    }
+
+    public void setMe203179QTY(String me203179QTY) {
+        this.me203179QTY = me203179QTY;
+        notifyPropertyChanged(BR.me203179QTY);
+    }
+
+    @Bindable
+    public String getMe203179DAY() {
+        return me203179DAY;
+    }
+
+    public void setMe203179DAY(String me203179DAY) {
+        this.me203179DAY = me203179DAY;
+        notifyPropertyChanged(BR.me203179DAY);
+    }
+
+    @Bindable
+    public String getMe203180() {
+        return me203180;
+    }
+
+    public void setMe203180(String me203180) {
+        this.me203180 = me203180;
+        notifyPropertyChanged(BR.me203180);
+    }
+
+    @Bindable
+    public String getMe203180QTY() {
+        return me203180QTY;
+    }
+
+    public void setMe203180QTY(String me203180QTY) {
+        this.me203180QTY = me203180QTY;
+        notifyPropertyChanged(BR.me203180QTY);
+    }
+
+    @Bindable
+    public String getMe203180DAY() {
+        return me203180DAY;
+    }
+
+    public void setMe203180DAY(String me203180DAY) {
+        this.me203180DAY = me203180DAY;
+        notifyPropertyChanged(BR.me203180DAY);
+    }
+
+    @Bindable
+    public String getMe203181() {
+        return me203181;
+    }
+
+    public void setMe203181(String me203181) {
+        this.me203181 = me203181;
+        notifyPropertyChanged(BR.me203181);
+    }
+
+    @Bindable
+    public String getMe203181QTY() {
+        return me203181QTY;
+    }
+
+    public void setMe203181QTY(String me203181QTY) {
+        this.me203181QTY = me203181QTY;
+        notifyPropertyChanged(BR.me203181QTY);
+    }
+
+    @Bindable
+    public String getMe203181DAY() {
+        return me203181DAY;
+    }
+
+    public void setMe203181DAY(String me203181DAY) {
+        this.me203181DAY = me203181DAY;
+        notifyPropertyChanged(BR.me203181DAY);
+    }
+
+    @Bindable
+    public String getMe203182() {
+        return me203182;
+    }
+
+    public void setMe203182(String me203182) {
+        this.me203182 = me203182;
+        notifyPropertyChanged(BR.me203182);
+    }
+
+    @Bindable
+    public String getMe203182QTY() {
+        return me203182QTY;
+    }
+
+    public void setMe203182QTY(String me203182QTY) {
+        this.me203182QTY = me203182QTY;
+        notifyPropertyChanged(BR.me203182QTY);
+    }
+
+    @Bindable
+    public String getMe203182DAY() {
+        return me203182DAY;
+    }
+
+    public void setMe203182DAY(String me203182DAY) {
+        this.me203182DAY = me203182DAY;
+        notifyPropertyChanged(BR.me203182DAY);
+    }
+
+    @Bindable
+    public String getMe203183() {
+        return me203183;
+    }
+
+    public void setMe203183(String me203183) {
+        this.me203183 = me203183;
+        notifyPropertyChanged(BR.me203183);
+    }
+
+    @Bindable
+    public String getMe203183QTY() {
+        return me203183QTY;
+    }
+
+    public void setMe203183QTY(String me203183QTY) {
+        this.me203183QTY = me203183QTY;
+        notifyPropertyChanged(BR.me203183QTY);
+    }
+
+    @Bindable
+    public String getMe203183DAY() {
+        return me203183DAY;
+    }
+
+    public void setMe203183DAY(String me203183DAY) {
+        this.me203183DAY = me203183DAY;
+        notifyPropertyChanged(BR.me203183DAY);
+    }
+
+    @Bindable
+    public String getMe203184() {
+        return me203184;
+    }
+
+    public void setMe203184(String me203184) {
+        this.me203184 = me203184;
+        notifyPropertyChanged(BR.me203184);
+    }
+
+    @Bindable
+    public String getMe203184QTY() {
+        return me203184QTY;
+    }
+
+    public void setMe203184QTY(String me203184QTY) {
+        this.me203184QTY = me203184QTY;
+        notifyPropertyChanged(BR.me203184QTY);
+    }
+
+    @Bindable
+    public String getMe203184DAY() {
+        return me203184DAY;
+    }
+
+    public void setMe203184DAY(String me203184DAY) {
+        this.me203184DAY = me203184DAY;
+        notifyPropertyChanged(BR.me203184DAY);
+    }
+
+    @Bindable
+    public String getMe203185() {
+        return me203185;
+    }
+
+    public void setMe203185(String me203185) {
+        this.me203185 = me203185;
+        notifyPropertyChanged(BR.me203185);
+    }
+
+    @Bindable
+    public String getMe203185QTY() {
+        return me203185QTY;
+    }
+
+    public void setMe203185QTY(String me203185QTY) {
+        this.me203185QTY = me203185QTY;
+        notifyPropertyChanged(BR.me203185QTY);
+    }
+
+    @Bindable
+    public String getMe203185DAY() {
+        return me203185DAY;
+    }
+
+    public void setMe203185DAY(String me203185DAY) {
+        this.me203185DAY = me203185DAY;
+        notifyPropertyChanged(BR.me203185DAY);
+    }
+
+    @Bindable
+    public String getMe203186() {
+        return me203186;
+    }
+
+    public void setMe203186(String me203186) {
+        this.me203186 = me203186;
+        notifyPropertyChanged(BR.me203186);
+    }
+
+    @Bindable
+    public String getMe203186QTY() {
+        return me203186QTY;
+    }
+
+    public void setMe203186QTY(String me203186QTY) {
+        this.me203186QTY = me203186QTY;
+        notifyPropertyChanged(BR.me203186QTY);
+    }
+
+    @Bindable
+    public String getMe203186DAY() {
+        return me203186DAY;
+    }
+
+    public void setMe203186DAY(String me203186DAY) {
+        this.me203186DAY = me203186DAY;
+        notifyPropertyChanged(BR.me203186DAY);
+    }
+
+    @Bindable
+    public String getMe203187() {
+        return me203187;
+    }
+
+    public void setMe203187(String me203187) {
+        this.me203187 = me203187;
+        notifyPropertyChanged(BR.me203187);
+    }
+
+    @Bindable
+    public String getMe203187QTY() {
+        return me203187QTY;
+    }
+
+    public void setMe203187QTY(String me203187QTY) {
+        this.me203187QTY = me203187QTY;
+        notifyPropertyChanged(BR.me203187QTY);
+    }
+
+    @Bindable
+    public String getMe203187DAY() {
+        return me203187DAY;
+    }
+
+    public void setMe203187DAY(String me203187DAY) {
+        this.me203187DAY = me203187DAY;
+        notifyPropertyChanged(BR.me203187DAY);
+    }
+
+    @Bindable
+    public String getMe203188() {
+        return me203188;
+    }
+
+    public void setMe203188(String me203188) {
+        this.me203188 = me203188;
+        notifyPropertyChanged(BR.me203188);
+    }
+
+    @Bindable
+    public String getMe203188QTY() {
+        return me203188QTY;
+    }
+
+    public void setMe203188QTY(String me203188QTY) {
+        this.me203188QTY = me203188QTY;
+        notifyPropertyChanged(BR.me203188QTY);
+    }
+
+    @Bindable
+    public String getMe203188DAY() {
+        return me203188DAY;
+    }
+
+    public void setMe203188DAY(String me203188DAY) {
+        this.me203188DAY = me203188DAY;
+        notifyPropertyChanged(BR.me203188DAY);
+    }
+
+    @Bindable
+    public String getMe203189() {
+        return me203189;
+    }
+
+    public void setMe203189(String me203189) {
+        this.me203189 = me203189;
+        notifyPropertyChanged(BR.me203189);
+    }
+
+    @Bindable
+    public String getMe203189QTY() {
+        return me203189QTY;
+    }
+
+    public void setMe203189QTY(String me203189QTY) {
+        this.me203189QTY = me203189QTY;
+        notifyPropertyChanged(BR.me203189QTY);
+    }
+
+    @Bindable
+    public String getMe203189DAY() {
+        return me203189DAY;
+    }
+
+    public void setMe203189DAY(String me203189DAY) {
+        this.me203189DAY = me203189DAY;
+        notifyPropertyChanged(BR.me203189DAY);
+    }
+
+    @Bindable
+    public String getMe203190() {
+        return me203190;
+    }
+
+    public void setMe203190(String me203190) {
+        this.me203190 = me203190;
+        notifyPropertyChanged(BR.me203190);
+    }
+
+    @Bindable
+    public String getMe203190QTY() {
+        return me203190QTY;
+    }
+
+    public void setMe203190QTY(String me203190QTY) {
+        this.me203190QTY = me203190QTY;
+        notifyPropertyChanged(BR.me203190QTY);
+    }
+
+    @Bindable
+    public String getMe203190DAY() {
+        return me203190DAY;
+    }
+
+    public void setMe203190DAY(String me203190DAY) {
+        this.me203190DAY = me203190DAY;
+        notifyPropertyChanged(BR.me203190DAY);
+    }
+
+    @Bindable
+    public String getMe203191() {
+        return me203191;
+    }
+
+    public void setMe203191(String me203191) {
+        this.me203191 = me203191;
+        notifyPropertyChanged(BR.me203191);
+    }
+
+    @Bindable
+    public String getMe203191QTY() {
+        return me203191QTY;
+    }
+
+    public void setMe203191QTY(String me203191QTY) {
+        this.me203191QTY = me203191QTY;
+        notifyPropertyChanged(BR.me203191QTY);
+    }
+
+    @Bindable
+    public String getMe203191DAY() {
+        return me203191DAY;
+    }
+
+    public void setMe203191DAY(String me203191DAY) {
+        this.me203191DAY = me203191DAY;
+        notifyPropertyChanged(BR.me203191DAY);
+    }
+
+
+    public MobileHealth Sync(JSONObject jsonObject) throws JSONException {
+        this.id = jsonObject.getString(MHContract.MHTable.COLUMN_ID);
+        this.uid = jsonObject.getString(MHContract.MHTable.COLUMN_UID);
+        this.userName = jsonObject.getString(MHContract.MHTable.COLUMN_USERNAME);
+        this.projectName = jsonObject.getString(MHContract.MHTable.COLUMN_PROJECT_NAME);
+        this.sysDate = jsonObject.getString(MHContract.MHTable.COLUMN_SYSDATE);
+        this.deviceId = jsonObject.getString(MHContract.MHTable.COLUMN_DEVICEID);
+        this.deviceTag = jsonObject.getString(MHContract.MHTable.COLUMN_DEVICETAGID);
+        this.appver = jsonObject.getString(MHContract.MHTable.COLUMN_APPVERSION);
+        this.synced = jsonObject.getString(MHContract.MHTable.COLUMN_SYNCED);
+        this.syncDate = jsonObject.getString(MHContract.MHTable.COLUMN_SYNCED_DATE);
+        this.status = jsonObject.getString(MHContract.MHTable.COLUMN_STATUS);
+        this.serial = jsonObject.getString(MHContract.MHTable.COLUMN_SERIAL);
+        this.ss101 = jsonObject.getString(MHContract.MHTable.COLUMN_SS101);
+        this.ss102 = jsonObject.getString(MHContract.MHTable.COLUMN_SS102);
+        this.ss103 = jsonObject.getString(MHContract.MHTable.COLUMN_SS103);
+        this.ss104 = jsonObject.getString(MHContract.MHTable.COLUMN_SS104);
+        this.ss105 = jsonObject.getString(MHContract.MHTable.COLUMN_SS105);
+        this.ss106 = jsonObject.getString(MHContract.MHTable.COLUMN_SS106);
+        this.ss107 = jsonObject.getString(MHContract.MHTable.COLUMN_SS107);
+
+        this.sA = jsonObject.getString(MHContract.MHTable.COLUMN_SA);
+        this.sB = jsonObject.getString(MHContract.MHTable.COLUMN_SB);
+
+        return this;
+
+    }
+
+
+    public MobileHealth Hydrate(Cursor cursor) throws JSONException {
+        this.id = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_ID));
+        this.uid = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_UID));
+        this.userName = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_USERNAME));
+        this.projectName = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_PROJECT_NAME));
+        this.sysDate = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SYSDATE));
+        this.deviceId = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_DEVICEID));
+        this.deviceTag = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_DEVICETAGID));
+        this.appver = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_APPVERSION));
+        this.synced = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SYNCED));
+        this.syncDate = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SYNCED_DATE));
+        this.status = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_STATUS));
+        this.serial = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SERIAL));
+        this.ss101 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS101));
+        this.ss102 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS102));
+        this.ss103 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS103));
+        this.ss104 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS104));
+        this.ss105 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS105));
+        this.ss106 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS106));
+        this.ss107 = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SS107));
+
+        //For childCount
+        //this.sA = cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SA));
+
+        sAHydrate(cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SA)));
+        sBHydrate(cursor.getString(cursor.getColumnIndexOrThrow(MHContract.MHTable.COLUMN_SB)));
+
+        return this;
+    }
+
+
+    //TODO: Try this instead of toJSONObject
+    @Override
+    public String toString() {
+        return new GsonBuilder().create().toJson(this, MobileHealth.class);
+    }
+
+
+    public String sAtoString() {
+        JSONObject json = new JSONObject();
+
+        try {
+            json.put("ss107d", ss107d)
+                    .put("ss107m", ss107m)
+                    .put("ss107y", ss107y)
+                    .put("ss108", ss108)
+                    .put("ss109", ss109)
+                    .put("ss110", ss110)
+                    .put("ss11099", ss11099)
+                    .put("ss110atempx", ss110atempx)
+                    .put("ss110a99", ss110a99)
+                    .put("ss110bdiastolicx", ss110bdiastolicx)
+                    .put("ss110bsystolicx", ss110bsystolicx)
+                    .put("ss110b99", ss110b99)
+                    .put("ss110c", ss110c)
+                    .put("ss110drbsx", ss110drbsx)
+                    .put("ss110d99", ss110d99)
+                    .put("ss110ehbx", ss110ehbx)
+                    .put("ss110e99", ss110e99)
+                    .put("pc20101", pc20101)
+                    .put("pc20102", pc20102)
+                    .put("pc20103", pc20103)
+                    .put("pc20107", pc20107)
+                    .put("pc20109", pc20109)
+                    .put("pc20110", pc20110)
+                    .put("pc20111", pc20111)
+                    .put("pc20112", pc20112)
+                    .put("pc20113", pc20113)
+                    .put("pc20114", pc20114)
+                    .put("pc20117", pc20117)
+                    .put("pc20119", pc20119)
+                    .put("pc20196", pc20196)
+                    .put("pc20196x", pc20196x)
+                    .put("pc20199", pc20199)
+                    .put("di20201", di20201)
+                    .put("di20203", di20203)
+                    .put("di20205", di20205)
+                    .put("di20209", di20209)
+                    .put("di20210", di20210)
+                    .put("di20211", di20211)
+                    .put("di20216", di20216)
+                    .put("di20219", di20219)
+                    .put("di20296", di20296)
+                    .put("di20296x", di20296x)
+                    .put("di20299", di20299)
+                    .put("vs301", vs301)
+                    .put("vs306a", vs306a)
+                    .put("vs306b", vs306b)
+                    .put("vs306c", vs306c)
+                    .put("vs306d", vs306d)
+                    .put("vs306e", vs306e)
+                    .put("vs306f", vs306f)
+                    .put("vs306g", vs306g)
+                    .put("vs306i", vs306i)
+                    .put("vs30699", vs30699)
+                    .put("ss110muac", ss110muac)
+                    .put("ss110mm99", ss110mm99)
+                    .put("ss110fosx", ss110fosx)
+                    .put("ss110f99", ss110f99)
+                    .put("ss110ghrx", ss110ghrx)
+                    .put("ss110g99", ss110g99)
+                    .put("vs306h", vs306h)
+                    .put("pc20121", pc20121)
+                    .put("pc20122", pc20122)
+                    .put("pc20123", pc20123)
+                    .put("pc20124", pc20124)
+                    .put("pc20125", pc20125)
+                    .put("pc20126", pc20126)
+                    .put("pc20127", pc20127)
+                    .put("pc20128", pc20128)
+                    .put("pc20129", pc20129)
+                    .put("pc20130", pc20130)
+                    .put("pc20131", pc20131)
+                    .put("pc20132", pc20132)
+                    .put("pc20133", pc20133)
+                    .put("pc20134", pc20134)
+                    .put("pc20135", pc20135)
+                    .put("pc20136", pc20136)
+                    .put("di20221", di20221)
+                    .put("di20222", di20222)
+                    .put("di20223", di20223)
+                    .put("di20224", di20224)
+                    .put("di20225", di20225)
+                    .put("di20226", di20226)
+                    .put("di20227", di20227)
+                    .put("di20228", di20228)
+                    .put("di20229", di20229)
+                    .put("di20230", di20230)
+                    .put("di20231", di20231)
+                    .put("di20232", di20232)
+                    .put("di20233", di20233)
+                    .put("di20234", di20234)
+                    .put("di20235", di20235)
+                    .put("di20236", di20236)
+                    .put("di20237", di20237)
+                    .put("di20238", di20238)
+                    .put("di20239", di20239)
+                    .put("di20240", di20240)
+                    .put("di20241", di20241)
+                    .put("di20242", di20242)
+                    .put("di20243", di20243)
+                    .put("di20244", di20244)
+                    .put("di20245", di20245)
+                    .put("di20246", di20246)
+                    .put("di20247", di20247)
+                    .put("di20248", di20248)
+                    .put("di20249", di20249)
+                    .put("di20250", di20250)
+                    .put("di20251", di20251)
+                    .put("di20252", di20252)
+                    .put("di20253", di20253)
+                    .put("di20254", di20254)
+                    .put("di20255", di20255)
+                    .put("di20256", di20256)
+                    .put("di20257", di20257)
+                    .put("di20258", di20258)
+                    .put("di20259", di20259)
+                    .put("di20260", di20260)
+                    .put("di20261", di20261)
+                    .put("di20262", di20262)
+                    .put("di20263", di20263)
+                    .put("di20264", di20264)
+                    .put("di20265", di20265)
+                    .put("di20266", di20266)
+                    .put("di20267", di20267)
+                    .put("di20268", di20268)
+                    .put("di20269", di20269)
+                    .put("di20270", di20270)
+                    .put("di20271", di20271)
+                    .put("di20272", di20272)
+                    .put("di20273", di20273)
+                    .put("di20274", di20274)
+                    .put("di20275", di20275)
+                    .put("di20276", di20276)
+                    .put("di20277", di20277)
+                    .put("di20278", di20278)
+                    .put("di20279", di20279)
+                    .put("di20280", di20280)
+                    .put("di20281", di20281)
+                    .put("di20282", di20282)
+                    .put("di20283", di20283)
+                    .put("di20284", di20284)
+                    .put("di20285", di20285)
+                    .put("vs311", vs311);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return "\"error\":, \"" + e.getMessage() + "\"";
+
+        }
+        return json.toString();
+    }
+
+    public String sBtoString() {
+        JSONObject json = new JSONObject();
+
+        try {
+            json.put("me20301", me20301)
+                    .put("me20307", me20307)
+                    .put("me20310", me20310)
+                    .put("me20315", me20315)
+                    .put("me20322", me20322)
+                    .put("me20323", me20323)
+                    .put("me20356", me20356)
+                    .put("me203101", me203101)
+                    .put("me203102", me203102)
+                    .put("me203103", me203103)
+                    .put("me203104", me203104)
+                    .put("me203105", me203105)
+                    .put("me203106", me203106)
+                    .put("me203107", me203107)
+                    .put("me203108", me203108)
+                    .put("me203109", me203109)
+                    .put("me203110", me203110)
+                    .put("me203111", me203111)
+                    .put("me203112", me203112)
+                    .put("me203113", me203113)
+                    .put("me203114", me203114)
+                    .put("me203115", me203115)
+                    .put("me203116", me203116)
+                    .put("me203117", me203117)
+                    .put("me203118", me203118)
+                    .put("me203119", me203119)
+                    .put("me203120", me203120)
+                    .put("me203121", me203121)
+                    .put("me203122", me203122)
+                    .put("me203123", me203123)
+                    .put("me203124", me203124)
+                    .put("me203125", me203125)
+                    .put("me203126", me203126)
+                    .put("me203127", me203127)
+                    .put("me203128", me203128)
+                    .put("me203129", me203129)
+                    .put("me203130", me203130)
+                    .put("me203131", me203131)
+                    .put("me203132", me203132)
+                    .put("me203133", me203133)
+                    .put("me203134", me203134)
+                    .put("me203135", me203135)
+                    .put("me203136", me203136)
+                    .put("me203136QTY", me203136QTY)
+                    .put("me203136DAY", me203136DAY)
+                    .put("me203137", me203137)
+                    .put("me203137QTY", me203137QTY)
+                    .put("me203137DAY", me203137DAY)
+                    .put("me203138", me203138)
+                    .put("me203138QTY", me203138QTY)
+                    .put("me203138DAY", me203138DAY)
+                    .put("me203139", me203139)
+                    .put("me203139QTY", me203139QTY)
+                    .put("me203139DAY", me203139DAY)
+                    .put("me203140", me203140)
+                    .put("me203140QTY", me203140QTY)
+                    .put("me203140DAY", me203140DAY)
+                    .put("me203141", me203141)
+                    .put("me203141QTY", me203141QTY)
+                    .put("me203141DAY", me203141DAY)
+                    .put("me203142", me203142)
+                    .put("me203142QTY", me203142QTY)
+                    .put("me203142DAY", me203142DAY)
+                    .put("me203143", me203143)
+                    .put("me203143QTY", me203143QTY)
+                    .put("me203143DAY", me203143DAY)
+                    .put("me203144", me203144)
+                    .put("me203144QTY", me203144QTY)
+                    .put("me203144DAY", me203144DAY)
+                    .put("me203145", me203145)
+                    .put("me203145QTY", me203145QTY)
+                    .put("me203145DAY", me203145DAY)
+                    .put("me203146", me203146)
+                    .put("me203146QTY", me203146QTY)
+                    .put("me203146DAY", me203146DAY)
+                    .put("me203147", me203147)
+                    .put("me203147QTY", me203147QTY)
+                    .put("me203147DAY", me203147DAY)
+                    .put("me203148", me203148)
+                    .put("me203148QTY", me203148QTY)
+                    .put("me203148DAY", me203148DAY)
+                    .put("me203149", me203149)
+                    .put("me203149QTY", me203149QTY)
+                    .put("me203149DAY", me203149DAY)
+                    .put("me203150", me203150)
+                    .put("me203150QTY", me203150QTY)
+                    .put("me203150DAY", me203150DAY)
+                    .put("me203151", me203151)
+                    .put("me203151QTY", me203151QTY)
+                    .put("me203151DAY", me203151DAY)
+                    .put("me203152", me203152)
+                    .put("me203152QTY", me203152QTY)
+                    .put("me203152DAY", me203152DAY)
+                    .put("me203153", me203153)
+                    .put("me203153QTY", me203153QTY)
+                    .put("me203153DAY", me203153DAY)
+                    .put("me203154", me203154)
+                    .put("me203154QTY", me203154QTY)
+                    .put("me203154DAY", me203154DAY)
+                    .put("me203155", me203155)
+                    .put("me203155QTY", me203155QTY)
+                    .put("me203155DAY", me203155DAY)
+                    .put("me203156", me203156)
+                    .put("me203156QTY", me203156QTY)
+                    .put("me203156DAY", me203156DAY)
+                    .put("me203157", me203157)
+                    .put("me203157QTY", me203157QTY)
+                    .put("me203157DAY", me203157DAY)
+                    .put("me203158", me203158)
+                    .put("me203158QTY", me203158QTY)
+                    .put("me203158DAY", me203158DAY)
+                    .put("me203159", me203159)
+                    .put("me203159QTY", me203159QTY)
+                    .put("me203159DAY", me203159DAY)
+                    .put("me203160", me203160)
+                    .put("me203160QTY", me203160QTY)
+                    .put("me203160DAY", me203160DAY)
+                    .put("me203161", me203161)
+                    .put("me203161QTY", me203161QTY)
+                    .put("me203161DAY", me203161DAY)
+                    .put("me203162", me203162)
+                    .put("me203162QTY", me203162QTY)
+                    .put("me203162DAY", me203162DAY)
+                    .put("me203163", me203163)
+                    .put("me203163QTY", me203163QTY)
+                    .put("me203163DAY", me203163DAY)
+                    .put("me203164", me203164)
+                    .put("me203164QTY", me203164QTY)
+                    .put("me203164DAY", me203164DAY)
+                    .put("me203165", me203165)
+                    .put("me203165QTY", me203165QTY)
+                    .put("me203165DAY", me203165DAY)
+                    .put("me203166", me203166)
+                    .put("me203166QTY", me203166QTY)
+                    .put("me203166DAY", me203166DAY)
+                    .put("me203167", me203167)
+                    .put("me203167QTY", me203167QTY)
+                    .put("me203167DAY", me203167DAY)
+                    .put("me203168", me203168)
+                    .put("me203168QTY", me203168QTY)
+                    .put("me203168DAY", me203168DAY)
+                    .put("me203169", me203169)
+                    .put("me203169QTY", me203169QTY)
+                    .put("me203169DAY", me203169DAY)
+                    .put("me203170", me203170)
+                    .put("me203170QTY", me203170QTY)
+                    .put("me203170DAY", me203170DAY)
+                    .put("me203171", me203171)
+                    .put("me203171QTY", me203171QTY)
+                    .put("me203171DAY", me203171DAY)
+                    .put("me203172", me203172)
+                    .put("me203172QTY", me203172QTY)
+                    .put("me203172DAY", me203172DAY)
+                    .put("me203173", me203173)
+                    .put("me203173QTY", me203173QTY)
+                    .put("me203173DAY", me203173DAY)
+                    .put("me203174", me203174)
+                    .put("me203174QTY", me203174QTY)
+                    .put("me203174DAY", me203174DAY)
+                    .put("me203175", me203175)
+                    .put("me203175QTY", me203175QTY)
+                    .put("me203175DAY", me203175DAY)
+                    .put("me203176", me203176)
+                    .put("me203176QTY", me203176QTY)
+                    .put("me203176DAY", me203176DAY)
+                    .put("me203177", me203177)
+                    .put("me203177QTY", me203177QTY)
+                    .put("me203177DAY", me203177DAY)
+                    .put("me203178", me203178)
+                    .put("me203178QTY", me203178QTY)
+                    .put("me203178DAY", me203178DAY)
+                    .put("me203179", me203179)
+                    .put("me203179QTY", me203179QTY)
+                    .put("me203179DAY", me203179DAY)
+                    .put("me203180", me203180)
+                    .put("me203180QTY", me203180QTY)
+                    .put("me203180DAY", me203180DAY)
+                    .put("me203181", me203181)
+                    .put("me203181QTY", me203181QTY)
+                    .put("me203181DAY", me203181DAY)
+                    .put("me203182", me203182)
+                    .put("me203182QTY", me203182QTY)
+                    .put("me203182DAY", me203182DAY)
+                    .put("me203183", me203183)
+                    .put("me203183QTY", me203183QTY)
+                    .put("me203183DAY", me203183DAY)
+                    .put("me203184", me203184)
+                    .put("me203184QTY", me203184QTY)
+                    .put("me203184DAY", me203184DAY)
+                    .put("me203185", me203185)
+                    .put("me203185QTY", me203185QTY)
+                    .put("me203185DAY", me203185DAY)
+                    .put("me203186", me203186)
+                    .put("me203186QTY", me203186QTY)
+                    .put("me203186DAY", me203186DAY)
+                    .put("me203187", me203187)
+                    .put("me203187QTY", me203187QTY)
+                    .put("me203187DAY", me203187DAY)
+                    .put("me203188", me203188)
+                    .put("me203188QTY", me203188QTY)
+                    .put("me203188DAY", me203188DAY)
+                    .put("me203189", me203189)
+                    .put("me203189QTY", me203189QTY)
+                    .put("me203189DAY", me203189DAY)
+                    .put("me203190", me203190)
+                    .put("me203190QTY", me203190QTY)
+                    .put("me203190DAY", me203190DAY)
+                    .put("me203191", me203191)
+                    .put("me203191QTY", me203191QTY)
+                    .put("me203191DAY", me203191DAY)
+                    .put("me20396", me20396)
+                    .put("me20396x", me20396x)
+                    .put("me20399", me20399)
+                    .put("vs310", vs310);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return "\"error\":, \"" + e.getMessage() + "\"";
+
+        }
+        return json.toString();
+    }
+
+
+    public JSONObject toJSONObject() throws JSONException {
+
+        JSONObject json = new JSONObject();
+
+
+        json.put(MHContract.MHTable.COLUMN_ID, this.id);
+        json.put(MHContract.MHTable.COLUMN_UID, this.uid);
+        json.put(MHContract.MHTable.COLUMN_USERNAME, this.userName);
+        json.put(MHContract.MHTable.COLUMN_PROJECT_NAME, this.projectName);
+        json.put(MHContract.MHTable.COLUMN_SYSDATE, this.sysDate);
+        json.put(MHContract.MHTable.COLUMN_DEVICEID, this.deviceId);
+        json.put(MHContract.MHTable.COLUMN_DEVICETAGID, this.deviceTag);
+        json.put(MHContract.MHTable.COLUMN_APPVERSION, this.appver);
+        json.put(MHContract.MHTable.COLUMN_SYNCED, this.synced);
+        json.put(MHContract.MHTable.COLUMN_SYNCED_DATE, this.syncDate);
+        json.put(MHContract.MHTable.COLUMN_STATUS, this.status);
+        json.put(MHContract.MHTable.COLUMN_SERIAL, this.serial);
+        json.put(MHContract.MHTable.COLUMN_SS101, this.ss101);
+        json.put(MHContract.MHTable.COLUMN_SS102, this.ss102);
+        json.put(MHContract.MHTable.COLUMN_SS103, this.ss103);
+        json.put(MHContract.MHTable.COLUMN_SS104, this.ss104);
+        json.put(MHContract.MHTable.COLUMN_SS105, this.ss105);
+        json.put(MHContract.MHTable.COLUMN_SS106, this.ss106);
+        json.put(MHContract.MHTable.COLUMN_SS107, this.ss107);
+
+        json.put(MHContract.MHTable.COLUMN_SA, new JSONObject(sAtoString()));
+        json.put(MHContract.MHTable.COLUMN_SB, new JSONObject(sBtoString()));
+
+        //For ChildCount
+        //json.put(MHContract.MHTable.COLUMN_SA, this.sA == null ? JSONObject.NULL : this.sA);
+
+
+/*
+            if (this.sA != null && !this.sA.equals("")) {
+                json.put(MHContract.MHTable.COLUMN_SA, new JSONObject(this.sA));
+            }*/
+
+        return json;
+
+    }
+
+
+    public void sAHydrate(String string) throws JSONException {
+        Log.d("sAHydrateS", "string: " + string);
+
+        if (string != null) {
+
+
+            JSONObject json = null;
+            json = new JSONObject(string);
+            this.ss107d = json.getString("ss107d");
+            this.ss107m = json.getString("ss107m");
+            this.ss107y = json.getString("ss107y");
+            this.ss108 = json.getString("ss108");
+            this.ss109 = json.getString("ss109");
+            this.ss110 = json.getString("ss110");
+            this.ss11099 = json.getString("ss11099");
+            this.ss110atempx = json.getString("ss110atempx");
+            this.ss110a99 = json.getString("ss110a99");
+            this.ss110bdiastolicx = json.getString("ss110bdiastolicx");
+            this.ss110bsystolicx = json.getString("ss110bsystolicx");
+            this.ss110b99 = json.getString("ss110b99");
+            this.ss110c = json.getString("ss110c");
+            this.ss110drbsx = json.getString("ss110drbsx");
+            this.ss110d99 = json.getString("ss110d99");
+            this.ss110ehbx = json.getString("ss110ehbx");
+            this.ss110e99 = json.getString("ss110e99");
+            /*this.ss111a = json.getString("ss111a");
+            this.ss111b = json.getString("ss111b");
+            this.ss111c = json.getString("ss111c");
+            this.ss111d = json.getString("ss111d");
+            this.ss11199 = json.getString("ss11199");*/
+            this.pc20101 = json.getString("pc20101");
+            this.pc20102 = json.getString("pc20102");
+            this.pc20103 = json.getString("pc20103");
+            this.pc20107 = json.getString("pc20107");
+            this.pc20109 = json.getString("pc20109");
+            this.pc20110 = json.getString("pc20110");
+            this.pc20111 = json.getString("pc20111");
+            this.pc20112 = json.getString("pc20112");
+            this.pc20113 = json.getString("pc20113");
+            this.pc20114 = json.getString("pc20114");
+            this.pc20117 = json.getString("pc20117");
+            this.pc20119 = json.getString("pc20119");
+            this.pc20196 = json.getString("pc20196");
+            this.pc20196x = json.getString("pc20196x");
+            this.pc20199 = json.getString("pc20199");
+            this.di20201 = json.getString("di20201");
+            this.di20203 = json.getString("di20203");
+            this.di20205 = json.getString("di20205");
+            this.di20209 = json.getString("di20209");
+            this.di20210 = json.getString("di20210");
+            this.di20211 = json.getString("di20211");
+            this.di20216 = json.getString("di20216");
+            this.di20219 = json.getString("di20219");
+            this.di20296 = json.getString("di20296");
+            this.di20296x = json.getString("di20296x");
+            this.di20299 = json.getString("di20299");
+            this.vs301 = json.getString("vs301");
+            /*this.vs302 = json.getString("vs302");
+            this.vs303 = json.getString("vs303");
+            this.vs304 = json.getString("vs304");
+            this.vs305 = json.getString("vs305");*/
+            this.vs306a = json.getString("vs306a");
+            this.vs306b = json.getString("vs306b");
+            this.vs306c = json.getString("vs306c");
+            this.vs306d = json.getString("vs306d");
+            this.vs306e = json.getString("vs306e");
+            this.vs306f = json.getString("vs306f");
+            this.vs306g = json.getString("vs306g");
+            this.vs306i = json.getString("vs306i");
+            this.vs30699 = json.getString("vs30699");
+            /*this.vs307 = json.getString("vs307");
+            this.vs308 = json.getString("vs308");*/
+            this.ss110muac = json.getString("ss110muac");
+            this.ss110mm99 = json.getString("ss110mm99");
+            this.ss110fosx = json.getString("ss110fosx");
+            this.ss110f99 = json.getString("ss110f99");
+            this.ss110ghrx = json.getString("ss110ghrx");
+            this.ss110g99 = json.getString("ss110g99");
+            this.vs306h = json.getString("vs306h");
+            this.pc20121 = json.getString("pc20121");
+            this.pc20122 = json.getString("pc20122");
+            this.pc20123 = json.getString("pc20123");
+            this.pc20124 = json.getString("pc20124");
+            this.pc20125 = json.getString("pc20125");
+            this.pc20126 = json.getString("pc20126");
+            this.pc20127 = json.getString("pc20127");
+            this.pc20128 = json.getString("pc20128");
+            this.pc20129 = json.getString("pc20129");
+            this.pc20130 = json.getString("pc20130");
+            this.pc20131 = json.getString("pc20131");
+            this.pc20132 = json.getString("pc20132");
+            this.pc20133 = json.getString("pc20133");
+            this.pc20134 = json.getString("pc20134");
+            this.pc20135 = json.getString("pc20135");
+            this.pc20136 = json.getString("pc20136");
+            this.di20221 = json.getString("di20221");
+            this.di20222 = json.getString("di20222");
+            this.di20223 = json.getString("di20223");
+            this.di20224 = json.getString("di20224");
+            this.di20225 = json.getString("di20225");
+            this.di20226 = json.getString("di20226");
+            this.di20227 = json.getString("di20227");
+            this.di20228 = json.getString("di20228");
+            this.di20229 = json.getString("di20229");
+            this.di20230 = json.getString("di20230");
+            this.di20231 = json.getString("di20231");
+            this.di20232 = json.getString("di20232");
+            this.di20233 = json.getString("di20233");
+            this.di20234 = json.getString("di20234");
+            this.di20235 = json.getString("di20235");
+            this.di20236 = json.getString("di20236");
+            this.di20237 = json.getString("di20237");
+            this.di20238 = json.getString("di20238");
+            this.di20239 = json.getString("di20239");
+            this.di20240 = json.getString("di20240");
+            this.di20241 = json.getString("di20241");
+            this.di20242 = json.getString("di20242");
+            this.di20243 = json.getString("di20243");
+            this.di20244 = json.getString("di20244");
+            this.di20245 = json.getString("di20245");
+            this.di20246 = json.getString("di20246");
+            this.di20247 = json.getString("di20247");
+            this.di20248 = json.getString("di20248");
+            this.di20249 = json.getString("di20249");
+            this.di20250 = json.getString("di20250");
+            this.di20251 = json.getString("di20251");
+            this.di20252 = json.getString("di20252");
+            this.di20253 = json.getString("di20253");
+            this.di20254 = json.getString("di20254");
+            this.di20255 = json.getString("di20255");
+            this.di20256 = json.getString("di20256");
+            this.di20257 = json.getString("di20257");
+            this.di20258 = json.getString("di20258");
+            this.di20259 = json.getString("di20259");
+            this.di20260 = json.getString("di20260");
+            this.di20261 = json.getString("di20261");
+            this.di20262 = json.getString("di20262");
+            this.di20263 = json.getString("di20263");
+            this.di20264 = json.getString("di20264");
+            this.di20265 = json.getString("di20265");
+            this.di20266 = json.getString("di20266");
+            this.di20267 = json.getString("di20267");
+            this.di20268 = json.getString("di20268");
+            this.di20269 = json.getString("di20269");
+            this.di20270 = json.getString("di20270");
+            this.di20271 = json.getString("di20271");
+            this.di20272 = json.getString("di20272");
+            this.di20273 = json.getString("di20273");
+            this.di20274 = json.getString("di20274");
+            this.di20275 = json.getString("di20275");
+            this.di20276 = json.getString("di20276");
+            this.di20277 = json.getString("di20277");
+            this.di20278 = json.getString("di20278");
+            this.di20279 = json.getString("di20279");
+            this.di20280 = json.getString("di20280");
+            this.di20281 = json.getString("di20281");
+            this.di20282 = json.getString("di20282");
+            this.di20283 = json.getString("di20283");
+            this.di20284 = json.getString("di20284");
+            this.di20285 = json.getString("di20285");
+            this.vs311 = json.has("vs311") ? json.getString("vs311") : "";
+
+        }
+    }
+
+
+    public void sBHydrate(String string) throws JSONException {
+        Log.d("sBHydrate", "string: " + string);
+
+        if (string != null) {
+
+
+            JSONObject json = null;
+            json = new JSONObject(string);
+
+            this.me20301 = json.has("me20301") ? json.getString("me20301") : "";
+            this.me20307 = json.has("me20307") ? json.getString("me20307") : "";
+            this.me20310 = json.has("me20310") ? json.getString("me20310") : "";
+            this.me20315 = json.has("me20315") ? json.getString("me20315") : "";
+            this.me20322 = json.has("me20322") ? json.getString("me20322") : "";
+            this.me20323 = json.has("me20323") ? json.getString("me20323") : "";
+            this.me20356 = json.has("me20356") ? json.getString("me20356") : "";
+            this.me20396 = json.has("me20396") ? json.getString("me20396") : "";
+            this.me20396x = json.has("me20396x") ? json.getString("me20396x") : "";
+            this.me20399 = json.has("me20399") ? json.getString("me20399") : "";
+            this.me203101 = json.has("me203101") ? json.getString("me203101") : "";
+            this.me203102 = json.has("me203102") ? json.getString("me203102") : "";
+            this.me203103 = json.has("me203103") ? json.getString("me203103") : "";
+            this.me203104 = json.has("me203104") ? json.getString("me203104") : "";
+            this.me203105 = json.has("me203105") ? json.getString("me203105") : "";
+            this.me203106 = json.has("me203106") ? json.getString("me203106") : "";
+            this.me203107 = json.has("me203107") ? json.getString("me203107") : "";
+            this.me203108 = json.has("me203108") ? json.getString("me203108") : "";
+            this.me203109 = json.has("me203109") ? json.getString("me203109") : "";
+            this.me203110 = json.has("me203110") ? json.getString("me203110") : "";
+            this.me203111 = json.has("me203111") ? json.getString("me203111") : "";
+            this.me203112 = json.has("me203112") ? json.getString("me203112") : "";
+            this.me203113 = json.has("me203113") ? json.getString("me203113") : "";
+            this.me203114 = json.has("me203114") ? json.getString("me203114") : "";
+            this.me203115 = json.has("me203115") ? json.getString("me203115") : "";
+            this.me203116 = json.has("me203116") ? json.getString("me203116") : "";
+            this.me203117 = json.has("me203117") ? json.getString("me203117") : "";
+            this.me203118 = json.has("me203118") ? json.getString("me203118") : "";
+            this.me203119 = json.has("me203119") ? json.getString("me203119") : "";
+            this.me203120 = json.has("me203120") ? json.getString("me203120") : "";
+            this.me203121 = json.has("me203121") ? json.getString("me203121") : "";
+            this.me203122 = json.has("me203122") ? json.getString("me203122") : "";
+            this.me203123 = json.has("me203123") ? json.getString("me203123") : "";
+            this.me203124 = json.has("me203124") ? json.getString("me203124") : "";
+            this.me203125 = json.has("me203125") ? json.getString("me203125") : "";
+            this.me203126 = json.has("me203126") ? json.getString("me203126") : "";
+            this.me203127 = json.has("me203127") ? json.getString("me203127") : "";
+            this.me203128 = json.has("me203128") ? json.getString("me203128") : "";
+            this.me203129 = json.has("me203129") ? json.getString("me203129") : "";
+            this.me203130 = json.has("me203130") ? json.getString("me203130") : "";
+            this.me203131 = json.has("me203131") ? json.getString("me203131") : "";
+            this.me203132 = json.has("me203132") ? json.getString("me203132") : "";
+            this.me203133 = json.has("me203133") ? json.getString("me203133") : "";
+            this.me203134 = json.has("me203134") ? json.getString("me203134") : "";
+            this.me203135 = json.has("me203135") ? json.getString("me203135") : "";
+            this.me203136 = json.has("me203136") ? json.getString("me203136") : "";
+            this.me203136QTY = json.has("me203136QTY") ? json.getString("me203136QTY") : "";
+            this.me203136DAY = json.has("me203136DAY") ? json.getString("me203136DAY") : "";
+            this.me203137 = json.has("me203137") ? json.getString("me203137") : "";
+            this.me203137QTY = json.has("me203137QTY") ? json.getString("me203137QTY") : "";
+            this.me203137DAY = json.has("me203137DAY") ? json.getString("me203137DAY") : "";
+            this.me203138 = json.has("me203138") ? json.getString("me203138") : "";
+            this.me203138QTY = json.has("me203138QTY") ? json.getString("me203138QTY") : "";
+            this.me203138DAY = json.has("me203138DAY") ? json.getString("me203138DAY") : "";
+            this.me203139 = json.has("me203139") ? json.getString("me203139") : "";
+            this.me203139QTY = json.has("me203139QTY") ? json.getString("me203139QTY") : "";
+            this.me203139DAY = json.has("me203139DAY") ? json.getString("me203139DAY") : "";
+            this.me203140 = json.has("me203140") ? json.getString("me203140") : "";
+            this.me203140QTY = json.has("me203140QTY") ? json.getString("me203140QTY") : "";
+            this.me203140DAY = json.has("me203140DAY") ? json.getString("me203140DAY") : "";
+            this.me203141 = json.has("me203141") ? json.getString("me203141") : "";
+            this.me203141QTY = json.has("me203141QTY") ? json.getString("me203141QTY") : "";
+            this.me203141DAY = json.has("me203141DAY") ? json.getString("me203141DAY") : "";
+            this.me203142 = json.has("me203142") ? json.getString("me203142") : "";
+            this.me203142QTY = json.has("me203142QTY") ? json.getString("me203142QTY") : "";
+            this.me203142DAY = json.has("me203142DAY") ? json.getString("me203142DAY") : "";
+            this.me203143 = json.has("me203143") ? json.getString("me203143") : "";
+            this.me203143QTY = json.has("me203143QTY") ? json.getString("me203143QTY") : "";
+            this.me203143DAY = json.has("me203143DAY") ? json.getString("me203143DAY") : "";
+            this.me203144 = json.has("me203144") ? json.getString("me203144") : "";
+            this.me203144QTY = json.has("me203144QTY") ? json.getString("me203144QTY") : "";
+            this.me203144DAY = json.has("me203144DAY") ? json.getString("me203144DAY") : "";
+            this.me203145 = json.has("me203145") ? json.getString("me203145") : "";
+            this.me203145QTY = json.has("me203145QTY") ? json.getString("me203145QTY") : "";
+            this.me203145DAY = json.has("me203145DAY") ? json.getString("me203145DAY") : "";
+            this.me203146 = json.has("me203146") ? json.getString("me203146") : "";
+            this.me203146QTY = json.has("me203146QTY") ? json.getString("me203146QTY") : "";
+            this.me203146DAY = json.has("me203146DAY") ? json.getString("me203146DAY") : "";
+            this.me203147 = json.has("me203147") ? json.getString("me203147") : "";
+            this.me203147QTY = json.has("me203147QTY") ? json.getString("me203147QTY") : "";
+            this.me203147DAY = json.has("me203147DAY") ? json.getString("me203147DAY") : "";
+            this.me203148 = json.has("me203148") ? json.getString("me203148") : "";
+            this.me203148QTY = json.has("me203148QTY") ? json.getString("me203148QTY") : "";
+            this.me203148DAY = json.has("me203148DAY") ? json.getString("me203148DAY") : "";
+            this.me203149 = json.has("me203149") ? json.getString("me203149") : "";
+            this.me203149QTY = json.has("me203149QTY") ? json.getString("me203149QTY") : "";
+            this.me203149DAY = json.has("me203149DAY") ? json.getString("me203149DAY") : "";
+            this.me203150 = json.has("me203150") ? json.getString("me203150") : "";
+            this.me203150QTY = json.has("me203150QTY") ? json.getString("me203150QTY") : "";
+            this.me203150DAY = json.has("me203150DAY") ? json.getString("me203150DAY") : "";
+            this.me203151 = json.has("me203151") ? json.getString("me203151") : "";
+            this.me203151QTY = json.has("me203151QTY") ? json.getString("me203151QTY") : "";
+            this.me203151DAY = json.has("me203151DAY") ? json.getString("me203151DAY") : "";
+            this.me203152 = json.has("me203152") ? json.getString("me203152") : "";
+            this.me203152QTY = json.has("me203152QTY") ? json.getString("me203152QTY") : "";
+            this.me203152DAY = json.has("me203152DAY") ? json.getString("me203152DAY") : "";
+            this.me203153 = json.has("me203153") ? json.getString("me203153") : "";
+            this.me203153QTY = json.has("me203153QTY") ? json.getString("me203153QTY") : "";
+            this.me203153DAY = json.has("me203153DAY") ? json.getString("me203153DAY") : "";
+            this.me203154 = json.has("me203154") ? json.getString("me203154") : "";
+            this.me203154QTY = json.has("me203154QTY") ? json.getString("me203154QTY") : "";
+            this.me203154DAY = json.has("me203154DAY") ? json.getString("me203154DAY") : "";
+            this.me203155 = json.has("me203155") ? json.getString("me203155") : "";
+            this.me203155QTY = json.has("me203155QTY") ? json.getString("me203155QTY") : "";
+            this.me203155DAY = json.has("me203155DAY") ? json.getString("me203155DAY") : "";
+            this.me203156 = json.has("me203156") ? json.getString("me203156") : "";
+            this.me203156QTY = json.has("me203156QTY") ? json.getString("me203156QTY") : "";
+            this.me203156DAY = json.has("me203156DAY") ? json.getString("me203156DAY") : "";
+            this.me203157 = json.has("me203157") ? json.getString("me203157") : "";
+            this.me203157QTY = json.has("me203157QTY") ? json.getString("me203157QTY") : "";
+            this.me203157DAY = json.has("me203157DAY") ? json.getString("me203157DAY") : "";
+            this.me203158 = json.has("me203158") ? json.getString("me203158") : "";
+            this.me203158QTY = json.has("me203158QTY") ? json.getString("me203158QTY") : "";
+            this.me203158DAY = json.has("me203158DAY") ? json.getString("me203158DAY") : "";
+            this.me203159 = json.has("me203159") ? json.getString("me203159") : "";
+            this.me203159QTY = json.has("me203159QTY") ? json.getString("me203159QTY") : "";
+            this.me203159DAY = json.has("me203159DAY") ? json.getString("me203159DAY") : "";
+            this.me203160 = json.has("me203160") ? json.getString("me203160") : "";
+            this.me203160QTY = json.has("me203160QTY") ? json.getString("me203160QTY") : "";
+            this.me203160DAY = json.has("me203160DAY") ? json.getString("me203160DAY") : "";
+            this.me203161 = json.has("me203161") ? json.getString("me203161") : "";
+            this.me203161QTY = json.has("me203161QTY") ? json.getString("me203161QTY") : "";
+            this.me203161DAY = json.has("me203161DAY") ? json.getString("me203161DAY") : "";
+            this.me203162 = json.has("me203162") ? json.getString("me203162") : "";
+            this.me203162QTY = json.has("me203162QTY") ? json.getString("me203162QTY") : "";
+            this.me203162DAY = json.has("me203162DAY") ? json.getString("me203162DAY") : "";
+            this.me203163 = json.has("me203163") ? json.getString("me203163") : "";
+            this.me203163QTY = json.has("me203163QTY") ? json.getString("me203163QTY") : "";
+            this.me203163DAY = json.has("me203163DAY") ? json.getString("me203163DAY") : "";
+            this.me203164 = json.has("me203164") ? json.getString("me203164") : "";
+            this.me203164QTY = json.has("me203164QTY") ? json.getString("me203164QTY") : "";
+            this.me203164DAY = json.has("me203164DAY") ? json.getString("me203164DAY") : "";
+            this.me203165 = json.has("me203165") ? json.getString("me203165") : "";
+            this.me203165QTY = json.has("me203165QTY") ? json.getString("me203165QTY") : "";
+            this.me203165DAY = json.has("me203165DAY") ? json.getString("me203165DAY") : "";
+            this.me203166 = json.has("me203166") ? json.getString("me203166") : "";
+            this.me203166QTY = json.has("me203166QTY") ? json.getString("me203166QTY") : "";
+            this.me203166DAY = json.has("me203166DAY") ? json.getString("me203166DAY") : "";
+            this.me203167 = json.has("me203167") ? json.getString("me203167") : "";
+            this.me203167QTY = json.has("me203167QTY") ? json.getString("me203167QTY") : "";
+            this.me203167DAY = json.has("me203167DAY") ? json.getString("me203167DAY") : "";
+            this.me203168 = json.has("me203168") ? json.getString("me203168") : "";
+            this.me203168QTY = json.has("me203168QTY") ? json.getString("me203168QTY") : "";
+            this.me203168DAY = json.has("me203168DAY") ? json.getString("me203168DAY") : "";
+            this.me203169 = json.has("me203169") ? json.getString("me203169") : "";
+            this.me203169QTY = json.has("me203169QTY") ? json.getString("me203169QTY") : "";
+            this.me203169DAY = json.has("me203169DAY") ? json.getString("me203169DAY") : "";
+            this.me203170 = json.has("me203170") ? json.getString("me203170") : "";
+            this.me203170QTY = json.has("me203170QTY") ? json.getString("me203170QTY") : "";
+            this.me203170DAY = json.has("me203170DAY") ? json.getString("me203170DAY") : "";
+            this.me203171 = json.has("me203171") ? json.getString("me203171") : "";
+            this.me203171QTY = json.has("me203171QTY") ? json.getString("me203171QTY") : "";
+            this.me203171DAY = json.has("me203171DAY") ? json.getString("me203171DAY") : "";
+            this.me203172 = json.has("me203172") ? json.getString("me203172") : "";
+            this.me203172QTY = json.has("me203172QTY") ? json.getString("me203172QTY") : "";
+            this.me203172DAY = json.has("me203172DAY") ? json.getString("me203172DAY") : "";
+            this.me203173 = json.has("me203173") ? json.getString("me203173") : "";
+            this.me203173QTY = json.has("me203173QTY") ? json.getString("me203173QTY") : "";
+            this.me203173DAY = json.has("me203173DAY") ? json.getString("me203173DAY") : "";
+            this.me203174 = json.has("me203174") ? json.getString("me203174") : "";
+            this.me203174QTY = json.has("me203174QTY") ? json.getString("me203174QTY") : "";
+            this.me203174DAY = json.has("me203174DAY") ? json.getString("me203174DAY") : "";
+            this.me203175 = json.has("me203175") ? json.getString("me203175") : "";
+            this.me203175QTY = json.has("me203175QTY") ? json.getString("me203175QTY") : "";
+            this.me203175DAY = json.has("me203175DAY") ? json.getString("me203175DAY") : "";
+            this.me203176 = json.has("me203176") ? json.getString("me203176") : "";
+            this.me203176QTY = json.has("me203176QTY") ? json.getString("me203176QTY") : "";
+            this.me203176DAY = json.has("me203176DAY") ? json.getString("me203176DAY") : "";
+            this.me203177 = json.has("me203177") ? json.getString("me203177") : "";
+            this.me203177QTY = json.has("me203177QTY") ? json.getString("me203177QTY") : "";
+            this.me203177DAY = json.has("me203177DAY") ? json.getString("me203177DAY") : "";
+            this.me203178 = json.has("me203178") ? json.getString("me203178") : "";
+            this.me203178QTY = json.has("me203178QTY") ? json.getString("me203178QTY") : "";
+            this.me203178DAY = json.has("me203178DAY") ? json.getString("me203178DAY") : "";
+            this.me203179 = json.has("me203179") ? json.getString("me203179") : "";
+            this.me203179QTY = json.has("me203179QTY") ? json.getString("me203179QTY") : "";
+            this.me203179DAY = json.has("me203179DAY") ? json.getString("me203179DAY") : "";
+            this.me203180 = json.has("me203180") ? json.getString("me203180") : "";
+            this.me203180QTY = json.has("me203180QTY") ? json.getString("me203180QTY") : "";
+            this.me203180DAY = json.has("me203180DAY") ? json.getString("me203180DAY") : "";
+            this.me203181 = json.has("me203181") ? json.getString("me203181") : "";
+            this.me203181QTY = json.has("me203181QTY") ? json.getString("me203181QTY") : "";
+            this.me203181DAY = json.has("me203181DAY") ? json.getString("me203181DAY") : "";
+            this.me203182 = json.has("me203182") ? json.getString("me203182") : "";
+            this.me203182QTY = json.has("me203182QTY") ? json.getString("me203182QTY") : "";
+            this.me203182DAY = json.has("me203182DAY") ? json.getString("me203182DAY") : "";
+            this.me203183 = json.has("me203183") ? json.getString("me203183") : "";
+            this.me203183QTY = json.has("me203183QTY") ? json.getString("me203183QTY") : "";
+            this.me203183DAY = json.has("me203183DAY") ? json.getString("me203183DAY") : "";
+            this.me203184 = json.has("me203184") ? json.getString("me203184") : "";
+            this.me203184QTY = json.has("me203184QTY") ? json.getString("me203184QTY") : "";
+            this.me203184DAY = json.has("me203184DAY") ? json.getString("me203184DAY") : "";
+            this.me203185 = json.has("me203185") ? json.getString("me203185") : "";
+            this.me203185QTY = json.has("me203185QTY") ? json.getString("me203185QTY") : "";
+            this.me203185DAY = json.has("me203185DAY") ? json.getString("me203185DAY") : "";
+            this.me203186 = json.has("me203186") ? json.getString("me203186") : "";
+            this.me203186QTY = json.has("me203186QTY") ? json.getString("me203186QTY") : "";
+            this.me203186DAY = json.has("me203186DAY") ? json.getString("me203186DAY") : "";
+            this.me203187 = json.has("me203187") ? json.getString("me203187") : "";
+            this.me203187QTY = json.has("me203187QTY") ? json.getString("me203187QTY") : "";
+            this.me203187DAY = json.has("me203187DAY") ? json.getString("me203187DAY") : "";
+            this.me203188 = json.has("me203188") ? json.getString("me203188") : "";
+            this.me203188QTY = json.has("me203188QTY") ? json.getString("me203188QTY") : "";
+            this.me203188DAY = json.has("me203188DAY") ? json.getString("me203188DAY") : "";
+            this.me203189 = json.has("me203189") ? json.getString("me203189") : "";
+            this.me203189QTY = json.has("me203189QTY") ? json.getString("me203189QTY") : "";
+            this.me203189DAY = json.has("me203189DAY") ? json.getString("me203189DAY") : "";
+            this.me203190 = json.has("me203190") ? json.getString("me203190") : "";
+            this.me203190QTY = json.has("me203190QTY") ? json.getString("me203190QTY") : "";
+            this.me203190DAY = json.has("me203190DAY") ? json.getString("me203190DAY") : "";
+            this.me203191 = json.has("me203191") ? json.getString("me203191") : "";
+            this.me203191QTY = json.has("me203191QTY") ? json.getString("me203191QTY") : "";
+            this.me203191DAY = json.has("me203191DAY") ? json.getString("me203191DAY") : "";
+            this.vs310 = json.has("vs310") ? json.getString("vs310") : "";
+        }
     }
 }
