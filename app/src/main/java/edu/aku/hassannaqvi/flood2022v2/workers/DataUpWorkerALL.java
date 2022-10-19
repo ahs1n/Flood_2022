@@ -147,13 +147,13 @@ public class DataUpWorkerALL extends Worker {
         return null;
     }*/
 
-    public static void longInfo(String str) {
+/*    public static void longInfo(String str) {
         if (str.length() > 4000) {
             Log.i(TAG, str.substring(0, 4000));
             longInfo(str.substring(4000));
         } else
             Log.i(TAG, str);
-    }
+    }*/
 
     /*
      * The method is doing nothing but only generating
@@ -303,7 +303,7 @@ public class DataUpWorkerALL extends Worker {
 
                 Log.d(TAG, "Upload Begins Length: " + jsonParam.length());
                 Log.d(TAG, "Upload Begins: " + jsonParam);
-                longInfo(String.valueOf(jsonParam));
+//                longInfo(String.valueOf(jsonParam));
 
                 String cipheredRequest = CipherSecure.encryptGCM(jsonParam.toString());
                 requestLength = cipheredRequest.length();
@@ -311,7 +311,7 @@ public class DataUpWorkerALL extends Worker {
 
                 String writeEnc = CipherSecure.encryptGCM(jsonParam.toString());
 
-                longInfo("Encrypted: " + writeEnc);
+//                longInfo("Encrypted: " + writeEnc);
 
                 //     wr.writeBytes(jsonParam.toString());
 
@@ -338,7 +338,7 @@ public class DataUpWorkerALL extends Worker {
 
                     }
                     displayNotification(nTitle, "Received Data");
-                    longInfo("result-server: " + writeEnc);
+//                    longInfo("result-server: " + writeEnc);
 
                 } else {
 
@@ -362,7 +362,7 @@ public class DataUpWorkerALL extends Worker {
 
                 return Result.failure(data);
             }
-        } catch (java.net.SocketTimeoutException e) {
+        } catch (java.net.SocketTimeoutException | OutOfMemoryError e) {
             Log.d(TAG, "doWork (Timeout): " + e.getMessage());
             displayNotification(nTitle, "Timeout Error: " + e.getMessage());
             data = new Data.Builder()
