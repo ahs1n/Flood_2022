@@ -62,7 +62,7 @@
             </intent-filter>-->
         </activity>
         <activity
-            android:name="edu.aku.hassannaqvi.flood2022.ui.LoginActivity"
+            android:name=".ui.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="edu.aku.hassannaqvi.flood2022.ui.SyncActivity"
