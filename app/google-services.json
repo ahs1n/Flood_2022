@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "659721554172",
+    "project_id": "floods-2022",
+    "storage_bucket": "floods-2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659721554172:android:9020648a3b976658b8af79",
+        "android_client_info": {
+          "package_name": "edu.aku.hassannaqvi.flood2022"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659721554172-dkpeapr0jse43m6br1dvj4nrojbmskdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKGf46Lt7O2nZ5bpHu12ieMODswiVprfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659721554172-dkpeapr0jse43m6br1dvj4nrojbmskdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
